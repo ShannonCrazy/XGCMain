@@ -1,6 +1,6 @@
 {
   "name": "XGCMain",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "A short description of XGCMain.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ShannonCrazy/XGCMain",
@@ -13,10 +13,47 @@
   },
   "source": {
     "git": "https://github.com/ShannonCrazy/XGCMain.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "XGCMain/Classes/**/*"
+  "source_files": "XGCMain/Classes/**/*",
+  "resource_bundles": {
+    "XGCMain": [
+      "XGCMain/Assets/**/*"
+    ]
+  },
+  "dependencies": {
+    "Toast": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "AFNetworking": [
+
+    ],
+    "AliyunOSSiOS": [
+
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "DZNEmptyDataSet": [
+
+    ],
+    "M13OrderedDictionary": [
+
+    ]
+  }
 }
