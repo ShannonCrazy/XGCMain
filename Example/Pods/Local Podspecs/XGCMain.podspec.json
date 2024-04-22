@@ -1,0 +1,22 @@
+{
+  "name": "XGCMain",
+  "version": "0.1.0",
+  "summary": "A short description of XGCMain.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ShannonCrazy/XGCMain",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ShannonCrazy": "541273160@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/ShannonCrazy/XGCMain.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "XGCMain/Classes/**/*"
+}
