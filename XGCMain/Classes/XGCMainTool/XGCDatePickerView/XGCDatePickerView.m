@@ -34,10 +34,13 @@ static CGFloat const UIDatePickerHeight = 310;
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = UIColor.clearColor;
         // 创建日历
-        self.calendar = [NSCalendar currentCalendar];
-        self.calendar.firstWeekday = 2;
-        self.calendar.timeZone = [NSTimeZone systemTimeZone];
-        self.calendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh_CN"];
+        self.calendar = ({
+            NSCalendar *calendar = [NSCalendar currentCalendar];
+            calendar.firstWeekday = 2;
+            calendar.timeZone = [NSTimeZone systemTimeZone];
+            calendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh_CN"];
+            calendar;
+        });
         // UI
         self.backgroundControl = ({
             UIControl *control = [[UIControl alloc] initWithFrame:self.bounds];

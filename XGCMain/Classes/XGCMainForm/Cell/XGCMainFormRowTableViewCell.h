@@ -17,7 +17,6 @@
 @class XGCMainFormRowStyleValue1Descriptor;
 @class XGCMainFormRowStyleSubtitleDescriptor;
 @class XGCMainFormRowMediaDescriptor;
-@class XGCMainMediaFileJsonModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *cTextLabel;
 /// 列表
 @property (nonatomic, weak) UITableView *tableView;
+/// 描述信息
 @property (nonatomic, strong, nullable) XGCMainFormRowDescriptor *descriptor;
 @end
 
@@ -44,12 +44,13 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface XGCMainFormRowActionTableViewCell : XGCMainFormRowTableViewCell
+/// 自定义事件
 @property (nonatomic, strong, nullable) XGCMainFormRowActionDescriptor *actionDescriptor;
-
+/// 时间选择事件
 @property (nonatomic, strong, nullable) XGCMainFormRowDateActionDescriptor *dateDescriptor;
-
+/// 字典选择事件
 @property (nonatomic, strong, nullable) XGCMainFormRowDictMapActionDescriptor *dictMapDescriptor;
-
+/// 点击事件
 @property (nonatomic, copy, nullable) void(^UIControlTouchUpInside)(__kindof XGCMainFormRowDescriptor *descriptor);
 @end
 

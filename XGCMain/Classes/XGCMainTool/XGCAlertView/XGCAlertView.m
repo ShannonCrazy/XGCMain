@@ -7,7 +7,7 @@
 
 #import "XGCAlertView.h"
 #import "XGCConfiguration.h"
-#import "XGCMainTextField.h"
+#import "XGCTextField.h"
 #import "XGCEmptyTableView.h"
 #import "NSString+XGCString.h"
 #import "XGCAlertTableViewCell.h"
@@ -25,7 +25,7 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
 @property (nonatomic, strong) UIButton *leftBarButton;
 @property (nonatomic, strong) UIButton *rightBarButton;
 @property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) XGCMainTextField *textField;
+@property (nonatomic, strong) XGCTextField *textField;
 @property (nonatomic, strong) XGCEmptyTableView *tableView;
 
 /// 一维数组
@@ -100,7 +100,7 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
             [self.toolbar addSubview:view];
         });
         self.textField = ({
-            XGCMainTextField *textField = [[XGCMainTextField alloc] initWithFrame:CGRectMake(20.0, CGRectGetMaxY(self.toolbar.frame) + 10.0, CGRectGetWidth(frame) - 40.0, 30.0)];
+            XGCTextField *textField = [[XGCTextField alloc] initWithFrame:CGRectMake(20.0, CGRectGetMaxY(self.toolbar.frame) + 10.0, CGRectGetWidth(frame) - 40.0, 30.0)];
             textField.layer.cornerRadius = 15.0;
             textField.placeholder = @"请输入关键字搜索";
             textField.textColor = XGCCMI.labelColor;
@@ -233,7 +233,7 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
 }
 
 #pragma mark action
-- (void)UITextFieldTextDidChangeAction:(XGCMainTextField *)textField {
+- (void)UITextFieldTextDidChangeAction:(XGCTextField *)textField {
     if (textField.markedTextRange) {
         return;
     }

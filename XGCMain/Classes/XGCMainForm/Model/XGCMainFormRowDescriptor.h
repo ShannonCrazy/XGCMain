@@ -11,7 +11,7 @@
 #import "XGCDatePickerView.h"
 // model
 #import "XGCUserDictMapModel.h"
-#import "XGCMainMediaFileJsonModel.h"
+#import "XGCMediaPreviewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -151,7 +151,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否可用
 @property(nonatomic, assign, getter=isEditable) BOOL editable;
 /// 附件
-@property (nonatomic, strong) NSMutableArray <XGCMainMediaFileJsonModel *> *fileJsons;
+@property (nonatomic, strong) NSMutableArray <XGCMediaPreviewModel *> *fileJsons;
 @end
 
 @interface XGCMainFormRowCustiomDescriptor : XGCMainFormRowDescriptor

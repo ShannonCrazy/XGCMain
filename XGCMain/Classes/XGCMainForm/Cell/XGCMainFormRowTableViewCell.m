@@ -9,15 +9,14 @@
 // model
 #import "XGCMainFormRowDescriptor.h"
 //
-#import "XGCMainTextView.h"
-#import "XGCMainTextField.h"
-#import "XGCMainMediaFileJsonContainerView.h"
+#import "XGCTextView.h"
+#import "XGCTextField.h"
+#import <XGCMain/XGCMediaPreviewContainerView.h>
 //
 #import "NSDate+XGCDate.h"
 #import "XGCUserManager.h"
 #import "UIImage+XGCImage.h"
 #import "XGCConfiguration.h"
-//#import "XGCComponentRoute.h"
 #import "NSString+XGCString.h"
 //
 #import <Masonry/Masonry.h>
@@ -95,7 +94,7 @@
 #pragma mark XGCMainFormRowTextFieldTableViewCell
 @interface XGCMainFormRowTextFieldTableViewCell ()
 @property (nonatomic, strong) UIView *containerView;
-@property (nonatomic, strong) XGCMainTextField *cTextField;
+@property (nonatomic, strong) XGCTextField *cTextField;
 @end
 
 @implementation XGCMainFormRowTextFieldTableViewCell
@@ -114,7 +113,7 @@
             view;
         });
         self.cTextField = ({
-            XGCMainTextField *textField = [[XGCMainTextField alloc] init];
+            XGCTextField *textField = [[XGCTextField alloc] init];
             textField.textAlignment = NSTextAlignmentRight;
             textField.textColor = XGCCMI.textFieldTextColor;
             textField.clearButtonMode = UITextFieldViewModeWhileEditing;
@@ -161,7 +160,7 @@
 @interface XGCMainFormRowTextFieldSelectorTableViewCell ()
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) UIButton *selectorButton;
-@property (nonatomic, strong) XGCMainTextField *cTextField;
+@property (nonatomic, strong) XGCTextField *cTextField;
 @end
 
 @implementation XGCMainFormRowTextFieldSelectorTableViewCell
@@ -200,7 +199,7 @@
             button;
         });
         self.cTextField = ({
-            XGCMainTextField *textField = [[XGCMainTextField alloc] init];
+            XGCTextField *textField = [[XGCTextField alloc] init];
             textField.textAlignment = NSTextAlignmentRight;
             textField.textColor = XGCCMI.textFieldTextColor;
             textField.clearButtonMode = UITextFieldViewModeWhileEditing;
@@ -261,8 +260,8 @@
 @end
 
 #pragma mark XGCMainFormRowTextViewTableViewCell
-@interface XGCMainFormRowTextViewTableViewCell ()<XGCMainTextViewDelegate>
-@property (nonatomic, strong) XGCMainTextView *cTextView;
+@interface XGCMainFormRowTextViewTableViewCell ()<XGCTextViewDelegate>
+@property (nonatomic, strong) XGCTextView *cTextView;
 @end
 
 @implementation XGCMainFormRowTextViewTableViewCell
@@ -270,7 +269,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.cTextView = ({
-            XGCMainTextView *textView = [[XGCMainTextView alloc] init];
+            XGCTextView *textView = [[XGCTextView alloc] init];
             textView.delegate = self;
             textView.scrollEnabled = NO;
             textView.textColor = XGCCMI.textFieldTextColor;
@@ -305,7 +304,7 @@
 }
 
 #pragma mark - UITextViewDelegate
-- (void)textView:(XGCMainTextView *)textView newHeightAfterTextChanged:(CGFloat)height {
+- (void)textView:(XGCTextView *)textView newHeightAfterTextChanged:(CGFloat)height {
     [self.tableView beginUpdates];
     [self.cTextView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(height);
@@ -313,7 +312,7 @@
     [self.tableView endUpdates];
 }
 
-- (void)textViewDidChange:(XGCMainTextView *)textView {
+- (void)textViewDidChange:(XGCTextView *)textView {
     if (textView.markedTextRange) {
         return;
     }
@@ -758,20 +757,22 @@
 
 #pragma mark XGCMainFormRowMediaTableViewCell
 @interface XGCMainFormRowMediaTableViewCell ()
-@property (nonatomic, strong) XGCMainMediaFileJsonContainerView *containerView;
+@property (nonatomic, strong) XGCMediaPreviewContainerView *containerView;
 @end
 
 @implementation XGCMainFormRowMediaTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.contentView.backgroundColor = UIColor.clearColor;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.containerView = ({
-            XGCMainMediaFileJsonContainerView *view = [[XGCMainMediaFileJsonContainerView alloc] init];
+            XGCMediaPreviewContainerView *view = [[XGCMediaPreviewContainerView alloc] initWithScrollDirection:UICollectionViewScrollDirectionHorizontal];
             [self.contentView addSubview:view];
             [view mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.mas_equalTo(self.contentView);
                 make.top.mas_equalTo(self.cTextLabel.mas_bottom);
+                make.height.mas_equalTo(view.itemSize.height);
                 make.bottom.mas_equalTo(self.contentView).priorityMedium();
             }];
             view;
@@ -794,6 +795,10 @@
     self.containerView.editable = _mediaDescriptor.editable;
     self.containerView.fileJsons = _mediaDescriptor.fileJsons;
     self.containerView.contentInset = UIEdgeInsetsMake(10.0, _mediaDescriptor.contentEdgeInsets.left, _mediaDescriptor.contentEdgeInsets.bottom, _mediaDescriptor.contentEdgeInsets.right);
+    CGFloat height = self.containerView.contentInset.top + self.containerView.contentInset.bottom + self.containerView.itemSize.height;
+    [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(height);
+    }];
 }
 
 @end

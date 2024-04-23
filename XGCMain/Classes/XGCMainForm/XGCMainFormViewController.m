@@ -220,8 +220,8 @@
         completion ? completion() : nil;
         return;
     }
-    __block  XGCMainMediaFileJsonModel * _Nullable fileJson = nil;
-    [firstObject.fileJsons enumerateObjectsUsingBlock:^(XGCMainMediaFileJsonModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    __block  XGCMediaPreviewModel * _Nullable fileJson = nil;
+    [firstObject.fileJsons enumerateObjectsUsingBlock:^(XGCMediaPreviewModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (obj.fileUrl.length == 0 && (obj.image || obj.filePathURL)) {
             *stop = (fileJson = obj) ? YES : NO;
         }

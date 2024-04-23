@@ -14,10 +14,6 @@
     return [UIImage imageNamed:name inBundle:[NSBundle bundleWithPath:path] compatibleWithTraitCollection:nil];
 }
 
-+ (UIImage *)imageNamed:(NSString *)name inClass:(Class)aClass {
-    return [UIImage imageNamed:name inBundle:[NSBundle bundleForClass:aClass] compatibleWithTraitCollection:nil];
-}
-
 - (UIImage *)makeRotation:(CGFloat)angle {
     size_t width = (size_t)CGImageGetWidth(self.CGImage);
     size_t height = (size_t)CGImageGetHeight(self.CGImage);

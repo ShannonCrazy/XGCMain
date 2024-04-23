@@ -8,8 +8,6 @@
 #import "XGCMainNavigationController.h"
 // delegate
 #import "XGCMainNavigationControllerDelegate.h"
-// controller
-#import "XGCMainViewController.h"
 //
 #import "XGCConfiguration.h"
 

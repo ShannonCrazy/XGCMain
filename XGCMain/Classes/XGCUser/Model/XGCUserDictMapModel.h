@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否展示
 @property (nonatomic, copy) NSString *cIsShow;
 /// 附加信息
-@property (nonatomic, copy) NSString *exlCol;
+@property (nonatomic, copy, nullable) NSString *exlCol;
 /// 是否选中
 @property (nonatomic, assign, getter=isSelected) BOOL selected;
 /// 是否可用

@@ -18,13 +18,11 @@
 #import "NSString+XGCString.h"
 // thirdparty
 #import "XGCAliyunOSSiOS.h"
-#import "XGCMainPickerManager.h"
 
 @interface XGCMainAppFuncCodeFormViewController ()
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray <NSIndexPath *> *needReloadIndexPaths;
 @property (nonatomic, strong) NSMutableIndexSet *needReloadIndexSets;
-@property (nonatomic, strong) XGCMainPickerManager *manager;
 @end
 
 @implementation XGCMainAppFuncCodeFormViewController
@@ -242,8 +240,8 @@
         completion ? completion() : nil;
         return;
     }
-    __block XGCMainMediaFileJsonModel *fileJson = nil;
-    [firstObject.fileJsons enumerateObjectsUsingBlock:^(XGCMainMediaFileJsonModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    __block XGCMediaPreviewModel *fileJson = nil;
+    [firstObject.fileJsons enumerateObjectsUsingBlock:^(XGCMediaPreviewModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (obj.fileUrl.length == 0 && (obj.image || obj.filePathURL)) {
             *stop = (fileJson = obj) ? YES : NO;
         }
@@ -474,39 +472,6 @@
         [this reloadRowsAtRows:@[dictMapDescriptor] withRowAnimation:UITableViewRowAnimationNone];
     };
     [self.view addSubview:view];
-}
-
-- (void)didSelectItemAtFileJson:(XGCMainMediaFileJsonModel *)original descriptor:(XGCMainFormRowMediaDescriptor *)descriptor imageView:(UIImageView *)imageView {
-    self.manager = [[XGCMainPickerManager alloc] init];
-    self.manager.sourceView = imageView.superview;
-    self.manager.sourceRect = imageView.frame;
-    self.manager.maxFilesCount = original ? 1 : NSUIntegerMax;
-    __weak typeof(self) this = self;
-    self.manager.didFinishPickingPhotosWithInfosHandle = ^(NSArray<UIImage *> * _Nonnull photos, NSArray<NSDictionary *> * _Nonnull infos) {
-        __block NSMutableArray <XGCMainMediaFileJsonModel *> *inserts = [NSMutableArray array];
-        [photos enumerateObjectsUsingBlock:^(UIImage * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [inserts addObject:[XGCMainMediaFileJsonModel image:obj filePathURL:nil fileName:nil suffix:nil]];
-        }];
-        if (original) {
-            [descriptor.fileJsons replaceObjectIn:original withObject:inserts.firstObject];
-        } else {
-            [descriptor.fileJsons addObjectsFromArray:inserts];
-        }
-        [this reloadRowsAtRows:@[descriptor] withRowAnimation:UITableViewRowAnimationNone];
-    };
-    self.manager.didPickDocumentsAtURLs = ^(NSArray<NSURL *> * _Nonnull urls) {
-        __block NSMutableArray <XGCMainMediaFileJsonModel *> *inserts = [NSMutableArray array];
-        [urls enumerateObjectsUsingBlock:^(NSURL * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [inserts addObject:[XGCMainMediaFileJsonModel image:nil filePathURL:obj fileName:nil suffix:nil]];
-        }];
-        if (original) {
-            [descriptor.fileJsons replaceObjectIn:original withObject:inserts.firstObject];
-        } else {
-            [descriptor.fileJsons addObjectsFromArray:inserts];
-        }
-        [this reloadRowsAtRows:@[descriptor] withRowAnimation:UITableViewRowAnimationNone];
-    };
-    [self.manager presentFromViewController:self];
 }
 
 @end

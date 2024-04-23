@@ -7,6 +7,9 @@
 //
 
 #import "XGCMainRoute.h"
+// Route
+#import <XGCMain/XGCWebViewRoute.h>
+#import <XGCMain/XGCMediaPreviewRoute.h>
 
 @interface XGCMainRoute ()
 @property (nonatomic, strong) UIWindowScene *windowScene API_AVAILABLE(ios(13.0));
@@ -27,6 +30,10 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.maps = [NSMutableDictionary dictionary];
+        // WKWebView预览
+        [self registerRoute:[XGCWebViewRoute new]];
+        // 附件预览
+        [self registerRoute:[XGCMediaPreviewRoute new]];
     }
     return self;
 }
@@ -37,10 +44,7 @@
 }
 
 + (void)registerRoute:(id<XGCMainRouteProtocol>)route {
-    if (!route || ![route conformsToProtocol:@protocol(XGCMainRouteProtocol)]) {
-        return;
-    }
-    [[XGCMainRoute shareInstance].maps setObject:route forKey:NSStringFromClass([route class])];
+    [[XGCMainRoute shareInstance] registerRoute:route];
 }
 
 + (BOOL)canRouteURL:(NSURL *)URL {
@@ -48,23 +52,19 @@
 }
 
 + (BOOL)canRouteURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {
-    for (id <XGCMainRouteProtocol> route in [[XGCMainRoute shareInstance].maps.allValues copy]) {
-        if (![route respondsToSelector:@selector(canRouteURL:withParameters:)]) {
-            continue;
-        }
-        if ([route canRouteURL:URL withParameters:parameters]) {
-            return YES;
-        }
-    }
-    return NO;
+    return [[XGCMainRoute shareInstance] canRouteURL:URL withParameters:parameters];
 }
 
 + (void)routeURL:(NSURL *)URL {
-    [self routeURL:URL withParameters:nil];
+    [self routeURL:URL withParameters:nil method:@"push" animated:YES];
 }
 
 + (void)routeURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {
-    return [[XGCMainRoute shareInstance] routeURL:URL withParameters:parameters];
+    [self routeURL:URL withParameters:parameters method:@"push" animated:YES];
+}
+
++ (void)routeURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters method:(NSString *)method animated:(BOOL)animated {
+    [[XGCMainRoute shareInstance] routeURL:URL withParameters:parameters method:method animated:animated];
 }
 
 + (__kindof UIViewController *)routeControllerForURL:(NSURL *)URL {
@@ -76,7 +76,26 @@
 }
 
 #pragma mark private
-- (void)routeURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {
+- (void)registerRoute:(id<XGCMainRouteProtocol>)route {
+    if (!route || ![route conformsToProtocol:@protocol(XGCMainRouteProtocol)]) {
+        return;
+    }
+    [self.maps setObject:route forKey:NSStringFromClass([route class])];
+}
+
+- (BOOL)canRouteURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {
+    for (id <XGCMainRouteProtocol> route in [self.maps.allValues copy]) {
+        if (![route respondsToSelector:@selector(canRouteURL:withParameters:)]) {
+            continue;
+        }
+        if ([route canRouteURL:URL withParameters:parameters]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+- (void)routeURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters method:(NSString *)method animated:(BOOL)animated {
     __kindof UIViewController *viewController = [self routeControllerForURL:URL withParameters:parameters];
     if (!viewController) {
         return;
@@ -111,7 +130,11 @@
     if (!rootViewController.navigationController) {
         return;
     }
-    [rootViewController.navigationController pushViewController:viewController animated:YES];
+    if ([method isEqualToString:@"push"]) {
+        [rootViewController.navigationController pushViewController:viewController animated:animated];
+    } else {
+        [rootViewController presentViewController:viewController animated:animated completion:nil];
+    }
 }
 
 - (__kindof UIViewController *)routeControllerForURL:(NSURL *)URL withParameters:(NSDictionary<NSString *,id> *)parameters {

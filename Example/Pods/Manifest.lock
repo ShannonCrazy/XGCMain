@@ -25,7 +25,7 @@ PODS:
   - SDWebImage/Core (5.19.1)
   - SVProgressHUD (2.2.5)
   - Toast (4.0.0)
-  - XGCMain (1.0.0):
+  - XGCMain (1.0.1):
     - AFNetworking
     - AliyunOSSiOS
     - DZNEmptyDataSet
@@ -68,7 +68,7 @@ SPEC CHECKSUMS:
   SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  XGCMain: 83363e9b9c1baf44575afaa9f3422be975b19260
+  XGCMain: d8933d012dfb50c6e105cdcdecd2efd41ab7fc18
 
 PODFILE CHECKSUM: fc2112c46b62005c8a73018cb97546ce16c9fd81
 
