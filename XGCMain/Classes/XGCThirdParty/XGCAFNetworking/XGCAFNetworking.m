@@ -223,6 +223,8 @@
     } completionHandler:nil];
     // 记录代理
     [self setObject:delegate dataTask:dataTask];
+    // 启动下载
+    [dataTask resume];
     return dataTask;
 }
 
@@ -289,7 +291,7 @@
             return;
         }
         dispatch_async(dispatch_get_main_queue(), ^{
-            delegate.download ? delegate.download(delegate.destination, nil) : nil;
+            delegate.download ? delegate.download(nil, [NSError errorWithDomain:NSCocoaErrorDomain code:262 userInfo:sender.userInfo]) : nil;
             [self removeObject:delegate];
         });
     }
@@ -303,7 +305,7 @@
             return;
         }
         dispatch_async(dispatch_get_main_queue(), ^{
-            delegate.download ? delegate.download(nil, [NSError errorWithDomain:NSCocoaErrorDomain code:262 userInfo:sender.userInfo]) : nil;
+            delegate.download ? delegate.download(delegate.destination, nil) : nil;
             [self removeObject:delegate];
         });
     }
