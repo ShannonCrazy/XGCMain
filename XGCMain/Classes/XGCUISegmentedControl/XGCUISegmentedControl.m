@@ -6,7 +6,6 @@
 //
 
 #import "XGCUISegmentedControl.h"
-#import "XGCConfiguration.h"
 
 @implementation XGCUISegmentedControl
 
@@ -34,8 +33,8 @@
 - (void)_didInitialize {
     self.layer.borderWidth = 2.0;
     self.layer.cornerRadius = 5.0;
-    self.layer.borderColor = XGCCMI.backgroundColor.CGColor;
-    self.tintColor = XGCCMI.whiteColor;
+    self.tintColor = UIColor.whiteColor;
+    self.layer.borderColor = UIColor.groupTableViewBackgroundColor.CGColor;
 }
 
 @end

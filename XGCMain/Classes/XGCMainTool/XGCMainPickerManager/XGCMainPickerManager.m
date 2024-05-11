@@ -9,7 +9,6 @@
 #if __has_include (<TZImagePickerController/TZImagePickerController.h>)
 #import <TZImagePickerController/TZImagePickerController.h>
 #endif
-#import "UIDevice+XGCDevice.h"
 //
 #import <AVFoundation/AVFoundation.h>
 
@@ -68,7 +67,7 @@ UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIDocumentPicke
         return;
     }
     UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    if (UIDevice.iPad) {
+    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         actionSheet.popoverPresentationController.sourceView = self.sourceView;
         actionSheet.popoverPresentationController.sourceRect = self.sourceRect;
     }

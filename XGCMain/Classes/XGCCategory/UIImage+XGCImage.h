@@ -10,8 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (XGCImage)
-
-+ (UIImage *)imageNamed:(NSString *)name inResource:(NSString *)resource;
 /// 旋转
 /// - Parameter angle: 角度
 - (nullable UIImage *)makeRotation:(CGFloat)angle;

@@ -9,7 +9,6 @@
 #import "XGCMediaPreviewCollectionViewCell.h"
 //
 #import "XGCConfiguration.h"
-#import "UIImage+XGCImage.h"
 #import "NSString+XGCString.h"
 //
 #import <Masonry/Masonry.h>
@@ -98,7 +97,7 @@
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             button.imageView.contentMode = UIViewContentModeScaleAspectFit;
             [button addTarget:self action:@selector(detailButonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
-            [button setImage:[UIImage imageNamed:@"main_amplify" inResource:@"XGCMain"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"main_amplify"] forState:UIControlStateNormal];
             [self.containerView addSubview:button];
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.left.right.mas_equalTo(self.containerView);
@@ -109,7 +108,7 @@
         self.replaceButton = ({
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             [button addTarget:self action:@selector(replaceButtonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
-            [button setImage:[UIImage imageNamed:@"main_replace" inResource:@"XGCMain"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"main_replace"] forState:UIControlStateNormal];
             [self.containerView addSubview:button];
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.bottom.mas_equalTo(self.containerView);
@@ -121,7 +120,7 @@
         self.deleteButton = ({
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             [button addTarget:self action:@selector(deleteButtonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
-            [button setImage:[UIImage imageNamed:@"main_delete" inResource:@"XGCMain"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"main_delete"] forState:UIControlStateNormal];
             [self.containerView addSubview:button];
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.right.bottom.mas_equalTo(self.containerView);
@@ -172,19 +171,19 @@
     } else if ([self.model.suffix isImageFormat]) {
         [self.fileUrl sd_setImageWithURL:[NSURL URLWithString:self.model.fileUrl]];
     } else if ([self.model.suffix isWordFormat]) {
-        self.iconImageView.image = [UIImage imageNamed:@"main_word" inResource:@"XGCMain"];
+        self.iconImageView.image = [UIImage imageNamed:@"main_word"];
     } else if ([self.model.suffix isExcelFormat]) {
-        self.iconImageView.image = [UIImage imageNamed:@"main_excel" inResource:@"XGCMain"];
+        self.iconImageView.image = [UIImage imageNamed:@"main_excel"];
     } else if ([self.model.suffix isPdfFormat]) {
-        self.iconImageView.image = [UIImage imageNamed:@"main_pdf" inResource:@"XGCMain"];
+        self.iconImageView.image = [UIImage imageNamed:@"main_pdf"];
     } else if ([self.model.suffix isArchiveFormat]) {
         if ([self.model.suffix isEqualToString:@"rar"]) {
-            self.iconImageView.image = [UIImage imageNamed:@"main_rar" inResource:@"XGCMain"];
+            self.iconImageView.image = [UIImage imageNamed:@"main_rar"];
         } else if ([self.model.suffix isEqualToString:@"zip"]) {
-            self.iconImageView.image = [UIImage imageNamed:@"main_zip" inResource:@"XGCMain"];
+            self.iconImageView.image = [UIImage imageNamed:@"main_zip"];
         }
     } else if ([self.model.suffix isVideoFormat] || [self.model.fileUrl isVideoFormat]) {
-        self.iconImageView.image = [UIImage imageNamed:@"main_video" inResource:@"XGCMain"];
+        self.iconImageView.image = [UIImage imageNamed:@"main_video"];
     }
     self.fileName.text = self.model.fileName;
 }

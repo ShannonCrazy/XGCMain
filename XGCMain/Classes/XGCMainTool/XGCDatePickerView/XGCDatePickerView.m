@@ -6,15 +6,12 @@
 //
 
 #import "XGCDatePickerView.h"
-//
-#import "NSDate+XGCDate.h"
-#import "XGCConfiguration.h"
 
 static CGFloat const UIDatePickerHeight = 310;
 
 @interface XGCDatePickerView ()<UIPickerViewDelegate, UIPickerViewDataSource>
+// UI
 @property (nonatomic, strong) UIControl *backgroundControl;
-@property (nonatomic, strong) NSCalendar *calendar;
 @property (nonatomic, strong) UIView *containerView;
 @property (nonatomic, strong) UIView *toolbar;
 @property (nonatomic, strong) UIButton *leftBarButton;
@@ -22,7 +19,10 @@ static CGFloat const UIDatePickerHeight = 310;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIDatePicker *datePicker;
 @property (nonatomic, strong) UIPickerView *pickerView;
-
+// NSCalendar
+@property (nonatomic, strong) NSCalendar *calendar;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+// flag
 @property (nonatomic, assign, getter=isBeingPresented) BOOL beingPresented;
 @property (nonatomic, assign, getter=isEndPresented) BOOL endPresented;
 @property (nonatomic, assign, getter=isBeingDismissed) BOOL beingDismissed;
@@ -40,6 +40,11 @@ static CGFloat const UIDatePickerHeight = 310;
             calendar.timeZone = [NSTimeZone systemTimeZone];
             calendar.locale = [NSLocale localeWithLocaleIdentifier:@"zh_CN"];
             calendar;
+        });
+        self.dateFormatter = ({
+            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+            formatter.timeZone = self.calendar.timeZone;
+            formatter;
         });
         // UI
         self.backgroundControl = ({
@@ -60,12 +65,15 @@ static CGFloat const UIDatePickerHeight = 310;
             [self.containerView addSubview:view];
             view;
         });
+        // 蓝色
+        UIColor *systemBlueColor = UIColor.systemBlueColor ?: [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0];
+        //
         self.leftBarButton = ({
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             button.titleLabel.font = [UIFont systemFontOfSize:13];
             [button setTitle:@"取消" forState:UIControlStateNormal];
             button.frame = CGRectMake(0, 0, 44.0, CGRectGetHeight(self.toolbar.frame));
-            [button setTitleColor:XGCCMI.blueColor forState:UIControlStateNormal];
+            [button setTitleColor:systemBlueColor forState:UIControlStateNormal];
             [button addTarget:self action:@selector(backgroundControlTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
             [self.toolbar addSubview:button];
             button;
@@ -74,7 +82,7 @@ static CGFloat const UIDatePickerHeight = 310;
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             button.titleLabel.font = [UIFont systemFontOfSize:13];
             [button setTitle:@"确定" forState:UIControlStateNormal];
-            [button setTitleColor:XGCCMI.blueColor forState:UIControlStateNormal];
+            [button setTitleColor:systemBlueColor forState:UIControlStateNormal];
             button.frame = CGRectMake(CGRectGetWidth(self.toolbar.frame) - 44.0, 0, 44.0, CGRectGetHeight(self.toolbar.frame));
             [button addTarget:self action:@selector(rightBarButtonTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
             [self.toolbar addSubview:button];
@@ -83,9 +91,9 @@ static CGFloat const UIDatePickerHeight = 310;
         self.titleLabel = ({
             CGFloat x = CGRectGetMaxX(self.leftBarButton.frame);
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, 0, CGRectGetMinX(self.rightBarButton.frame) - x, CGRectGetHeight(self.toolbar.frame))];
-            label.textColor = XGCCMI.labelColor;
             label.font = [UIFont systemFontOfSize:13];
             label.textAlignment = NSTextAlignmentCenter;
+            label.textColor = [UIColor colorWithRed:(34.0 / 255.0) green:(34.0 / 255.0) blue:(34.0 / 255.0) alpha:1.0];
             [self.toolbar addSubview:label];
             label;
         });
@@ -195,7 +203,7 @@ static CGFloat const UIDatePickerHeight = 310;
     if (!self.date && !self.datePicker.hidden) {
         self.date = self.datePicker.date;
     }
-    self.date = [NSDate dateFromString:[self.date stringFromDateFormat:self.dateFormat] dateFormat:self.dateFormat];
+    self.date = [self.dateFormatter dateFromString:[self.dateFormatter stringFromDate:self.date]];
     // 回调
     self.didSelectDateAction ? self.didSelectDateAction(self, self.date) : nil;
     // 销毁页面
@@ -292,6 +300,7 @@ static CGFloat const UIDatePickerHeight = 310;
         self.pickerView.hidden = !(self.datePicker.hidden = YES);
         [self.pickerView reloadAllComponents];
     }
+    self.dateFormatter.dateFormat = _dateFormat;
 }
 
 - (void)setTitle:(NSString *)title {

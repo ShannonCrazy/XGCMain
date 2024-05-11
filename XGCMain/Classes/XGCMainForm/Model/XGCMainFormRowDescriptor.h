@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XGCMainFormRowDescriptor : NSObject
 /// 是否必填
 @property (nonatomic, assign, getter=isRequired) BOOL required;
+/// 分割线样式, default UITableViewCellSeparatorStyleSingleLine
+@property (nonatomic, assign) UITableViewCellSeparatorStyle separatorStyle;
 /// 缩进量 default UIEdgeInsetsMake(14.0, 20.0, 14.0, 20.0)
 @property (nonatomic, assign) UIEdgeInsets contentEdgeInsets;
 /// default is UITableViewAutomaticDimension
@@ -46,17 +48,23 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface XGCMainFormRowTextFieldSelectorDescriptor : XGCMainFormRowTextFieldDescriptor
-/// 图层
-@property (nonatomic, strong, readonly) CALayer *layer;
-/// 是否可用
+/// 按钮是否可用
 @property (nonatomic, assign, getter=isSelected) BOOL selected;
-
+/// 设置右侧按钮标题
+/// - Parameters:
+///   - title: 文本
+///   - state: 状态
 - (void)setTitle:(nullable NSString *)title forState:(UIControlState)state;
-
+/// 设置右侧按钮颜色
+/// - Parameters:
+///   - color: 颜色
+///   - state: 状态
 - (void)setTitleColor:(nullable UIColor *)color forState:(UIControlState)state;
 /// 按钮点击事件
 @property (nullable, nonatomic, copy) void(^UIButtonTouchUpInsideAction)(XGCMainFormRowTextFieldSelectorDescriptor *descriptor, UIButton *button);
+/// 标题map
 @property (nonatomic, strong, readonly) NSMutableDictionary <NSNumber *, NSString *> *titleMaps;
+/// 标题颜色map
 @property (nonatomic, strong, readonly) NSMutableDictionary <NSNumber *, UIColor *> *colorMaps;
 @end
 
@@ -129,6 +137,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, strong) NSArray <XGCUserDictMapModel *> *dictMaps;
 /// 编码发生改变事件
 @property (nullable, nonatomic, copy) void(^cCodeDidChangeAction)(XGCMainFormRowDictMapSelectorDescriptor *descriptor, NSString *cCode);
+@end
+
+@interface XGCMainFormRowStyleDefaultDescriptor : XGCMainFormRowDescriptor
 @end
 
 @interface XGCMainFormRowStyleValue1Descriptor : XGCMainFormRowDescriptor

@@ -8,41 +8,32 @@
 #import "XGCMainFormRowDictMapCollectionViewCell.h"
 //
 #import "XGCConfiguration.h"
-#import "UIImage+XGCImage.h"
 #import "XGCUserDictMapModel.h"
 //
 #import <Masonry/Masonry.h>
 
 @interface XGCMainFormRowDictMapCollectionViewCell ()
-@property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UILabel *cName;
+@property (nonatomic, strong) UIButton *cName;
 @end
 
 @implementation XGCMainFormRowDictMapCollectionViewCell
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.imageView = ({
-            UIImage *image = [UIImage imageNamed:@"main_xuanze_n" inResource:@"XGCMain"];
-            UIImage *highlightedImage = [UIImage imageNamed:@"main_xuanze_s" inResource:@"XGCMain"];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:image highlightedImage:highlightedImage];
-            [imageView setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
-            [self.contentView addSubview:imageView];
-            [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.mas_equalTo(self.contentView).offset(10.0);
-                make.centerY.mas_equalTo(self.contentView);
-            }];
-            imageView;
-        });
         self.cName = ({
-            UILabel *label = [[UILabel alloc] init];
-            label.textColor = XGCCMI.labelColor;
-            label.font = [UIFont systemFontOfSize:13];
-            [self.contentView addSubview:label];
-            [label mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.centerY.mas_equalTo(self.contentView);
-                make.left.mas_equalTo(self.imageView.mas_right).offset(10.0);
+            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+            button.userInteractionEnabled = NO;
+            button.imageView.layer.masksToBounds = NO;
+            button.titleLabel.font = [UIFont systemFontOfSize:13];
+            button.imageView.contentMode = UIViewContentModeCenter;
+            button.titleEdgeInsets = UIEdgeInsetsMake(0, 10.0, 0, -10.0);
+            [button setTitleColor:XGCCMI.labelColor forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"main_xuanze_n"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"main_xuanze_s"] forState:UIControlStateSelected];
+            [self.contentView addSubview:button];
+            [button mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(self.contentView);
             }];
-            label;
+            button;
         });
     }
     return self;
@@ -50,11 +41,17 @@
 
 - (void)setModel:(XGCUserDictMapModel *)model {
     _model = model;
-    self.cName.text = _model.cName;
-    self.imageView.highlighted = _model.selected;
+    self.cName.selected = _model.selected;
+    [self.cName setTitle:_model.cName forState:UIControlStateNormal];
+}
+
+- (void)setContentEdgeInsets:(UIEdgeInsets)contentEdgeInsets {
+    _contentEdgeInsets = contentEdgeInsets;
+    self.cName.contentEdgeInsets = UIEdgeInsetsMake(_contentEdgeInsets.top, 0, _contentEdgeInsets.bottom, 10);
 }
 
 - (void)setSelected:(BOOL)selected { }
 
 - (void)setHighlighted:(BOOL)highlighted { }
+
 @end

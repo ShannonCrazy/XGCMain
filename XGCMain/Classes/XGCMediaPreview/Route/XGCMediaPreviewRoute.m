@@ -27,7 +27,7 @@
     // 附件
     XGCMediaPreviewModel *fileJson = parameters[@"fileJson"];
     // URL
-    NSURL *imageUrl = [NSURL URLWithString:fileJson.fileUrl.URLEncoding];
+    NSURL *mediaPreviewURL = [NSURL URLWithString:fileJson.fileUrl.URLEncoding];
     // 如果是图片
     if ([fileJson.suffix isImageFormat]) {
         // 预览控件
@@ -53,7 +53,7 @@
         }
         // 如果没有数据
         if (photoItems.count == 0) {
-            [photoItems addObject:[KSPhotoItem itemWithSourceView:sourceView image:fileJson.image imageUrl:imageUrl]];
+            [photoItems addObject:[KSPhotoItem itemWithSourceView:sourceView image:fileJson.image imageUrl:mediaPreviewURL]];
         }
         // 当前默认展示哪个item
         NSUInteger selectedIndex = 0;
@@ -61,14 +61,14 @@
             if (item.image && fileJson.image && [item.image isEqual:fileJson.image]) {
                 selectedIndex = [photoItems indexOfObject:item];
             }
-            if (item.imageUrl && imageUrl && [item.imageUrl.absoluteString isEqualToString:imageUrl.absoluteString]) {
+            if (item.imageUrl && mediaPreviewURL && [item.imageUrl.absoluteString isEqualToString:mediaPreviewURL.absoluteString]) {
                 selectedIndex = [photoItems indexOfObject:item];
             }
         }
         return [KSPhotoBrowser browserWithPhotoItems:photoItems selectedIndex:selectedIndex];
-    } else {
-        return [XGCMainRoute routeControllerForURL:[NSURL URLWithString:@"xinggc://XGCWebView"] withParameters:[NSDictionary dictionaryWithObject:imageUrl forKey:@"URL"]];
     }
+    [XGCMainRoute routeURL:[NSURL URLWithString:@"xinggc://XGCWebView"] withParameters:[NSDictionary dictionaryWithObject:mediaPreviewURL forKey:@"URL"]];
+    return nil;
 }
 
 @end

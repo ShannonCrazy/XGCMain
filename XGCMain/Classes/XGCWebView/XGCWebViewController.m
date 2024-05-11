@@ -10,7 +10,9 @@
 // tool
 #import <WebKit/WebKit.h>
 //
+#if __has_include ("XGCURLManagerCenter.h")
 #import "XGCURLManagerCenter.h"
+#endif
 
 @interface XGCWebViewController ()<WKUIDelegate, WKNavigationDelegate, WKDownloadDelegate, UIDocumentInteractionControllerDelegate>
 /// 链接
@@ -69,8 +71,11 @@
     });
     // 加载
     if (self.URL) {
-        // 如果是office文档，使用阿里云打开
-        if ([self isOfficeExtension:self.URL.pathExtension]) {
+        if ([self.URL.scheme isEqualToString:@"file"]) {
+            [self.wkWebView loadFileURL:self.URL allowingReadAccessToURL:self.URL.URLByDeletingLastPathComponent];
+        } 
+#if __has_include ("XGCURLManagerCenter.h")
+        else if ([self isOfficeExtension:self.URL.pathExtension]) {
             __kindof NSObject <XGCURLProtocol> *configuration = XGCURLManagerCenter.defaultURLManager.currentConfiguration;
             NSURLComponents *components = [[NSURLComponents alloc] init];
             components.scheme = [configuration scheme];
@@ -79,7 +84,9 @@
             components.path = @"/fileView.html";
             components.query = [NSString stringWithFormat:@"sourceUri=oss://%@%@&title=%@", [self.URL.host componentsSeparatedByString:@"."].firstObject, self.URL.path, self.URL.lastPathComponent.stringByDeletingPathExtension];
             [self.wkWebView loadRequest:[NSURLRequest requestWithURL:components.URL]];
-        } else {
+        }
+#endif
+        else {
             [self.wkWebView loadRequest:[NSURLRequest requestWithURL:self.URL]];
         }
     }

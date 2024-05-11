@@ -13,12 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 /// 鉴权地址
 - (NSString *)authServerUrl;
+/// oss结束地址
+- (NSString *)endpoint;
 /// 桶名
 - (NSString *)bucketName;
 @end
 
-typedef void (^XGCOSSNetworkingUploadProgressBlock) (int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend);
-typedef void (^XGCOSSNetworkingCompletionHandler) (NSString * _Nullable destination, NSError * _Nullable error);
+typedef void (^XGCAliyunOSSiOSUploadProgressBlock) (int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend);
+typedef void (^XGCAliyunOSSiOSCompletionHandler) (NSString * _Nullable destination, NSError * _Nullable error);
 
 @interface XGCAliyunOSSiOS : NSObject
 /// 注册AliyunOSS配置协议
@@ -26,16 +28,13 @@ typedef void (^XGCOSSNetworkingCompletionHandler) (NSString * _Nullable destinat
 + (void)registerProtocol:(NSObject <XGCAliyunOSSiOSProtocol> *)protocol;
 /// 单例对象
 @property (class, nonatomic, strong, readonly) XGCAliyunOSSiOS *shareInstance;
-
 /// 上传文件
 /// - Parameters:
 ///   - uploadingData: 文件二进制
-///   - fileName: 文件名称
-///   - pathExtension: 文件后缀
+///   - objectKey: 文件路径
 ///   - uploadProgress: 上传回调
 ///   - completionHandler: 完成回调
-- (void)putObject:(NSData *)uploadingData fileName:(NSString *)fileName pathExtension:(NSString *)pathExtension
-   uploadProgress:(nullable XGCOSSNetworkingUploadProgressBlock)uploadProgress completionHandler:(nullable XGCOSSNetworkingCompletionHandler)completionHandler;
+- (void)putObject:(NSData *)uploadingData objectKey:(NSString *)objectKey uploadProgress:(nullable XGCAliyunOSSiOSUploadProgressBlock)uploadProgress completionHandler:(nullable XGCAliyunOSSiOSCompletionHandler)completionHandler;
 
 @end
 

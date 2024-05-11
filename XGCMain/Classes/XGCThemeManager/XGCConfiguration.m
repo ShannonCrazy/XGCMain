@@ -7,7 +7,6 @@
 
 #import "XGCConfiguration.h"
 //
-#import "UIImage+XGCImage.h"
 #import "UIColor+XGCColor.h"
 
 /// UIColor 相关的宏，用于快速创建一个 UIColor 对象，更多创建的宏可查看 UIColor+QMUI.h

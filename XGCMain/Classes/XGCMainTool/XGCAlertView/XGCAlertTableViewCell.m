@@ -8,7 +8,7 @@
 #import "XGCAlertTableViewCell.h"
 // XGCMain
 #import "XGCConfiguration.h"
-#import "UIImage+XGCImage.h"
+//
 #import "XGCUserDictMapModel.h"
 
 @interface XGCAlertTableViewCell ()
@@ -26,7 +26,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.cImageView = ({
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_xuanze_n" inResource:@"XGCMain"] highlightedImage:[UIImage imageNamed:@"main_xuanze_s" inResource:@"XGCMain"]];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"main_xuanze_n"] highlightedImage:[UIImage imageNamed:@"main_xuanze_s"]];
             imageView.translatesAutoresizingMaskIntoConstraints = NO;
             [imageView setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
             [self.contentView addSubview:imageView];

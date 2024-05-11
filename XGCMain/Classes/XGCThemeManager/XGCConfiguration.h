@@ -5,8 +5,8 @@
 //  Created by 凌志 on 2023/12/26.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #define XGCCMI [XGCConfiguration sharedInstance]
 

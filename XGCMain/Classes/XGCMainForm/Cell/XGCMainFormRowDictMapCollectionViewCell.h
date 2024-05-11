@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XGCMainFormRowDictMapCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) XGCUserDictMapModel *model;
+@property (nonatomic, assign) UIEdgeInsets contentEdgeInsets;
 @end
 
 NS_ASSUME_NONNULL_END

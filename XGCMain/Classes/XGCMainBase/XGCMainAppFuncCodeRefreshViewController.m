@@ -13,8 +13,10 @@
 
 @implementation XGCMainAppFuncCodeRefreshViewController
 
-- (BOOL)beginRefreshingWhenDidMoveToSuperView {
-    return YES;
++ (instancetype)cAppFuncCode:(NSString *)cAppFuncCode {
+    XGCMainAppFuncCodeRefreshViewController *viewController = [super cAppFuncCode:cAppFuncCode];
+    viewController.beginRefreshingWhenDidMoveToSuperView = YES;
+    return viewController;
 }
 
 - (void)viewDidLoad {

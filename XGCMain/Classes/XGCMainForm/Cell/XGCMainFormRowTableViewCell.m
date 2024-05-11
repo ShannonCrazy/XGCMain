@@ -11,13 +11,12 @@
 //
 #import "XGCTextView.h"
 #import "XGCTextField.h"
-#import <XGCMain/XGCMediaPreviewContainerView.h>
-//
+#import "XGCMainRoute.h"
 #import "NSDate+XGCDate.h"
 #import "XGCUserManager.h"
-#import "UIImage+XGCImage.h"
 #import "XGCConfiguration.h"
 #import "NSString+XGCString.h"
+#import "XGCMediaPreviewContainerView.h"
 //
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -41,6 +40,7 @@
             [label mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.top.left.mas_equalTo(self.contentView);
                 make.height.mas_equalTo(label.font.lineHeight);
+                make.right.mas_lessThanOrEqualTo(self.contentView);
             }];
             label;
         });
@@ -57,7 +57,7 @@
             }];
             label;
         });
-        ({
+        self.separatorView = ({
             UIView *view = [[UIView alloc] init];
             view.backgroundColor = XGCCMI.backgroundColor;
             [self.contentView addSubview:view];
@@ -66,6 +66,7 @@
                 make.bottom.mas_equalTo(self.contentView).priorityLow();
                 make.height.mas_equalTo(1.0);
             }];
+            view;
         });
     }
     return self;
@@ -76,17 +77,23 @@
     if (![_descriptor isKindOfClass:[XGCMainFormRowDescriptor class]]) {
         return;
     }
+    // 左侧*号
     self.cRequiredLabel.font = _descriptor.font;
     self.cRequiredLabel.hidden = !_descriptor.isRequired;
+    // 顶部文字
+    self.cTextLabel.numberOfLines = 1;
     self.cTextLabel.font = _descriptor.font;
     self.cTextLabel.text = _descriptor.cDescription;
     _descriptor.addTextLabelWithConfigurationHandler ? _descriptor.addTextLabelWithConfigurationHandler(self.cTextLabel) : nil;
     // 约束
-    [self.cTextLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.cTextLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(self.cTextLabel.font.lineHeight);
         make.top.mas_equalTo(self.contentView).offset(_descriptor.contentEdgeInsets.top);
         make.left.mas_equalTo(self.contentView).offset(_descriptor.contentEdgeInsets.left);
+        make.right.mas_lessThanOrEqualTo(self.contentView).offset(-_descriptor.contentEdgeInsets.right);
     }];
+    // 线条
+    self.separatorView.hidden = _descriptor.separatorStyle != UITableViewCellSeparatorStyleSingleLine;
 }
 
 @end
@@ -325,8 +332,11 @@
 #pragma mark XGCMainFormRowActionTableViewCell
 @interface XGCMainFormRowActionTableViewCell ()
 @property (nonatomic, strong) UIView *containerView;
+
 @property (nonatomic, strong) UIImageView *cImageView;
+
 @property (nonatomic, strong) UILabel *placeholderTextLabel;
+
 @property (nonatomic, strong) UILabel *cDetailTextLabel;
 @end
 
@@ -359,7 +369,7 @@
         // 提示文本
         self.placeholderTextLabel = ({
             UILabel *label = [[UILabel alloc] init];
-            label.textColor = XGCCMI.placeholderTextColor;
+            label.textColor = [UIColor.grayColor colorWithAlphaComponent:0.7];
             [label setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
             [self.containerView addSubview:label];
             [label mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -453,7 +463,7 @@
     _actionDescriptor = nil; _dictMapDescriptor = nil;
     _dateDescriptor = dateDescriptor;
     // 图片
-    self.cImageView.image = [UIImage imageNamed:@"main_arrow_blue_right" inResource:@"XGCMain"];
+    self.cImageView.image = [UIImage imageNamed:@"main_arrow_blue_right"];
     [self.cImageView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(self.containerView).offset(-_dateDescriptor.contentEdgeInsets.right);
     }];
@@ -490,7 +500,7 @@
     _actionDescriptor = nil; _dateDescriptor = nil;
     _dictMapDescriptor = dictMapDescriptor;
     // 图片
-    self.cImageView.image = [UIImage imageNamed:@"main_arrow_blue_right" inResource:@"XGCMain"];
+    self.cImageView.image = [UIImage imageNamed:@"main_arrow_blue_right"];
     [self.cImageView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(self.cImageView.image.size);
         make.right.mas_equalTo(self.containerView).offset(-_dictMapDescriptor.contentEdgeInsets.right);
@@ -556,6 +566,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
         self.collectionView = ({
             UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
             layout.minimumLineSpacing = layout.minimumInteritemSpacing = 0;
@@ -569,9 +580,8 @@
             [collectionView registerClass:[XGCMainFormRowDictMapCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([XGCMainFormRowDictMapCollectionViewCell class])];
             [self.contentView addSubview:collectionView];
             [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.right.mas_equalTo(self.contentView);
+                make.right.top.mas_equalTo(self.contentView);
                 make.left.mas_equalTo(self.cTextLabel.mas_right).offset(8.0);
-                make.bottom.mas_equalTo(self.contentView).priorityLow();
             }];
             collectionView;
         });
@@ -587,15 +597,26 @@
     _dictMapSelectorDescriptor = dictMapSelectorDescriptor;
     // 约束
     UIEdgeInsets contentInset = _dictMapSelectorDescriptor.contentEdgeInsets;
-    CGFloat height = contentInset.top + contentInset.bottom + dictMapSelectorDescriptor.font.lineHeight;
-    [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(height);
+    [self.cTextLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.contentView).offset(-contentInset.bottom).priorityMedium();
     }];
-    self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, contentInset.right);
+    // 内容缩进
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, contentInset.right - 10.0);
     // 数据
     self.lists = _dictMapSelectorDescriptor.dictMaps ?: [XGCUM.cMenu cDictMap:_dictMapSelectorDescriptor.cCoder];
     [self.lists enumerateObjectsUsingBlock:^(XGCUserDictMapModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         obj.selected = [obj.cCode isEqualToString:_dictMapSelectorDescriptor.cCode];
+    }];
+    // 计算高度
+    CGFloat height = contentInset.top + contentInset.bottom + dictMapSelectorDescriptor.font.lineHeight;
+    // 计算宽度
+    __block CGFloat width = self.collectionView.contentInset.right;
+    [self.lists enumerateObjectsUsingBlock:^(XGCUserDictMapModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        width += [self collectionView:self.collectionView layout:self.collectionView.collectionViewLayout sizeForItemAtIndexPath:[NSIndexPath indexPathForItem:idx inSection:0]].width;
+    }];
+    [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(ceil(height));
+        make.width.mas_equalTo(ceil(width));
     }];
     [self.collectionView reloadData];
 }
@@ -607,6 +628,7 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     XGCMainFormRowDictMapCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([XGCMainFormRowDictMapCollectionViewCell class]) forIndexPath:indexPath];
     cell.model = self.lists[indexPath.item];
+    cell.contentEdgeInsets = self.dictMapSelectorDescriptor.contentEdgeInsets;
     return cell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -617,13 +639,20 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     XGCUserDictMapModel *row = self.lists[indexPath.item];
-    self.dictMapSelectorDescriptor.cCode = row.cCode;
-    [self.lists enumerateObjectsUsingBlock:^(XGCUserDictMapModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        obj.selected = NO;
-    }];
-    row.selected = YES;
+    for (XGCUserDictMapModel *model in self.lists) {
+        if ([model isEqual:row]) {
+            continue;
+        }
+        model.selected = NO;
+    }
+    row.selected = !row.selected;
+    // cCode
+    NSString * _Nullable cCode = row.selected ? row.cCode : nil;
+    self.dictMapSelectorDescriptor.cCode = cCode;
+    // 刷新
     [collectionView reloadData];
-    self.dictMapSelectorDescriptor.cCodeDidChangeAction ? self.dictMapSelectorDescriptor.cCodeDidChangeAction(self.dictMapSelectorDescriptor, row.cCode) : nil;
+    // 回调
+    self.dictMapSelectorDescriptor.cCodeDidChangeAction ? self.dictMapSelectorDescriptor.cCodeDidChangeAction(self.dictMapSelectorDescriptor, cCode) : nil;
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     __block CGFloat width = 0;
@@ -639,6 +668,35 @@
     }
     return UIEdgeInsetsZero;
 }
+@end
+
+#pragma mark XGCMainFormRowStyleDefaultTableViewCell
+@implementation XGCMainFormRowStyleDefaultTableViewCell
+- (void)setDefaultDescriptor:(XGCMainFormRowStyleDefaultDescriptor *)defaultDescriptor {
+    [super setDescriptor:defaultDescriptor];
+    if (![defaultDescriptor isKindOfClass:[XGCMainFormRowStyleDefaultDescriptor class]]) {
+        return;
+    }
+    _defaultDescriptor = defaultDescriptor;
+    // 多行
+    self.cTextLabel.numberOfLines = 0;
+    // 移除高度约束
+    NSArray <MASViewConstraint *> *constraints = [MASViewConstraint installedConstraintsForView:self.cTextLabel];
+    __block MASViewConstraint *height = nil;
+    [constraints enumerateObjectsUsingBlock:^(MASViewConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        MASViewAttribute *firstViewAttribute = obj.firstViewAttribute;
+        if ([firstViewAttribute.view isEqual:self.cTextLabel] && firstViewAttribute.layoutAttribute == NSLayoutAttributeHeight) {
+            *stop = (height = obj) ? YES : NO;
+        }
+    }];
+    height ? [height uninstall] : nil;
+    // 重新约束
+    [self.cTextLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_greaterThanOrEqualTo(self.cTextLabel.font.lineHeight);
+        make.bottom.mas_equalTo(self.contentView).offset(_defaultDescriptor.contentEdgeInsets.bottom).priorityMedium();
+    }];
+}
+
 @end
 
 #pragma mark XGCMainFormRowStyleValue1TableViewCell
@@ -665,13 +723,19 @@
             UILabel *label = [[UILabel alloc] init];
             label.numberOfLines = 0;
             label.textColor = XGCCMI.labelColor;
+            label.font = [UIFont systemFontOfSize:13];
+            // 横向
             [label setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
             [label setContentCompressionResistancePriority:UILayoutPriorityFittingSizeLevel forAxis:UILayoutConstraintAxisHorizontal];
+            // 纵向
+            [label setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+            [label setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
             [self.containerView addSubview:label];
             [label mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.right.mas_equalTo(self.containerView);
+                make.left.mas_greaterThanOrEqualTo(self.containerView);
+                make.top.mas_equalTo(self.containerView);
+                make.right.mas_equalTo(self.containerView);
                 make.height.mas_greaterThanOrEqualTo(label.font.lineHeight);
-                make.left.mas_equalTo(self.containerView).priority(998);
             }];
             label;
         });
@@ -688,11 +752,13 @@
         return;
     }
     _value1Descriptor = value1Descriptor;
+    // 右侧文本
     self.cDetailTextLabel.font = _value1Descriptor.font;
     self.cDetailTextLabel.text = _value1Descriptor.cDetailText;
     self.cDetailTextLabel.textColor = _value1Descriptor.cDetailTextColor ?: XGCCMI.labelColor;
     // 约束
-    [self.cDetailTextLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+    [self.cDetailTextLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_greaterThanOrEqualTo(self.containerView);
         make.height.mas_greaterThanOrEqualTo(self.cDetailTextLabel.font.lineHeight);
         make.top.mas_equalTo(self.containerView).offset(_value1Descriptor.contentEdgeInsets.top);
         make.right.mas_equalTo(self.containerView).offset(-_value1Descriptor.contentEdgeInsets.right);
@@ -736,6 +802,22 @@
         return;
     }
     _subtitleDescriptor = subtitleDescriptor;
+    // 移除高度约束
+    NSArray <MASViewConstraint *> *constraints = [MASViewConstraint installedConstraintsForView:self.cTextLabel];
+    __block MASViewConstraint *height = nil;
+    [constraints enumerateObjectsUsingBlock:^(MASViewConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        MASViewAttribute *firstViewAttribute = obj.firstViewAttribute;
+        if ([firstViewAttribute.view isEqual:self.cTextLabel] && firstViewAttribute.layoutAttribute == NSLayoutAttributeHeight) {
+            *stop = (height = obj) ? YES : NO;
+        }
+    }];
+    height ? [height uninstall] : nil;
+    // 上方
+    self.cTextLabel.numberOfLines = 0;
+    [self.cTextLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_greaterThanOrEqualTo(self.cTextLabel.font.lineHeight);
+    }];
+    // 下发文字
     self.cDetailTextLabel.font = _subtitleDescriptor.font;
     if (_subtitleDescriptor.cDetailText) {
         self.cDetailTextLabel.text = _subtitleDescriptor.cDetailText;
@@ -764,15 +846,12 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = UIColor.clearColor;
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.containerView = ({
-            XGCMediaPreviewContainerView *view = [[XGCMediaPreviewContainerView alloc] initWithScrollDirection:UICollectionViewScrollDirectionHorizontal];
+            XGCMediaPreviewContainerView *view = [[XGCMediaPreviewContainerView alloc] init];
             [self.contentView addSubview:view];
             [view mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.mas_equalTo(self.contentView);
                 make.top.mas_equalTo(self.cTextLabel.mas_bottom);
-                make.height.mas_equalTo(view.itemSize.height);
                 make.bottom.mas_equalTo(self.contentView).priorityMedium();
             }];
             view;
@@ -781,25 +860,16 @@
     return self;
 }
 
-- (void)setATarget:(__kindof UIViewController *)aTarget {
-    _aTarget = aTarget;
-    self.containerView.aTarget = _aTarget;
-}
-
 - (void)setMediaDescriptor:(XGCMainFormRowMediaDescriptor *)mediaDescriptor {
     [super setDescriptor:mediaDescriptor];
     if (![mediaDescriptor isKindOfClass:[XGCMainFormRowMediaDescriptor class]]) {
         return;
     }
     _mediaDescriptor = mediaDescriptor;
+    //
+    self.containerView.contentInset = UIEdgeInsetsMake(10.0, _mediaDescriptor.contentEdgeInsets.left, _mediaDescriptor.contentEdgeInsets.bottom, _mediaDescriptor.contentEdgeInsets.right);
     self.containerView.editable = _mediaDescriptor.editable;
     self.containerView.fileJsons = _mediaDescriptor.fileJsons;
-    self.containerView.contentInset = UIEdgeInsetsMake(10.0, _mediaDescriptor.contentEdgeInsets.left, _mediaDescriptor.contentEdgeInsets.bottom, _mediaDescriptor.contentEdgeInsets.right);
-    CGFloat height = self.containerView.contentInset.top + self.containerView.contentInset.bottom + self.containerView.itemSize.height;
-    [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(height);
-    }];
 }
 
 @end
-

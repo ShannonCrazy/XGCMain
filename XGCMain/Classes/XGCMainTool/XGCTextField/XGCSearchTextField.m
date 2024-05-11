@@ -7,8 +7,6 @@
 //
 
 #import "XGCSearchTextField.h"
-//
-#import "UIImage+XGCImage.h"
 
 @implementation XGCSearchTextField
 

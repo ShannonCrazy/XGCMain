@@ -14,7 +14,6 @@
 #import "XGCURLManagerCenter.h"
 
 @interface XGCURLSession ()
-/// 队列
 @property (nonatomic, strong) NSMutableDictionary <NSNumber *, XGCURLSessionDelegate *> *dataTasks;
 @end
 
@@ -32,9 +31,6 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.dataTasks = [NSMutableDictionary dictionary];
-        // https配置
-//        NSData *pkcs12_data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"api.xinggongcheng.com" ofType:@"p12"]];
-//        [XGCAFNetworking pkcs12_data:pkcs12_data password:@"Xinggc2018"];
         // 通知
         [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(cUserLogoutNotification) name:XGCUserLogoutNotification object:nil];
         [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(cUserKickOutNotification) name:XGCUserKickOutNotification object:nil];

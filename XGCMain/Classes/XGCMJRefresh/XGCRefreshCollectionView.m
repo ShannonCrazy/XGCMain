@@ -6,19 +6,9 @@
 //
 
 #import "XGCRefreshCollectionView.h"
-//
-#import "UIImage+XGCImage.h"
 // thirdparty
 #if __has_include (<MJRefresh/MJRefresh.h>)
 #import <MJRefresh/MJRefresh.h>
-#endif
-
-#if __has_include (<DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>)
-#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
-
-@interface XGCRefreshCollectionView ()<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
-@end
-
 #endif
 
 @implementation XGCRefreshCollectionView
@@ -28,15 +18,20 @@
 #if __has_include (<MJRefresh/MJRefresh.h>)
         self.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefreshingAction)];
         self.mj_header.automaticallyChangeAlpha = YES;
+        
         self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRefreshingAction)];
 #endif
-#if __has_include (<DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>)
-        self.emptyDataSetSource = self;
-        self.emptyDataSetDelegate = self;
-#endif
-        self.beginRefreshingWhenDidMoveToSuperView = YES;
-        self.startRow = 0;
         self.rows = 10;
+        self.startRow = 0;
+        self.beginRefreshingWhenDidMoveToSuperView = YES;
+        // block
+        __weak typeof(self) this = self;
+        self.emptyDataSetWillAppear = ^(UIScrollView * _Nonnull scrollView) {
+            if (scrollView.contentOffset.y >= 0) {
+                [scrollView setContentOffset:CGPointZero animated:NO];
+            }
+            this.mj_footer.hidden = YES;
+        };
     }
     return self;
 }
@@ -86,38 +81,6 @@
         return;
     }
     [self beginRefreshing];
-}
-
-#pragma mark DZNEmptyDataSetSource, DZNEmptyDataSetDelegate
-- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
-    return self.imageForEmptyDataSet ? self.imageForEmptyDataSet(scrollView) : [UIImage imageNamed:@"main_default"];
-}
-
-- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
-    return self.titleForEmptyDataSet ? self.titleForEmptyDataSet(scrollView) : nil;
-}
-
-- (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView {
-    return self.spaceHeightForEmptyDataSet ? self.spaceHeightForEmptyDataSet(scrollView) : 0;
-}
-
-- (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView {
-    return self.emptyDataSetShouldDisplay ? self.emptyDataSetShouldDisplay(scrollView) : YES;
-}
-
-- (BOOL)emptyDataSetShouldBeForcedToDisplay:(UIScrollView *)scrollView {
-    return self.emptyDataSetShouldBeForcedToDisplay ? self.emptyDataSetShouldBeForcedToDisplay(scrollView) : NO;
-}
-
-- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView {
-    return YES;
-}
-
-- (void)emptyDataSetWillAppear:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.y >= 0) {
-        [scrollView setContentOffset:CGPointZero animated:NO];
-    }
-    self.mj_footer.hidden = YES;
 }
 
 @end

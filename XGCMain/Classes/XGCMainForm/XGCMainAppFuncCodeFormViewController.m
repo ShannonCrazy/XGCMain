@@ -17,7 +17,7 @@
 #import "NSArray+XGCArray.h"
 #import "NSString+XGCString.h"
 // thirdparty
-#import "XGCAliyunOSSiOS.h"
+#import "XGCUploadSession.h"
 
 @interface XGCMainAppFuncCodeFormViewController ()
 @property (nonatomic, strong) UITableView *tableView;
@@ -258,7 +258,7 @@
         });
     };
     NSData *uploadingData = fileJson.image ? UIImageJPEGRepresentation(fileJson.image, 1.0) : (fileJson.filePathURL ? [NSData dataWithContentsOfURL:fileJson.filePathURL] : nil);
-    [XGCAliyunOSSiOS.shareInstance putObject:uploadingData fileName:fileJson.fileName pathExtension:fileJson.suffix uploadProgress:uploadProgress completionHandler:^(NSString * _Nullable destination, NSError * _Nullable error) {
+    [XGCUploadSession uploadWithData:uploadingData fileName:fileJson.fileName pathExtension:fileJson.suffix uploadProgress:uploadProgress completionHandler:^(NSString * _Nullable destination, NSError * _Nullable error) {
         if (!error) {
             fileJson.image = nil;
             fileJson.filePathURL = nil;

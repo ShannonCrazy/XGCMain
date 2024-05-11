@@ -14,6 +14,7 @@
 @class XGCMainFormRowDateActionDescriptor;
 @class XGCMainFormRowDictMapActionDescriptor;
 @class XGCMainFormRowDictMapSelectorDescriptor;
+@class XGCMainFormRowStyleDefaultDescriptor;
 @class XGCMainFormRowStyleValue1Descriptor;
 @class XGCMainFormRowStyleSubtitleDescriptor;
 @class XGCMainFormRowMediaDescriptor;
@@ -27,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *cTextLabel;
 /// 列表
 @property (nonatomic, weak) UITableView *tableView;
+/// 分割线
+@property (nonatomic, strong) UIView *separatorView;
 /// 描述信息
 @property (nonatomic, strong, nullable) XGCMainFormRowDescriptor *descriptor;
 @end
@@ -56,6 +59,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XGCMainFormRowDictMapSelectorTableViewCell : XGCMainFormRowTableViewCell
 @property (nonatomic, strong, nullable) XGCMainFormRowDictMapSelectorDescriptor *dictMapSelectorDescriptor;
+@end
+
+@interface XGCMainFormRowStyleDefaultTableViewCell : XGCMainFormRowTableViewCell
+@property (nonatomic, strong, nullable) XGCMainFormRowStyleDefaultDescriptor *defaultDescriptor;
 @end
 
 @interface XGCMainFormRowStyleValue1TableViewCell : XGCMainFormRowTableViewCell

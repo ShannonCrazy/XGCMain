@@ -8,8 +8,14 @@
 
 #import "XGCMainRoute.h"
 // Route
-#import <XGCMain/XGCWebViewRoute.h>
-#import <XGCMain/XGCMediaPreviewRoute.h>
+
+#if __has_include ("XGCWebViewRoute.h")
+#import "XGCWebViewRoute.h"
+#endif
+
+#if __has_include ("XGCMediaPreviewRoute.h")
+#import "XGCMediaPreviewRoute.h"
+#endif
 
 @interface XGCMainRoute ()
 @property (nonatomic, strong) UIWindowScene *windowScene API_AVAILABLE(ios(13.0));
@@ -30,10 +36,14 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.maps = [NSMutableDictionary dictionary];
-        // WKWebView预览
-        [self registerRoute:[XGCWebViewRoute new]];
-        // 附件预览
-        [self registerRoute:[XGCMediaPreviewRoute new]];
+        
+#if __has_include ("XGCWebViewRoute.h")
+        [self registerRoute:[XGCWebViewRoute new]]; // WKWebView预览
+#endif
+        
+#if __has_include ("XGCMediaPreviewRoute.h")
+        [self registerRoute:[XGCMediaPreviewRoute new]]; // 附件预览
+#endif
     }
     return self;
 }
@@ -101,16 +111,30 @@
         return;
     }
     UIWindow *keyWindow = nil;
-    if (@available(iOS 15.0, *)) {
-        keyWindow = self.windowScene.keyWindow;
-    } else if (@available(iOS 13.0, *)) {
-        for (UIWindow *window in self.windowScene.windows) {
-            if (window.isKeyWindow) {
-                keyWindow = window;
-                break;
+    if (@available(iOS 13.0, *)) {
+        if (!self.windowScene) {
+            NSSet<UIScene *> *connectedScenes = UIApplication.sharedApplication.connectedScenes;
+            for (UIWindowScene *windowScene in connectedScenes) {
+                if (![windowScene isKindOfClass:[UIWindowScene class]]) {
+                    continue;
+                }
+                if (windowScene.activationState != UISceneActivationStateForegroundActive) {
+                    continue;
+                }
+                self.windowScene = windowScene;
+            }
+            if (!self.windowScene) {
+                self.windowScene = (UIWindowScene *)connectedScenes.allObjects.firstObject;
             }
         }
-    } else {
+        for (UIWindow *window in self.windowScene.windows) {
+            if (!window.isKeyWindow) {
+                continue;
+            }
+            keyWindow = window;
+        }
+    }
+    if (!keyWindow) {
         keyWindow = UIApplication.sharedApplication.keyWindow;
     }
     if (!keyWindow) {

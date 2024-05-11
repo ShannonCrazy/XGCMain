@@ -17,6 +17,7 @@
     if (self = [super init]) {
         self.font = [UIFont systemFontOfSize:13];
         self.rowHeight = UITableViewAutomaticDimension;
+        self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         self.contentEdgeInsets = UIEdgeInsetsMake(14.0, 20.0, 14.0, 20.0);
     }
     return self;
@@ -53,7 +54,6 @@
         [self.titleMaps removeObjectForKey:key];
     }
 }
-
 - (void)setTitleColor:(UIColor *)color forState:(UIControlState)state {
     NSNumber *key = [NSNumber numberWithUnsignedInteger:state];
     if (color) {
@@ -61,10 +61,6 @@
     } else {
         [self.colorMaps removeObjectForKey:key];
     }
-}
-
-- (CALayer *)layer {
-    return [CALayer layer];
 }
 @end
 
@@ -80,7 +76,7 @@
 @implementation XGCMainFormRowActionDescriptor
 - (instancetype)init {
     if (self = [super init]) {
-        self.image = [UIImage imageNamed:@"main_arrow_blue_right" inResource:@"XGCMain"];
+        self.image = [UIImage imageNamed:@"main_arrow_blue_right"];
     }
     return self;
 }
@@ -95,6 +91,10 @@
 @end
 
 @implementation XGCMainFormRowDictMapSelectorDescriptor
+
+@end
+
+@implementation XGCMainFormRowStyleDefaultDescriptor
 
 @end
 

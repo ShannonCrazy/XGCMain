@@ -13,7 +13,6 @@
 #import <Masonry/Masonry.h>
 //
 #import "XGCMainRoute.h"
-#import "UIImage+XGCImage.h"
 #import "NSArray+XGCArray.h"
 #import "NSString+XGCString.h"
 //
@@ -29,16 +28,16 @@
 
 @implementation XGCMediaPreviewContainerView
 
-- (instancetype)initWithScrollDirection:(UICollectionViewScrollDirection)scrollDirection {
+- (instancetype)init {
     if (self = [super init]) {
         self.backgroundColor = UIColor.clearColor;
-        self.itemSize = CGSizeMake(80.0, 80.0);
         
         self.layout = ({
             UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
             layout.minimumLineSpacing = 10.0;
             layout.minimumInteritemSpacing = 0;
-            layout.scrollDirection = scrollDirection;
+            layout.itemSize = CGSizeMake(80.0, 80.0);
+            layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
             layout;
         });
         
@@ -52,17 +51,26 @@
             [collection registerClass:[XGCMediaPreviewCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([XGCMediaPreviewCollectionViewCell class])];
             [self addSubview:collection];
             [collection mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.edges.mas_equalTo(self);
+                make.left.right.top.mas_equalTo(self);
+                make.height.mas_equalTo(self.layout.itemSize.height);
             }];
             collection;
         });
         
         self.addFileJson = ({
-            XGCMediaPreviewModel *media = [XGCMediaPreviewModel image:[UIImage imageNamed:@"main_add" inResource:@"XGCMain"] filePathURL:nil fileName:nil suffix:nil];
+            XGCMediaPreviewModel *media = [XGCMediaPreviewModel image:[UIImage imageNamed:@"main_add"] filePathURL:nil fileName:nil suffix:nil];
             media;
         });
     }
     return self;
+}
+
+#pragma mark system
+- (void)updateConstraints {
+    [super updateConstraints];
+    [self mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.collectionView);
+    }];
 }
 
 #pragma mark set
@@ -74,17 +82,18 @@
 - (void)setContentInset:(UIEdgeInsets)contentInset {
     _contentInset = contentInset;
     self.collectionView.contentInset = _contentInset;
+    // 约束
+    CGFloat height = self.layout.itemSize.height + _contentInset.top + _contentInset.bottom;
+    [self.collectionView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(height);
+    }];
+    // 通知更改约束
+    [self setNeedsUpdateConstraints];
+    // 刷新
     [self.collectionView reloadData];
 }
 
 #pragma mark - UICollectionViewDelegate, UICollectionViewDataSource
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mediaPreview:sizeForItemAtIndexPath:)]) {
-        return [self.delegate mediaPreview:self sizeForItemAtIndexPath:indexPath];
-    }
-    return self.itemSize;
-}
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.fileJsons.count + (self.isEditable ? 1 : 0);
 }

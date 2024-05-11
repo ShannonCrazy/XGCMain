@@ -9,20 +9,10 @@
 #import <UIKit/UIKit.h>
 //
 #import "XGCMediaPreviewModel.h"
-@class XGCMediaPreviewContainerView;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol XGCMediaPreviewDelegate <NSObject>
-@optional
-- (CGSize)mediaPreview:(XGCMediaPreviewContainerView *)preview sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
-@end
-
 @interface XGCMediaPreviewContainerView : UIView
-
-- (instancetype)initWithScrollDirection:(UICollectionViewScrollDirection)scrollDirection;
-/// 代理
-@property (nonatomic, weak, nullable) id <XGCMediaPreviewDelegate> delegate;
 /// 对象
 @property (nonatomic, weak, nullable) __kindof UIViewController *aTarget;
 /// 是否可以编辑
@@ -31,8 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSMutableArray <XGCMediaPreviewModel *> *fileJsons;
 /// 缩进 default UIEdgeInsetsZero.
 @property (nonatomic, assign) UIEdgeInsets contentInset;
-/// itemSize default : CGSizeMake(80.0, 80.0)
-@property (nonatomic, assign) CGSize itemSize;
 @end
 
 NS_ASSUME_NONNULL_END

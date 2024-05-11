@@ -11,9 +11,6 @@
 #import "XGCUserMapModel.h"
 #import "XGCMenuAndFuncListModel.h"
 //
-//#import "XGCMobClickManager.h"
-//
-#import "XGCURLSession.h"
 #import "NSArray+XGCArray.h"
 //
 #import <MJExtension/MJExtension.h>
@@ -138,27 +135,6 @@ NSString * const XGCUserSwitchAccountsNotification = @"kXGCUserSwitchAccountsNot
 
 /// 刷新token
 - (void)refreshToken {
-    if (self.cUser.token.length == 0) {
-        return;
-    }
-    NSTimeInterval difference = [NSDate date].timeIntervalSince1970 - self.cUser.begTimeStamp / 1000.0;
-    if (difference <= tokenExpiredSecond) {
-        return;
-    }
-    // 大于两天
-    __weak typeof(self) this = self;
-    [XGCURLSession POST:@"token/refreshToken" parameters:[NSDictionary dictionaryWithObject:self.cUser.token forKey:@"token"] aTarget:self callback:^(id  _Nullable responseObject, NSError * _Nullable error) {
-        if (responseObject) {
-            XGCUserModel *temp = [XGCUserModel mj_objectWithKeyValues:responseObject];
-            // 更新现有数据
-            this.cUser.token = temp.token;
-            this.cUser.tokenExpiredSecond = temp.tokenExpiredSecond;
-            this.cUser.begTimeStamp = temp.begTimeStamp;
-            this.cUser.endTimeStamp = temp.endTimeStamp;
-            // 存储
-            [this storageUser:this.cUser];
-        }
-    }];
 }
 
 #pragma mark Notification

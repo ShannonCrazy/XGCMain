@@ -7,9 +7,7 @@
 
 #import "XGCAlertView.h"
 #import "XGCConfiguration.h"
-#import "XGCTextField.h"
 #import "XGCEmptyTableView.h"
-#import "NSString+XGCString.h"
 #import "XGCAlertTableViewCell.h"
 //
 #import <M13OrderedDictionary/M13OrderedDictionary.h>
@@ -25,7 +23,7 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
 @property (nonatomic, strong) UIButton *leftBarButton;
 @property (nonatomic, strong) UIButton *rightBarButton;
 @property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) XGCTextField *textField;
+@property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) XGCEmptyTableView *tableView;
 
 /// 一维数组
@@ -100,7 +98,7 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
             [self.toolbar addSubview:view];
         });
         self.textField = ({
-            XGCTextField *textField = [[XGCTextField alloc] initWithFrame:CGRectMake(20.0, CGRectGetMaxY(self.toolbar.frame) + 10.0, CGRectGetWidth(frame) - 40.0, 30.0)];
+            UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20.0, CGRectGetMaxY(self.toolbar.frame) + 10.0, CGRectGetWidth(frame) - 40.0, 30.0)];
             textField.layer.cornerRadius = 15.0;
             textField.placeholder = @"请输入关键字搜索";
             textField.textColor = XGCCMI.labelColor;
@@ -108,7 +106,6 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
             textField.textAlignment = NSTextAlignmentCenter;
             textField.backgroundColor = XGCCMI.backgroundColor;
             textField.clearButtonMode = UITextFieldViewModeWhileEditing;
-            textField.contentInset = UIEdgeInsetsMake(0, 15.0, 0, 15.0);
             [textField addTarget:self action:@selector(UITextFieldTextDidChangeAction:) forControlEvents:UIControlEventEditingChanged];
             [self.containerView addSubview:textField];
             textField;
@@ -233,12 +230,13 @@ static CGFloat const XGCAlertViewToolBarHeight = 40.0;
 }
 
 #pragma mark action
-- (void)UITextFieldTextDidChangeAction:(XGCTextField *)textField {
+- (void)UITextFieldTextDidChangeAction:(UITextField *)textField {
     if (textField.markedTextRange) {
         return;
     }
     if (textField.hasText) {
-        self.results = [self.delayeringTrees filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.cName CONTAINS %@", [textField.text removeWhitespace]]];
+        NSString *text = [textField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        self.results = [self.delayeringTrees filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.cName CONTAINS %@", text]];
     } else {
         self.results = self.delayeringTrees;
     }

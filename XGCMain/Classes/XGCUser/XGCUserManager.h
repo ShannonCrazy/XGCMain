@@ -7,8 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import "XGCUserModel.h"
-#import "XGCUserMapModel.h"
-#import "XGCMenuDataModel.h"
 #import "XGCMenuAndFuncListModel.h"
 
 NS_ASSUME_NONNULL_BEGIN

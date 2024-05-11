@@ -6,12 +6,14 @@
 //
 
 #import "XGCMainViewController.h"
+// model
 #import "XGCUserAclMapModel.h"
 #import "XGCMenuDataModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XGCMainAppFuncCodeViewController : XGCMainViewController
+
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
 
