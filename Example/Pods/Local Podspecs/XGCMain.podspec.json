@@ -1,6 +1,6 @@
 {
   "name": "XGCMain",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "summary": "A short description of XGCMain.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ShannonCrazy/XGCMain",
@@ -13,47 +13,241 @@
   },
   "source": {
     "git": "https://github.com/ShannonCrazy/XGCMain.git",
-    "tag": "1.0.1"
+    "tag": "1.0.3"
   },
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "XGCMain/Classes/**/*",
+  "source_files": "XGCMain/Classes/XGCMain.h",
   "resource_bundles": {
     "XGCMain": [
-      "XGCMain/Assets/**/*"
+      "XGCMain/Assets/XGCMain.xcassets"
     ]
   },
   "dependencies": {
     "Toast": [
 
     ],
-    "Masonry": [
-
-    ],
-    "MJRefresh": [
-
-    ],
-    "SDWebImage": [
-
-    ],
-    "MJExtension": [
-
-    ],
-    "AFNetworking": [
-
-    ],
-    "AliyunOSSiOS": [
-
-    ],
     "SVProgressHUD": [
 
-    ],
-    "DZNEmptyDataSet": [
-
-    ],
-    "M13OrderedDictionary": [
-
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "XGCEmptyScrollView",
+      "source_files": "XGCMain/Classes/XGCEmptyScrollView/*",
+      "dependencies": {
+        "DZNEmptyDataSet": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMJRefresh",
+      "source_files": "XGCMain/Classes/XGCMJRefresh/*",
+      "dependencies": {
+        "XGCMain/XGCEmptyScrollView": [
+
+        ],
+        "MJRefresh": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCThemeManager",
+      "source_files": "XGCMain/Classes/XGCThemeManager/*"
+    },
+    {
+      "name": "XGCCategory",
+      "source_files": "XGCMain/Classes/XGCCategory/*"
+    },
+    {
+      "name": "XGCUser",
+      "source_files": "XGCMain/Classes/XGCUser/*",
+      "dependencies": {
+        "MJExtension": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainRoute",
+      "source_files": "XGCMain/Classes/XGCMainRoute/*"
+    },
+    {
+      "name": "XGCURLSession",
+      "source_files": [
+        "XGCMain/Classes/XGCURLSession/*",
+        "XGCMain/Classes/XGCURLManagerCenter/*",
+        "XGCMain/Classes/XGCAFNetworking/*"
+      ],
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "AFNetworking": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCUploadSession",
+      "source_files": [
+        "XGCMain/Classes/XGCUploadSession/*",
+        "XGCMain/Classes/XGCAliyunOSSiOS/*"
+      ],
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "AliyunOSSiOS": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainBase",
+      "source_files": "XGCMain/Classes/XGCMainBase/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCMJRefresh": [
+
+        ],
+        "XGCMain/XGCThemeManager": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCImageUrlControl",
+      "source_files": "XGCMain/Classes/XGCImageUrlControl/*",
+      "dependencies": {
+        "XGCMain/XGCThemeManager": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCTextField",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCTextField/*"
+    },
+    {
+      "name": "XGCTextView",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCTextView/*"
+    },
+    {
+      "name": "XGCUISegmentedControl",
+      "source_files": "XGCMain/Classes/XGCUISegmentedControl/*"
+    },
+    {
+      "name": "XGCMainPickerManager",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCMainPickerManager/*",
+      "dependencies": {
+        "TZImagePickerController": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCAlertView",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCAlertView/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCEmptyScrollView": [
+
+        ],
+        "M13OrderedDictionary": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCDatePickerView",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCDatePickerView/*"
+    },
+    {
+      "name": "XGCMediaPreview",
+      "source_files": "XGCMain/Classes/XGCMediaPreview/**/*",
+      "dependencies": {
+        "XGCMain/XGCCategory": [
+
+        ],
+        "XGCMain/XGCMainRoute": [
+
+        ],
+        "XGCMain/XGCMainPickerManager": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCWebView",
+      "source_files": "XGCMain/Classes/XGCWebView/*",
+      "dependencies": {
+        "XGCMain/XGCMainRoute": [
+
+        ]
+      },
+      "frameworks": [
+        "WebKit",
+        "QuartzCore"
+      ]
+    },
+    {
+      "name": "XGCViewConfiguration",
+      "source_files": "XGCMain/Classes/XGCViewConfiguration/*",
+      "dependencies": {
+        "XGCMain/XGCMainPickerManager": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainForm",
+      "source_files": "XGCMain/Classes/XGCMainForm/**/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCCategory": [
+
+        ],
+        "XGCMain/XGCTextView": [
+
+        ],
+        "XGCMain/XGCTextField": [
+
+        ],
+        "XGCMain/XGCAlertView": [
+
+        ],
+        "XGCMain/XGCUploadSession": [
+
+        ],
+        "XGCMain/XGCViewConfiguration": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    }
+  ]
 }

@@ -25,17 +25,127 @@ PODS:
   - SDWebImage/Core (5.19.1)
   - SVProgressHUD (2.2.5)
   - Toast (4.0.0)
-  - XGCMain (1.0.1):
-    - AFNetworking
-    - AliyunOSSiOS
-    - DZNEmptyDataSet
+  - TZImagePickerController (3.8.5):
+    - TZImagePickerController/Basic (= 3.8.5)
+    - TZImagePickerController/Location (= 3.8.5)
+  - TZImagePickerController/Basic (3.8.5)
+  - TZImagePickerController/Location (3.8.5)
+  - XGCMain (1.0.3):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCAlertView (= 1.0.3)
+    - XGCMain/XGCCategory (= 1.0.3)
+    - XGCMain/XGCDatePickerView (= 1.0.3)
+    - XGCMain/XGCEmptyScrollView (= 1.0.3)
+    - XGCMain/XGCImageUrlControl (= 1.0.3)
+    - XGCMain/XGCMainBase (= 1.0.3)
+    - XGCMain/XGCMainForm (= 1.0.3)
+    - XGCMain/XGCMainPickerManager (= 1.0.3)
+    - XGCMain/XGCMainRoute (= 1.0.3)
+    - XGCMain/XGCMediaPreview (= 1.0.3)
+    - XGCMain/XGCMJRefresh (= 1.0.3)
+    - XGCMain/XGCTextField (= 1.0.3)
+    - XGCMain/XGCTextView (= 1.0.3)
+    - XGCMain/XGCThemeManager (= 1.0.3)
+    - XGCMain/XGCUISegmentedControl (= 1.0.3)
+    - XGCMain/XGCUploadSession (= 1.0.3)
+    - XGCMain/XGCURLSession (= 1.0.3)
+    - XGCMain/XGCUser (= 1.0.3)
+    - XGCMain/XGCViewConfiguration (= 1.0.3)
+    - XGCMain/XGCWebView (= 1.0.3)
+  - XGCMain/XGCAlertView (1.0.3):
     - M13OrderedDictionary
-    - Masonry
-    - MJExtension
-    - MJRefresh
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCEmptyScrollView
+    - XGCMain/XGCUser
+  - XGCMain/XGCCategory (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCDatePickerView (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCEmptyScrollView (1.0.3):
+    - DZNEmptyDataSet
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCImageUrlControl (1.0.3):
     - SDWebImage
     - SVProgressHUD
     - Toast
+    - XGCMain/XGCThemeManager
+  - XGCMain/XGCMainBase (1.0.3):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMJRefresh
+    - XGCMain/XGCThemeManager
+    - XGCMain/XGCUser
+  - XGCMain/XGCMainForm (1.0.3):
+    - Masonry
+    - SDWebImage
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCAlertView
+    - XGCMain/XGCCategory
+    - XGCMain/XGCTextField
+    - XGCMain/XGCTextView
+    - XGCMain/XGCUploadSession
+    - XGCMain/XGCUser
+    - XGCMain/XGCViewConfiguration
+  - XGCMain/XGCMainPickerManager (1.0.3):
+    - SVProgressHUD
+    - Toast
+    - TZImagePickerController
+  - XGCMain/XGCMainRoute (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCMediaPreview (1.0.3):
+    - Masonry
+    - SDWebImage
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCCategory
+    - XGCMain/XGCMainPickerManager
+    - XGCMain/XGCMainRoute
+  - XGCMain/XGCMJRefresh (1.0.3):
+    - MJRefresh
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCEmptyScrollView
+  - XGCMain/XGCTextField (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCTextView (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCThemeManager (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCUISegmentedControl (1.0.3):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCUploadSession (1.0.3):
+    - AliyunOSSiOS
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCUser
+  - XGCMain/XGCURLSession (1.0.3):
+    - AFNetworking
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCUser
+  - XGCMain/XGCUser (1.0.3):
+    - MJExtension
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCViewConfiguration (1.0.3):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMainPickerManager
+  - XGCMain/XGCWebView (1.0.3):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMainRoute
 
 DEPENDENCIES:
   - XGCMain (from `../`)
@@ -52,6 +162,7 @@ SPEC REPOS:
     - SDWebImage
     - SVProgressHUD
     - Toast
+    - TZImagePickerController
 
 EXTERNAL SOURCES:
   XGCMain:
@@ -68,7 +179,8 @@ SPEC CHECKSUMS:
   SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  XGCMain: d8933d012dfb50c6e105cdcdecd2efd41ab7fc18
+  TZImagePickerController: c0f8e83c27cb08f7d812b1d066a5934d30ff78ad
+  XGCMain: 1e8fcc2f4935046b2c4054bb301164c7c33cbba9
 
 PODFILE CHECKSUM: fc2112c46b62005c8a73018cb97546ce16c9fd81
 

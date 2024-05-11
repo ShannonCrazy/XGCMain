@@ -25,77 +25,81 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9C577CC7F53C78DFB8FB2F62 /* Pods_XGCMain_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4202EF893EB0C6F45B5B442 /* Pods_XGCMain_Example.framework */; };
 		FB5012E22BD75018001034DD /* XGCSecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5012E12BD75018001034DD /* XGCSecondaryViewController.m */; };
-		FB5014B62BD79F54001034DD /* XGCMain.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5014022BD79F54001034DD /* XGCMain.xcassets */; };
-		FB5014B72BD79F54001034DD /* UIControl+XGCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014052BD79F54001034DD /* UIControl+XGCControl.m */; };
-		FB5014B82BD79F54001034DD /* UIView+XGCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014072BD79F54001034DD /* UIView+XGCView.m */; };
-		FB5014B92BD79F54001034DD /* XGCActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014092BD79F54001034DD /* XGCActivityIndicatorView.m */; };
-		FB5014BA2BD79F54001034DD /* XGCViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50140B2BD79F54001034DD /* XGCViewConfiguration.m */; };
-		FB5014BB2BD79F54001034DD /* XGCViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50140D2BD79F54001034DD /* XGCViewLayer.m */; };
-		FB5014BC2BD79F54001034DD /* NSArray+XGCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014102BD79F54001034DD /* NSArray+XGCArray.m */; };
-		FB5014BD2BD79F54001034DD /* NSCalendar+XGCCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014122BD79F54001034DD /* NSCalendar+XGCCalendar.m */; };
-		FB5014BE2BD79F54001034DD /* NSDate+XGCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014142BD79F54001034DD /* NSDate+XGCDate.m */; };
-		FB5014BF2BD79F54001034DD /* NSString+XGCString.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014162BD79F54001034DD /* NSString+XGCString.m */; };
-		FB5014C02BD79F54001034DD /* UIColor+XGCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014182BD79F54001034DD /* UIColor+XGCColor.m */; };
-		FB5014C12BD79F54001034DD /* UIDevice+XGCDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50141A2BD79F54001034DD /* UIDevice+XGCDevice.m */; };
-		FB5014C22BD79F54001034DD /* UIImage+XGCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50141C2BD79F54001034DD /* UIImage+XGCImage.m */; };
-		FB5014C32BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50141F2BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.m */; };
-		FB5014C42BD79F54001034DD /* XGCMainAppFuncCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014212BD79F54001034DD /* XGCMainAppFuncCodeViewController.m */; };
-		FB5014C52BD79F54001034DD /* XGCMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014232BD79F54001034DD /* XGCMainNavigationController.m */; };
-		FB5014C62BD79F54001034DD /* XGCMainNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014252BD79F54001034DD /* XGCMainNavigationControllerDelegate.m */; };
-		FB5014C72BD79F54001034DD /* XGCMainRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014272BD79F54001034DD /* XGCMainRefreshViewController.m */; };
-		FB5014C82BD79F54001034DD /* XGCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014292BD79F54001034DD /* XGCMainTabBarController.m */; };
-		FB5014C92BD79F54001034DD /* XGCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50142B2BD79F54001034DD /* XGCMainViewController.m */; };
-		FB5014CA2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50142E2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.m */; };
-		FB5014CB2BD79F54001034DD /* XGCMainFormRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014302BD79F54001034DD /* XGCMainFormRowTableViewCell.m */; };
-		FB5014CC2BD79F54001034DD /* XGCMainFormSectionTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014322BD79F54001034DD /* XGCMainFormSectionTableHeaderView.m */; };
-		FB5014CD2BD79F54001034DD /* XGCMainFormDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014352BD79F54001034DD /* XGCMainFormDescriptor.m */; };
-		FB5014CE2BD79F54001034DD /* XGCMainFormRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014372BD79F54001034DD /* XGCMainFormRowDescriptor.m */; };
-		FB5014CF2BD79F54001034DD /* XGCMainFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014392BD79F54001034DD /* XGCMainFormSectionDescriptor.m */; };
-		FB5014D02BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50143E2BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.m */; };
-		FB5014D12BD79F54001034DD /* XGCMainFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014402BD79F54001034DD /* XGCMainFormViewController.m */; };
-		FB5014D22BD79F54001034DD /* XGCMainRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014432BD79F54001034DD /* XGCMainRoute.m */; };
-		FB5014D32BD79F54001034DD /* XGCAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014462BD79F54001034DD /* XGCAlertTableViewCell.m */; };
-		FB5014D42BD79F54001034DD /* XGCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014482BD79F54001034DD /* XGCAlertView.m */; };
-		FB5014D52BD79F54001034DD /* XGCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50144B2BD79F54001034DD /* XGCDatePickerView.m */; };
-		FB5014D62BD79F54001034DD /* XGCImageUrlControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50144E2BD79F54001034DD /* XGCImageUrlControl.m */; };
-		FB5014D72BD79F54001034DD /* XGCMainPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014512BD79F54001034DD /* XGCMainPickerManager.m */; };
-		FB5014D82BD79F54001034DD /* XGCSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014542BD79F54001034DD /* XGCSearchTextField.m */; };
-		FB5014D92BD79F54001034DD /* XGCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014572BD79F54001034DD /* XGCTextField.m */; };
-		FB5014DA2BD79F54001034DD /* XGCTextFieldDelegator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014592BD79F54001034DD /* XGCTextFieldDelegator.m */; };
-		FB5014DB2BD79F54001034DD /* XGCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50145C2BD79F54001034DD /* XGCTextView.m */; };
-		FB5014DC2BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014602BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.m */; };
-		FB5014DD2BD79F54001034DD /* KSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014642BD79F54001034DD /* KSPhotoBrowser.m */; };
-		FB5014DE2BD79F54001034DD /* KSPhotoBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014662BD79F54001034DD /* KSPhotoBrowserManager.m */; };
-		FB5014DF2BD79F54001034DD /* KSPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014682BD79F54001034DD /* KSPhotoItem.m */; };
-		FB5014E02BD79F54001034DD /* KSPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50146A2BD79F54001034DD /* KSPhotoView.m */; };
-		FB5014E12BD79F54001034DD /* KSProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50146C2BD79F54001034DD /* KSProgressLayer.m */; };
-		FB5014E22BD79F54001034DD /* KSSDImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50146E2BD79F54001034DD /* KSSDImageManager.m */; };
-		FB5014E32BD79F54001034DD /* XGCMediaPreviewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014712BD79F54001034DD /* XGCMediaPreviewModel.m */; };
-		FB5014E42BD79F54001034DD /* XGCMediaPreviewRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014742BD79F54001034DD /* XGCMediaPreviewRoute.m */; };
-		FB5014E52BD79F54001034DD /* XGCMediaPreviewContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014772BD79F54001034DD /* XGCMediaPreviewContainerView.m */; };
-		FB5014E62BD79F54001034DD /* XGCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50147A2BD79F54001034DD /* XGCConfiguration.m */; };
-		FB5014E72BD79F54001034DD /* XGCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50147C2BD79F54001034DD /* XGCThemeManager.m */; };
-		FB5014E82BD79F54001034DD /* XGCThemeManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50147E2BD79F54001034DD /* XGCThemeManagerCenter.m */; };
-		FB5014E92BD79F54001034DD /* XGCAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014822BD79F54001034DD /* XGCAFNetworking.m */; };
-		FB5014EA2BD79F54001034DD /* XGCAFNetworkingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014842BD79F54001034DD /* XGCAFNetworkingDelegate.m */; };
-		FB5014EB2BD79F54001034DD /* XGCAliyunOSSiOS.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014872BD79F54001034DD /* XGCAliyunOSSiOS.m */; };
-		FB5014EC2BD79F54001034DD /* XGCAliyunOSSiOSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014892BD79F54001034DD /* XGCAliyunOSSiOSDelegate.m */; };
-		FB5014ED2BD79F54001034DD /* XGCEmptyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50148C2BD79F54001034DD /* XGCEmptyTableView.m */; };
-		FB5014EE2BD79F54001034DD /* XGCRefreshCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50148F2BD79F54001034DD /* XGCRefreshCollectionView.m */; };
-		FB5014EF2BD79F54001034DD /* XGCRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014912BD79F54001034DD /* XGCRefreshTableView.m */; };
-		FB5014F02BD79F54001034DD /* XGCURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014952BD79F54001034DD /* XGCURLManager.m */; };
-		FB5014F12BD79F54001034DD /* XGCURLManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014972BD79F54001034DD /* XGCURLManagerCenter.m */; };
-		FB5014F22BD79F54001034DD /* XGCURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50149B2BD79F54001034DD /* XGCURLSession.m */; };
-		FB5014F32BD79F54001034DD /* XGCURLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50149D2BD79F54001034DD /* XGCURLSessionDelegate.m */; };
-		FB5014F42BD79F54001034DD /* XGCMenuAndFuncListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014A02BD79F54001034DD /* XGCMenuAndFuncListModel.m */; };
-		FB5014F52BD79F54001034DD /* XGCMenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014A22BD79F54001034DD /* XGCMenuDataModel.m */; };
-		FB5014F62BD79F54001034DD /* XGCUserAclMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014A42BD79F54001034DD /* XGCUserAclMapModel.m */; };
-		FB5014F72BD79F54001034DD /* XGCUserDictMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014A62BD79F54001034DD /* XGCUserDictMapModel.m */; };
-		FB5014F82BD79F54001034DD /* XGCUserMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014A82BD79F54001034DD /* XGCUserMapModel.m */; };
-		FB5014F92BD79F54001034DD /* XGCUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014AA2BD79F54001034DD /* XGCUserModel.m */; };
-		FB5014FA2BD79F54001034DD /* XGCUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014AD2BD79F54001034DD /* XGCUserManager.m */; };
-		FB5014FB2BD79F54001034DD /* XGCWebViewRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014B02BD79F54001034DD /* XGCWebViewRoute.m */; };
-		FB5014FC2BD79F54001034DD /* XGCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5014B32BD79F54001034DD /* XGCWebViewController.m */; };
+		FB50162D2BD8F1C4001034DD /* XGCSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50162C2BD8F1C4001034DD /* XGCSceneDelegate.m */; };
+		FB5017E82BD9069F001034DD /* XGCMain.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5017312BD9069F001034DD /* XGCMain.xcassets */; };
+		FB5017E92BD9069F001034DD /* UIControl+XGCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017342BD9069F001034DD /* UIControl+XGCControl.m */; };
+		FB5017EA2BD9069F001034DD /* UIView+XGCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017362BD9069F001034DD /* UIView+XGCView.m */; };
+		FB5017EB2BD9069F001034DD /* XGCActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017382BD9069F001034DD /* XGCActivityIndicatorView.m */; };
+		FB5017EC2BD9069F001034DD /* XGCViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50173A2BD9069F001034DD /* XGCViewConfiguration.m */; };
+		FB5017ED2BD9069F001034DD /* XGCViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50173C2BD9069F001034DD /* XGCViewLayer.m */; };
+		FB5017EE2BD9069F001034DD /* NSArray+XGCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50173F2BD9069F001034DD /* NSArray+XGCArray.m */; };
+		FB5017EF2BD9069F001034DD /* NSBundle+XGCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017412BD9069F001034DD /* NSBundle+XGCBundle.m */; };
+		FB5017F02BD9069F001034DD /* NSCalendar+XGCCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017432BD9069F001034DD /* NSCalendar+XGCCalendar.m */; };
+		FB5017F12BD9069F001034DD /* NSDate+XGCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017452BD9069F001034DD /* NSDate+XGCDate.m */; };
+		FB5017F22BD9069F001034DD /* NSString+XGCString.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017472BD9069F001034DD /* NSString+XGCString.m */; };
+		FB5017F32BD9069F001034DD /* UIColor+XGCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017492BD9069F001034DD /* UIColor+XGCColor.m */; };
+		FB5017F42BD9069F001034DD /* UIDevice+XGCDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50174B2BD9069F001034DD /* UIDevice+XGCDevice.m */; };
+		FB5017F52BD9069F001034DD /* UIImage+XGCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50174D2BD9069F001034DD /* UIImage+XGCImage.m */; };
+		FB5017F62BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017502BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m */; };
+		FB5017F72BD9069F001034DD /* XGCMainAppFuncCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017522BD9069F001034DD /* XGCMainAppFuncCodeViewController.m */; };
+		FB5017F82BD9069F001034DD /* XGCMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017542BD9069F001034DD /* XGCMainNavigationController.m */; };
+		FB5017F92BD9069F001034DD /* XGCMainNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017562BD9069F001034DD /* XGCMainNavigationControllerDelegate.m */; };
+		FB5017FA2BD9069F001034DD /* XGCMainRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017582BD9069F001034DD /* XGCMainRefreshViewController.m */; };
+		FB5017FB2BD9069F001034DD /* XGCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50175A2BD9069F001034DD /* XGCMainTabBarController.m */; };
+		FB5017FC2BD9069F001034DD /* XGCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50175C2BD9069F001034DD /* XGCMainViewController.m */; };
+		FB5017FD2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50175F2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.m */; };
+		FB5017FE2BD9069F001034DD /* XGCMainFormRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017612BD9069F001034DD /* XGCMainFormRowTableViewCell.m */; };
+		FB5017FF2BD9069F001034DD /* XGCMainFormSectionTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017632BD9069F001034DD /* XGCMainFormSectionTableHeaderView.m */; };
+		FB5018002BD9069F001034DD /* XGCMainFormDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017662BD9069F001034DD /* XGCMainFormDescriptor.m */; };
+		FB5018012BD9069F001034DD /* XGCMainFormRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017682BD9069F001034DD /* XGCMainFormRowDescriptor.m */; };
+		FB5018022BD9069F001034DD /* XGCMainFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50176A2BD9069F001034DD /* XGCMainFormSectionDescriptor.m */; };
+		FB5018032BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50176F2BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.m */; };
+		FB5018052BD9069F001034DD /* XGCMainRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017742BD9069F001034DD /* XGCMainRoute.m */; };
+		FB5018062BD9069F001034DD /* XGCAlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017772BD9069F001034DD /* XGCAlertTableViewCell.m */; };
+		FB5018072BD9069F001034DD /* XGCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017792BD9069F001034DD /* XGCAlertView.m */; };
+		FB5018082BD9069F001034DD /* XGCDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50177C2BD9069F001034DD /* XGCDatePickerView.m */; };
+		FB5018092BD9069F001034DD /* XGCImageUrlControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50177F2BD9069F001034DD /* XGCImageUrlControl.m */; };
+		FB50180A2BD9069F001034DD /* XGCMainPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017822BD9069F001034DD /* XGCMainPickerManager.m */; };
+		FB50180B2BD9069F001034DD /* XGCSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017852BD9069F001034DD /* XGCSearchTextField.m */; };
+		FB50180C2BD9069F001034DD /* XGCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017882BD9069F001034DD /* XGCTextField.m */; };
+		FB50180D2BD9069F001034DD /* XGCTextFieldDelegator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50178A2BD9069F001034DD /* XGCTextFieldDelegator.m */; };
+		FB50180E2BD9069F001034DD /* XGCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50178D2BD9069F001034DD /* XGCTextView.m */; };
+		FB50180F2BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017912BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.m */; };
+		FB5018102BD9069F001034DD /* KSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017952BD9069F001034DD /* KSPhotoBrowser.m */; };
+		FB5018112BD9069F001034DD /* KSPhotoBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017972BD9069F001034DD /* KSPhotoBrowserManager.m */; };
+		FB5018122BD9069F001034DD /* KSPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017992BD9069F001034DD /* KSPhotoItem.m */; };
+		FB5018132BD9069F001034DD /* KSPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50179B2BD9069F001034DD /* KSPhotoView.m */; };
+		FB5018142BD9069F001034DD /* KSProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50179D2BD9069F001034DD /* KSProgressLayer.m */; };
+		FB5018152BD9069F001034DD /* KSSDImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50179F2BD9069F001034DD /* KSSDImageManager.m */; };
+		FB5018162BD9069F001034DD /* XGCMediaPreviewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017A22BD9069F001034DD /* XGCMediaPreviewModel.m */; };
+		FB5018172BD9069F001034DD /* XGCMediaPreviewRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017A52BD9069F001034DD /* XGCMediaPreviewRoute.m */; };
+		FB5018182BD9069F001034DD /* XGCMediaPreviewContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017A82BD9069F001034DD /* XGCMediaPreviewContainerView.m */; };
+		FB5018192BD9069F001034DD /* XGCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017AB2BD9069F001034DD /* XGCConfiguration.m */; };
+		FB50181A2BD9069F001034DD /* XGCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017AD2BD9069F001034DD /* XGCThemeManager.m */; };
+		FB50181B2BD9069F001034DD /* XGCThemeManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017AF2BD9069F001034DD /* XGCThemeManagerCenter.m */; };
+		FB50181C2BD9069F001034DD /* XGCAFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017B32BD9069F001034DD /* XGCAFNetworking.m */; };
+		FB50181D2BD9069F001034DD /* XGCAFNetworkingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017B52BD9069F001034DD /* XGCAFNetworkingDelegate.m */; };
+		FB50181E2BD9069F001034DD /* XGCAliyunOSSiOS.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017B82BD9069F001034DD /* XGCAliyunOSSiOS.m */; };
+		FB50181F2BD9069F001034DD /* XGCAliyunOSSiOSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017BA2BD9069F001034DD /* XGCAliyunOSSiOSDelegate.m */; };
+		FB5018202BD9069F001034DD /* XGCEmptyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017BD2BD9069F001034DD /* XGCEmptyTableView.m */; };
+		FB5018212BD9069F001034DD /* XGCRefreshCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017C02BD9069F001034DD /* XGCRefreshCollectionView.m */; };
+		FB5018222BD9069F001034DD /* XGCRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017C22BD9069F001034DD /* XGCRefreshTableView.m */; };
+		FB5018232BD9069F001034DD /* XGCURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017C62BD9069F001034DD /* XGCURLManager.m */; };
+		FB5018242BD9069F001034DD /* XGCURLManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017C82BD9069F001034DD /* XGCURLManagerCenter.m */; };
+		FB5018252BD9069F001034DD /* XGCURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017CC2BD9069F001034DD /* XGCURLSession.m */; };
+		FB5018262BD9069F001034DD /* XGCURLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017CE2BD9069F001034DD /* XGCURLSessionDelegate.m */; };
+		FB5018272BD9069F001034DD /* XGCMenuAndFuncListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017D12BD9069F001034DD /* XGCMenuAndFuncListModel.m */; };
+		FB5018282BD9069F001034DD /* XGCMenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017D32BD9069F001034DD /* XGCMenuDataModel.m */; };
+		FB5018292BD9069F001034DD /* XGCUserAclMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017D52BD9069F001034DD /* XGCUserAclMapModel.m */; };
+		FB50182A2BD9069F001034DD /* XGCUserDictMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017D72BD9069F001034DD /* XGCUserDictMapModel.m */; };
+		FB50182B2BD9069F001034DD /* XGCUserMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017D92BD9069F001034DD /* XGCUserMapModel.m */; };
+		FB50182C2BD9069F001034DD /* XGCUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017DB2BD9069F001034DD /* XGCUserModel.m */; };
+		FB50182D2BD9069F001034DD /* XGCUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017DE2BD9069F001034DD /* XGCUserManager.m */; };
+		FB50182E2BD9069F001034DD /* XGCWebViewRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017E12BD9069F001034DD /* XGCWebViewRoute.m */; };
+		FB50182F2BD9069F001034DD /* XGCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5017E42BD9069F001034DD /* XGCWebViewController.m */; };
+		FB50184A2BDB3F1F001034DD /* XGCUploadSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5018492BDB3F1F001034DD /* XGCUploadSession.m */; };
+		FB50184D2BDB47D5001034DD /* XGCEmptyCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50184C2BDB47D5001034DD /* XGCEmptyCollectionView.m */; };
+		FBED00692BEEFFE5005A029D /* XGCUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00672BEEFFE5005A029D /* XGCUISegmentedControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,150 +145,159 @@
 		F6E7DAC45F9F6D406AA23009 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FB5012E02BD75018001034DD /* XGCSecondaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSecondaryViewController.h; sourceTree = "<group>"; };
 		FB5012E12BD75018001034DD /* XGCSecondaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSecondaryViewController.m; sourceTree = "<group>"; };
-		FB5014022BD79F54001034DD /* XGCMain.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XGCMain.xcassets; sourceTree = "<group>"; };
-		FB5014042BD79F54001034DD /* UIControl+XGCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XGCControl.h"; sourceTree = "<group>"; };
-		FB5014052BD79F54001034DD /* UIControl+XGCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XGCControl.m"; sourceTree = "<group>"; };
-		FB5014062BD79F54001034DD /* UIView+XGCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XGCView.h"; sourceTree = "<group>"; };
-		FB5014072BD79F54001034DD /* UIView+XGCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XGCView.m"; sourceTree = "<group>"; };
-		FB5014082BD79F54001034DD /* XGCActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCActivityIndicatorView.h; sourceTree = "<group>"; };
-		FB5014092BD79F54001034DD /* XGCActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCActivityIndicatorView.m; sourceTree = "<group>"; };
-		FB50140A2BD79F54001034DD /* XGCViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCViewConfiguration.h; sourceTree = "<group>"; };
-		FB50140B2BD79F54001034DD /* XGCViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCViewConfiguration.m; sourceTree = "<group>"; };
-		FB50140C2BD79F54001034DD /* XGCViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCViewLayer.h; sourceTree = "<group>"; };
-		FB50140D2BD79F54001034DD /* XGCViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCViewLayer.m; sourceTree = "<group>"; };
-		FB50140F2BD79F54001034DD /* NSArray+XGCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XGCArray.h"; sourceTree = "<group>"; };
-		FB5014102BD79F54001034DD /* NSArray+XGCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XGCArray.m"; sourceTree = "<group>"; };
-		FB5014112BD79F54001034DD /* NSCalendar+XGCCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+XGCCalendar.h"; sourceTree = "<group>"; };
-		FB5014122BD79F54001034DD /* NSCalendar+XGCCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+XGCCalendar.m"; sourceTree = "<group>"; };
-		FB5014132BD79F54001034DD /* NSDate+XGCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XGCDate.h"; sourceTree = "<group>"; };
-		FB5014142BD79F54001034DD /* NSDate+XGCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XGCDate.m"; sourceTree = "<group>"; };
-		FB5014152BD79F54001034DD /* NSString+XGCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XGCString.h"; sourceTree = "<group>"; };
-		FB5014162BD79F54001034DD /* NSString+XGCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XGCString.m"; sourceTree = "<group>"; };
-		FB5014172BD79F54001034DD /* UIColor+XGCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XGCColor.h"; sourceTree = "<group>"; };
-		FB5014182BD79F54001034DD /* UIColor+XGCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XGCColor.m"; sourceTree = "<group>"; };
-		FB5014192BD79F54001034DD /* UIDevice+XGCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XGCDevice.h"; sourceTree = "<group>"; };
-		FB50141A2BD79F54001034DD /* UIDevice+XGCDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XGCDevice.m"; sourceTree = "<group>"; };
-		FB50141B2BD79F54001034DD /* UIImage+XGCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XGCImage.h"; sourceTree = "<group>"; };
-		FB50141C2BD79F54001034DD /* UIImage+XGCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XGCImage.m"; sourceTree = "<group>"; };
-		FB50141E2BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainAppFuncCodeRefreshViewController.h; sourceTree = "<group>"; };
-		FB50141F2BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainAppFuncCodeRefreshViewController.m; sourceTree = "<group>"; };
-		FB5014202BD79F54001034DD /* XGCMainAppFuncCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainAppFuncCodeViewController.h; sourceTree = "<group>"; };
-		FB5014212BD79F54001034DD /* XGCMainAppFuncCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainAppFuncCodeViewController.m; sourceTree = "<group>"; };
-		FB5014222BD79F54001034DD /* XGCMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainNavigationController.h; sourceTree = "<group>"; };
-		FB5014232BD79F54001034DD /* XGCMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainNavigationController.m; sourceTree = "<group>"; };
-		FB5014242BD79F54001034DD /* XGCMainNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainNavigationControllerDelegate.h; sourceTree = "<group>"; };
-		FB5014252BD79F54001034DD /* XGCMainNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainNavigationControllerDelegate.m; sourceTree = "<group>"; };
-		FB5014262BD79F54001034DD /* XGCMainRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainRefreshViewController.h; sourceTree = "<group>"; };
-		FB5014272BD79F54001034DD /* XGCMainRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainRefreshViewController.m; sourceTree = "<group>"; };
-		FB5014282BD79F54001034DD /* XGCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainTabBarController.h; sourceTree = "<group>"; };
-		FB5014292BD79F54001034DD /* XGCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainTabBarController.m; sourceTree = "<group>"; };
-		FB50142A2BD79F54001034DD /* XGCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainViewController.h; sourceTree = "<group>"; };
-		FB50142B2BD79F54001034DD /* XGCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainViewController.m; sourceTree = "<group>"; };
-		FB50142D2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormRowDictMapCollectionViewCell.h; sourceTree = "<group>"; };
-		FB50142E2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormRowDictMapCollectionViewCell.m; sourceTree = "<group>"; };
-		FB50142F2BD79F54001034DD /* XGCMainFormRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormRowTableViewCell.h; sourceTree = "<group>"; };
-		FB5014302BD79F54001034DD /* XGCMainFormRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormRowTableViewCell.m; sourceTree = "<group>"; };
-		FB5014312BD79F54001034DD /* XGCMainFormSectionTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormSectionTableHeaderView.h; sourceTree = "<group>"; };
-		FB5014322BD79F54001034DD /* XGCMainFormSectionTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormSectionTableHeaderView.m; sourceTree = "<group>"; };
-		FB5014342BD79F54001034DD /* XGCMainFormDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormDescriptor.h; sourceTree = "<group>"; };
-		FB5014352BD79F54001034DD /* XGCMainFormDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormDescriptor.m; sourceTree = "<group>"; };
-		FB5014362BD79F54001034DD /* XGCMainFormRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormRowDescriptor.h; sourceTree = "<group>"; };
-		FB5014372BD79F54001034DD /* XGCMainFormRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormRowDescriptor.m; sourceTree = "<group>"; };
-		FB5014382BD79F54001034DD /* XGCMainFormSectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormSectionDescriptor.h; sourceTree = "<group>"; };
-		FB5014392BD79F54001034DD /* XGCMainFormSectionDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormSectionDescriptor.m; sourceTree = "<group>"; };
-		FB50143D2BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainAppFuncCodeFormViewController.h; sourceTree = "<group>"; };
-		FB50143E2BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainAppFuncCodeFormViewController.m; sourceTree = "<group>"; };
-		FB50143F2BD79F54001034DD /* XGCMainFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormViewController.h; sourceTree = "<group>"; };
-		FB5014402BD79F54001034DD /* XGCMainFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormViewController.m; sourceTree = "<group>"; };
-		FB5014422BD79F54001034DD /* XGCMainRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainRoute.h; sourceTree = "<group>"; };
-		FB5014432BD79F54001034DD /* XGCMainRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainRoute.m; sourceTree = "<group>"; };
-		FB5014452BD79F54001034DD /* XGCAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAlertTableViewCell.h; sourceTree = "<group>"; };
-		FB5014462BD79F54001034DD /* XGCAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAlertTableViewCell.m; sourceTree = "<group>"; };
-		FB5014472BD79F54001034DD /* XGCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAlertView.h; sourceTree = "<group>"; };
-		FB5014482BD79F54001034DD /* XGCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAlertView.m; sourceTree = "<group>"; };
-		FB50144A2BD79F54001034DD /* XGCDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCDatePickerView.h; sourceTree = "<group>"; };
-		FB50144B2BD79F54001034DD /* XGCDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCDatePickerView.m; sourceTree = "<group>"; };
-		FB50144D2BD79F54001034DD /* XGCImageUrlControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCImageUrlControl.h; sourceTree = "<group>"; };
-		FB50144E2BD79F54001034DD /* XGCImageUrlControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCImageUrlControl.m; sourceTree = "<group>"; };
-		FB5014502BD79F54001034DD /* XGCMainPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainPickerManager.h; sourceTree = "<group>"; };
-		FB5014512BD79F54001034DD /* XGCMainPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainPickerManager.m; sourceTree = "<group>"; };
-		FB5014532BD79F54001034DD /* XGCSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCSearchTextField.h; sourceTree = "<group>"; };
-		FB5014542BD79F54001034DD /* XGCSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCSearchTextField.m; sourceTree = "<group>"; };
-		FB5014562BD79F54001034DD /* XGCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCTextField.h; sourceTree = "<group>"; };
-		FB5014572BD79F54001034DD /* XGCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCTextField.m; sourceTree = "<group>"; };
-		FB5014582BD79F54001034DD /* XGCTextFieldDelegator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCTextFieldDelegator.h; sourceTree = "<group>"; };
-		FB5014592BD79F54001034DD /* XGCTextFieldDelegator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCTextFieldDelegator.m; sourceTree = "<group>"; };
-		FB50145B2BD79F54001034DD /* XGCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCTextView.h; sourceTree = "<group>"; };
-		FB50145C2BD79F54001034DD /* XGCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCTextView.m; sourceTree = "<group>"; };
-		FB50145F2BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewCollectionViewCell.h; sourceTree = "<group>"; };
-		FB5014602BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewCollectionViewCell.m; sourceTree = "<group>"; };
-		FB5014622BD79F54001034DD /* KSImageManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImageManagerProtocol.h; sourceTree = "<group>"; };
-		FB5014632BD79F54001034DD /* KSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoBrowser.h; sourceTree = "<group>"; };
-		FB5014642BD79F54001034DD /* KSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoBrowser.m; sourceTree = "<group>"; };
-		FB5014652BD79F54001034DD /* KSPhotoBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoBrowserManager.h; sourceTree = "<group>"; };
-		FB5014662BD79F54001034DD /* KSPhotoBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoBrowserManager.m; sourceTree = "<group>"; };
-		FB5014672BD79F54001034DD /* KSPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoItem.h; sourceTree = "<group>"; };
-		FB5014682BD79F54001034DD /* KSPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoItem.m; sourceTree = "<group>"; };
-		FB5014692BD79F54001034DD /* KSPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoView.h; sourceTree = "<group>"; };
-		FB50146A2BD79F54001034DD /* KSPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoView.m; sourceTree = "<group>"; };
-		FB50146B2BD79F54001034DD /* KSProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSProgressLayer.h; sourceTree = "<group>"; };
-		FB50146C2BD79F54001034DD /* KSProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSProgressLayer.m; sourceTree = "<group>"; };
-		FB50146D2BD79F54001034DD /* KSSDImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSDImageManager.h; sourceTree = "<group>"; };
-		FB50146E2BD79F54001034DD /* KSSDImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSDImageManager.m; sourceTree = "<group>"; };
-		FB5014702BD79F54001034DD /* XGCMediaPreviewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewModel.h; sourceTree = "<group>"; };
-		FB5014712BD79F54001034DD /* XGCMediaPreviewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewModel.m; sourceTree = "<group>"; };
-		FB5014732BD79F54001034DD /* XGCMediaPreviewRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewRoute.h; sourceTree = "<group>"; };
-		FB5014742BD79F54001034DD /* XGCMediaPreviewRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewRoute.m; sourceTree = "<group>"; };
-		FB5014762BD79F54001034DD /* XGCMediaPreviewContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewContainerView.h; sourceTree = "<group>"; };
-		FB5014772BD79F54001034DD /* XGCMediaPreviewContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewContainerView.m; sourceTree = "<group>"; };
-		FB5014792BD79F54001034DD /* XGCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCConfiguration.h; sourceTree = "<group>"; };
-		FB50147A2BD79F54001034DD /* XGCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCConfiguration.m; sourceTree = "<group>"; };
-		FB50147B2BD79F54001034DD /* XGCThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCThemeManager.h; sourceTree = "<group>"; };
-		FB50147C2BD79F54001034DD /* XGCThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCThemeManager.m; sourceTree = "<group>"; };
-		FB50147D2BD79F54001034DD /* XGCThemeManagerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCThemeManagerCenter.h; sourceTree = "<group>"; };
-		FB50147E2BD79F54001034DD /* XGCThemeManagerCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCThemeManagerCenter.m; sourceTree = "<group>"; };
-		FB50147F2BD79F54001034DD /* XGCThemeTemplateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCThemeTemplateProtocol.h; sourceTree = "<group>"; };
-		FB5014812BD79F54001034DD /* XGCAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAFNetworking.h; sourceTree = "<group>"; };
-		FB5014822BD79F54001034DD /* XGCAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAFNetworking.m; sourceTree = "<group>"; };
-		FB5014832BD79F54001034DD /* XGCAFNetworkingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAFNetworkingDelegate.h; sourceTree = "<group>"; };
-		FB5014842BD79F54001034DD /* XGCAFNetworkingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAFNetworkingDelegate.m; sourceTree = "<group>"; };
-		FB5014862BD79F54001034DD /* XGCAliyunOSSiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAliyunOSSiOS.h; sourceTree = "<group>"; };
-		FB5014872BD79F54001034DD /* XGCAliyunOSSiOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAliyunOSSiOS.m; sourceTree = "<group>"; };
-		FB5014882BD79F54001034DD /* XGCAliyunOSSiOSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAliyunOSSiOSDelegate.h; sourceTree = "<group>"; };
-		FB5014892BD79F54001034DD /* XGCAliyunOSSiOSDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAliyunOSSiOSDelegate.m; sourceTree = "<group>"; };
-		FB50148B2BD79F54001034DD /* XGCEmptyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCEmptyTableView.h; sourceTree = "<group>"; };
-		FB50148C2BD79F54001034DD /* XGCEmptyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCEmptyTableView.m; sourceTree = "<group>"; };
-		FB50148E2BD79F54001034DD /* XGCRefreshCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCRefreshCollectionView.h; sourceTree = "<group>"; };
-		FB50148F2BD79F54001034DD /* XGCRefreshCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCRefreshCollectionView.m; sourceTree = "<group>"; };
-		FB5014902BD79F54001034DD /* XGCRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCRefreshTableView.h; sourceTree = "<group>"; };
-		FB5014912BD79F54001034DD /* XGCRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCRefreshTableView.m; sourceTree = "<group>"; };
-		FB5014942BD79F54001034DD /* XGCURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLManager.h; sourceTree = "<group>"; };
-		FB5014952BD79F54001034DD /* XGCURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLManager.m; sourceTree = "<group>"; };
-		FB5014962BD79F54001034DD /* XGCURLManagerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLManagerCenter.h; sourceTree = "<group>"; };
-		FB5014972BD79F54001034DD /* XGCURLManagerCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLManagerCenter.m; sourceTree = "<group>"; };
-		FB5014982BD79F54001034DD /* XGCURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLProtocol.h; sourceTree = "<group>"; };
-		FB50149A2BD79F54001034DD /* XGCURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLSession.h; sourceTree = "<group>"; };
-		FB50149B2BD79F54001034DD /* XGCURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLSession.m; sourceTree = "<group>"; };
-		FB50149C2BD79F54001034DD /* XGCURLSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLSessionDelegate.h; sourceTree = "<group>"; };
-		FB50149D2BD79F54001034DD /* XGCURLSessionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLSessionDelegate.m; sourceTree = "<group>"; };
-		FB50149F2BD79F54001034DD /* XGCMenuAndFuncListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMenuAndFuncListModel.h; sourceTree = "<group>"; };
-		FB5014A02BD79F54001034DD /* XGCMenuAndFuncListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMenuAndFuncListModel.m; sourceTree = "<group>"; };
-		FB5014A12BD79F54001034DD /* XGCMenuDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMenuDataModel.h; sourceTree = "<group>"; };
-		FB5014A22BD79F54001034DD /* XGCMenuDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMenuDataModel.m; sourceTree = "<group>"; };
-		FB5014A32BD79F54001034DD /* XGCUserAclMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserAclMapModel.h; sourceTree = "<group>"; };
-		FB5014A42BD79F54001034DD /* XGCUserAclMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserAclMapModel.m; sourceTree = "<group>"; };
-		FB5014A52BD79F54001034DD /* XGCUserDictMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserDictMapModel.h; sourceTree = "<group>"; };
-		FB5014A62BD79F54001034DD /* XGCUserDictMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserDictMapModel.m; sourceTree = "<group>"; };
-		FB5014A72BD79F54001034DD /* XGCUserMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserMapModel.h; sourceTree = "<group>"; };
-		FB5014A82BD79F54001034DD /* XGCUserMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserMapModel.m; sourceTree = "<group>"; };
-		FB5014A92BD79F54001034DD /* XGCUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserModel.h; sourceTree = "<group>"; };
-		FB5014AA2BD79F54001034DD /* XGCUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserModel.m; sourceTree = "<group>"; };
-		FB5014AC2BD79F54001034DD /* XGCUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserManager.h; sourceTree = "<group>"; };
-		FB5014AD2BD79F54001034DD /* XGCUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserManager.m; sourceTree = "<group>"; };
-		FB5014AF2BD79F54001034DD /* XGCWebViewRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCWebViewRoute.h; sourceTree = "<group>"; };
-		FB5014B02BD79F54001034DD /* XGCWebViewRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCWebViewRoute.m; sourceTree = "<group>"; };
-		FB5014B22BD79F54001034DD /* XGCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCWebViewController.h; sourceTree = "<group>"; };
-		FB5014B32BD79F54001034DD /* XGCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCWebViewController.m; sourceTree = "<group>"; };
+		FB50162B2BD8F1C4001034DD /* XGCSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCSceneDelegate.h; sourceTree = "<group>"; };
+		FB50162C2BD8F1C4001034DD /* XGCSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCSceneDelegate.m; sourceTree = "<group>"; };
+		FB5017312BD9069F001034DD /* XGCMain.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XGCMain.xcassets; sourceTree = "<group>"; };
+		FB5017332BD9069F001034DD /* UIControl+XGCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XGCControl.h"; sourceTree = "<group>"; };
+		FB5017342BD9069F001034DD /* UIControl+XGCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XGCControl.m"; sourceTree = "<group>"; };
+		FB5017352BD9069F001034DD /* UIView+XGCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XGCView.h"; sourceTree = "<group>"; };
+		FB5017362BD9069F001034DD /* UIView+XGCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XGCView.m"; sourceTree = "<group>"; };
+		FB5017372BD9069F001034DD /* XGCActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCActivityIndicatorView.h; sourceTree = "<group>"; };
+		FB5017382BD9069F001034DD /* XGCActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCActivityIndicatorView.m; sourceTree = "<group>"; };
+		FB5017392BD9069F001034DD /* XGCViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCViewConfiguration.h; sourceTree = "<group>"; };
+		FB50173A2BD9069F001034DD /* XGCViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCViewConfiguration.m; sourceTree = "<group>"; };
+		FB50173B2BD9069F001034DD /* XGCViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCViewLayer.h; sourceTree = "<group>"; };
+		FB50173C2BD9069F001034DD /* XGCViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCViewLayer.m; sourceTree = "<group>"; };
+		FB50173E2BD9069F001034DD /* NSArray+XGCArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XGCArray.h"; sourceTree = "<group>"; };
+		FB50173F2BD9069F001034DD /* NSArray+XGCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XGCArray.m"; sourceTree = "<group>"; };
+		FB5017402BD9069F001034DD /* NSBundle+XGCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+XGCBundle.h"; sourceTree = "<group>"; };
+		FB5017412BD9069F001034DD /* NSBundle+XGCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+XGCBundle.m"; sourceTree = "<group>"; };
+		FB5017422BD9069F001034DD /* NSCalendar+XGCCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+XGCCalendar.h"; sourceTree = "<group>"; };
+		FB5017432BD9069F001034DD /* NSCalendar+XGCCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+XGCCalendar.m"; sourceTree = "<group>"; };
+		FB5017442BD9069F001034DD /* NSDate+XGCDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XGCDate.h"; sourceTree = "<group>"; };
+		FB5017452BD9069F001034DD /* NSDate+XGCDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XGCDate.m"; sourceTree = "<group>"; };
+		FB5017462BD9069F001034DD /* NSString+XGCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XGCString.h"; sourceTree = "<group>"; };
+		FB5017472BD9069F001034DD /* NSString+XGCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XGCString.m"; sourceTree = "<group>"; };
+		FB5017482BD9069F001034DD /* UIColor+XGCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XGCColor.h"; sourceTree = "<group>"; };
+		FB5017492BD9069F001034DD /* UIColor+XGCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XGCColor.m"; sourceTree = "<group>"; };
+		FB50174A2BD9069F001034DD /* UIDevice+XGCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XGCDevice.h"; sourceTree = "<group>"; };
+		FB50174B2BD9069F001034DD /* UIDevice+XGCDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XGCDevice.m"; sourceTree = "<group>"; };
+		FB50174C2BD9069F001034DD /* UIImage+XGCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XGCImage.h"; sourceTree = "<group>"; };
+		FB50174D2BD9069F001034DD /* UIImage+XGCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XGCImage.m"; sourceTree = "<group>"; };
+		FB50174F2BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainAppFuncCodeRefreshViewController.h; sourceTree = "<group>"; };
+		FB5017502BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainAppFuncCodeRefreshViewController.m; sourceTree = "<group>"; };
+		FB5017512BD9069F001034DD /* XGCMainAppFuncCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainAppFuncCodeViewController.h; sourceTree = "<group>"; };
+		FB5017522BD9069F001034DD /* XGCMainAppFuncCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainAppFuncCodeViewController.m; sourceTree = "<group>"; };
+		FB5017532BD9069F001034DD /* XGCMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainNavigationController.h; sourceTree = "<group>"; };
+		FB5017542BD9069F001034DD /* XGCMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainNavigationController.m; sourceTree = "<group>"; };
+		FB5017552BD9069F001034DD /* XGCMainNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainNavigationControllerDelegate.h; sourceTree = "<group>"; };
+		FB5017562BD9069F001034DD /* XGCMainNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainNavigationControllerDelegate.m; sourceTree = "<group>"; };
+		FB5017572BD9069F001034DD /* XGCMainRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainRefreshViewController.h; sourceTree = "<group>"; };
+		FB5017582BD9069F001034DD /* XGCMainRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainRefreshViewController.m; sourceTree = "<group>"; };
+		FB5017592BD9069F001034DD /* XGCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainTabBarController.h; sourceTree = "<group>"; };
+		FB50175A2BD9069F001034DD /* XGCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainTabBarController.m; sourceTree = "<group>"; };
+		FB50175B2BD9069F001034DD /* XGCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainViewController.h; sourceTree = "<group>"; };
+		FB50175C2BD9069F001034DD /* XGCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainViewController.m; sourceTree = "<group>"; };
+		FB50175E2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormRowDictMapCollectionViewCell.h; sourceTree = "<group>"; };
+		FB50175F2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormRowDictMapCollectionViewCell.m; sourceTree = "<group>"; };
+		FB5017602BD9069F001034DD /* XGCMainFormRowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormRowTableViewCell.h; sourceTree = "<group>"; };
+		FB5017612BD9069F001034DD /* XGCMainFormRowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormRowTableViewCell.m; sourceTree = "<group>"; };
+		FB5017622BD9069F001034DD /* XGCMainFormSectionTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormSectionTableHeaderView.h; sourceTree = "<group>"; };
+		FB5017632BD9069F001034DD /* XGCMainFormSectionTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormSectionTableHeaderView.m; sourceTree = "<group>"; };
+		FB5017652BD9069F001034DD /* XGCMainFormDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormDescriptor.h; sourceTree = "<group>"; };
+		FB5017662BD9069F001034DD /* XGCMainFormDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormDescriptor.m; sourceTree = "<group>"; };
+		FB5017672BD9069F001034DD /* XGCMainFormRowDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormRowDescriptor.h; sourceTree = "<group>"; };
+		FB5017682BD9069F001034DD /* XGCMainFormRowDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormRowDescriptor.m; sourceTree = "<group>"; };
+		FB5017692BD9069F001034DD /* XGCMainFormSectionDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainFormSectionDescriptor.h; sourceTree = "<group>"; };
+		FB50176A2BD9069F001034DD /* XGCMainFormSectionDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainFormSectionDescriptor.m; sourceTree = "<group>"; };
+		FB50176E2BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainAppFuncCodeFormViewController.h; sourceTree = "<group>"; };
+		FB50176F2BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainAppFuncCodeFormViewController.m; sourceTree = "<group>"; };
+		FB5017732BD9069F001034DD /* XGCMainRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainRoute.h; sourceTree = "<group>"; };
+		FB5017742BD9069F001034DD /* XGCMainRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainRoute.m; sourceTree = "<group>"; };
+		FB5017762BD9069F001034DD /* XGCAlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAlertTableViewCell.h; sourceTree = "<group>"; };
+		FB5017772BD9069F001034DD /* XGCAlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAlertTableViewCell.m; sourceTree = "<group>"; };
+		FB5017782BD9069F001034DD /* XGCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAlertView.h; sourceTree = "<group>"; };
+		FB5017792BD9069F001034DD /* XGCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAlertView.m; sourceTree = "<group>"; };
+		FB50177B2BD9069F001034DD /* XGCDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCDatePickerView.h; sourceTree = "<group>"; };
+		FB50177C2BD9069F001034DD /* XGCDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCDatePickerView.m; sourceTree = "<group>"; };
+		FB50177E2BD9069F001034DD /* XGCImageUrlControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCImageUrlControl.h; sourceTree = "<group>"; };
+		FB50177F2BD9069F001034DD /* XGCImageUrlControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCImageUrlControl.m; sourceTree = "<group>"; };
+		FB5017812BD9069F001034DD /* XGCMainPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainPickerManager.h; sourceTree = "<group>"; };
+		FB5017822BD9069F001034DD /* XGCMainPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainPickerManager.m; sourceTree = "<group>"; };
+		FB5017842BD9069F001034DD /* XGCSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCSearchTextField.h; sourceTree = "<group>"; };
+		FB5017852BD9069F001034DD /* XGCSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCSearchTextField.m; sourceTree = "<group>"; };
+		FB5017872BD9069F001034DD /* XGCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCTextField.h; sourceTree = "<group>"; };
+		FB5017882BD9069F001034DD /* XGCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCTextField.m; sourceTree = "<group>"; };
+		FB5017892BD9069F001034DD /* XGCTextFieldDelegator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCTextFieldDelegator.h; sourceTree = "<group>"; };
+		FB50178A2BD9069F001034DD /* XGCTextFieldDelegator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCTextFieldDelegator.m; sourceTree = "<group>"; };
+		FB50178C2BD9069F001034DD /* XGCTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCTextView.h; sourceTree = "<group>"; };
+		FB50178D2BD9069F001034DD /* XGCTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCTextView.m; sourceTree = "<group>"; };
+		FB5017902BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		FB5017912BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewCollectionViewCell.m; sourceTree = "<group>"; };
+		FB5017932BD9069F001034DD /* KSImageManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImageManagerProtocol.h; sourceTree = "<group>"; };
+		FB5017942BD9069F001034DD /* KSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoBrowser.h; sourceTree = "<group>"; };
+		FB5017952BD9069F001034DD /* KSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoBrowser.m; sourceTree = "<group>"; };
+		FB5017962BD9069F001034DD /* KSPhotoBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoBrowserManager.h; sourceTree = "<group>"; };
+		FB5017972BD9069F001034DD /* KSPhotoBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoBrowserManager.m; sourceTree = "<group>"; };
+		FB5017982BD9069F001034DD /* KSPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoItem.h; sourceTree = "<group>"; };
+		FB5017992BD9069F001034DD /* KSPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoItem.m; sourceTree = "<group>"; };
+		FB50179A2BD9069F001034DD /* KSPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoView.h; sourceTree = "<group>"; };
+		FB50179B2BD9069F001034DD /* KSPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoView.m; sourceTree = "<group>"; };
+		FB50179C2BD9069F001034DD /* KSProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSProgressLayer.h; sourceTree = "<group>"; };
+		FB50179D2BD9069F001034DD /* KSProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSProgressLayer.m; sourceTree = "<group>"; };
+		FB50179E2BD9069F001034DD /* KSSDImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSDImageManager.h; sourceTree = "<group>"; };
+		FB50179F2BD9069F001034DD /* KSSDImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSDImageManager.m; sourceTree = "<group>"; };
+		FB5017A12BD9069F001034DD /* XGCMediaPreviewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewModel.h; sourceTree = "<group>"; };
+		FB5017A22BD9069F001034DD /* XGCMediaPreviewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewModel.m; sourceTree = "<group>"; };
+		FB5017A42BD9069F001034DD /* XGCMediaPreviewRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewRoute.h; sourceTree = "<group>"; };
+		FB5017A52BD9069F001034DD /* XGCMediaPreviewRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewRoute.m; sourceTree = "<group>"; };
+		FB5017A72BD9069F001034DD /* XGCMediaPreviewContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMediaPreviewContainerView.h; sourceTree = "<group>"; };
+		FB5017A82BD9069F001034DD /* XGCMediaPreviewContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMediaPreviewContainerView.m; sourceTree = "<group>"; };
+		FB5017AA2BD9069F001034DD /* XGCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCConfiguration.h; sourceTree = "<group>"; };
+		FB5017AB2BD9069F001034DD /* XGCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCConfiguration.m; sourceTree = "<group>"; };
+		FB5017AC2BD9069F001034DD /* XGCThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCThemeManager.h; sourceTree = "<group>"; };
+		FB5017AD2BD9069F001034DD /* XGCThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCThemeManager.m; sourceTree = "<group>"; };
+		FB5017AE2BD9069F001034DD /* XGCThemeManagerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCThemeManagerCenter.h; sourceTree = "<group>"; };
+		FB5017AF2BD9069F001034DD /* XGCThemeManagerCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCThemeManagerCenter.m; sourceTree = "<group>"; };
+		FB5017B02BD9069F001034DD /* XGCThemeTemplateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCThemeTemplateProtocol.h; sourceTree = "<group>"; };
+		FB5017B22BD9069F001034DD /* XGCAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAFNetworking.h; sourceTree = "<group>"; };
+		FB5017B32BD9069F001034DD /* XGCAFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAFNetworking.m; sourceTree = "<group>"; };
+		FB5017B42BD9069F001034DD /* XGCAFNetworkingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAFNetworkingDelegate.h; sourceTree = "<group>"; };
+		FB5017B52BD9069F001034DD /* XGCAFNetworkingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAFNetworkingDelegate.m; sourceTree = "<group>"; };
+		FB5017B72BD9069F001034DD /* XGCAliyunOSSiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAliyunOSSiOS.h; sourceTree = "<group>"; };
+		FB5017B82BD9069F001034DD /* XGCAliyunOSSiOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAliyunOSSiOS.m; sourceTree = "<group>"; };
+		FB5017B92BD9069F001034DD /* XGCAliyunOSSiOSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCAliyunOSSiOSDelegate.h; sourceTree = "<group>"; };
+		FB5017BA2BD9069F001034DD /* XGCAliyunOSSiOSDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCAliyunOSSiOSDelegate.m; sourceTree = "<group>"; };
+		FB5017BC2BD9069F001034DD /* XGCEmptyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCEmptyTableView.h; sourceTree = "<group>"; };
+		FB5017BD2BD9069F001034DD /* XGCEmptyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCEmptyTableView.m; sourceTree = "<group>"; };
+		FB5017BF2BD9069F001034DD /* XGCRefreshCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCRefreshCollectionView.h; sourceTree = "<group>"; };
+		FB5017C02BD9069F001034DD /* XGCRefreshCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCRefreshCollectionView.m; sourceTree = "<group>"; };
+		FB5017C12BD9069F001034DD /* XGCRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCRefreshTableView.h; sourceTree = "<group>"; };
+		FB5017C22BD9069F001034DD /* XGCRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCRefreshTableView.m; sourceTree = "<group>"; };
+		FB5017C52BD9069F001034DD /* XGCURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLManager.h; sourceTree = "<group>"; };
+		FB5017C62BD9069F001034DD /* XGCURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLManager.m; sourceTree = "<group>"; };
+		FB5017C72BD9069F001034DD /* XGCURLManagerCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLManagerCenter.h; sourceTree = "<group>"; };
+		FB5017C82BD9069F001034DD /* XGCURLManagerCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLManagerCenter.m; sourceTree = "<group>"; };
+		FB5017C92BD9069F001034DD /* XGCURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLProtocol.h; sourceTree = "<group>"; };
+		FB5017CB2BD9069F001034DD /* XGCURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLSession.h; sourceTree = "<group>"; };
+		FB5017CC2BD9069F001034DD /* XGCURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLSession.m; sourceTree = "<group>"; };
+		FB5017CD2BD9069F001034DD /* XGCURLSessionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCURLSessionDelegate.h; sourceTree = "<group>"; };
+		FB5017CE2BD9069F001034DD /* XGCURLSessionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCURLSessionDelegate.m; sourceTree = "<group>"; };
+		FB5017D02BD9069F001034DD /* XGCMenuAndFuncListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMenuAndFuncListModel.h; sourceTree = "<group>"; };
+		FB5017D12BD9069F001034DD /* XGCMenuAndFuncListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMenuAndFuncListModel.m; sourceTree = "<group>"; };
+		FB5017D22BD9069F001034DD /* XGCMenuDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMenuDataModel.h; sourceTree = "<group>"; };
+		FB5017D32BD9069F001034DD /* XGCMenuDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMenuDataModel.m; sourceTree = "<group>"; };
+		FB5017D42BD9069F001034DD /* XGCUserAclMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserAclMapModel.h; sourceTree = "<group>"; };
+		FB5017D52BD9069F001034DD /* XGCUserAclMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserAclMapModel.m; sourceTree = "<group>"; };
+		FB5017D62BD9069F001034DD /* XGCUserDictMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserDictMapModel.h; sourceTree = "<group>"; };
+		FB5017D72BD9069F001034DD /* XGCUserDictMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserDictMapModel.m; sourceTree = "<group>"; };
+		FB5017D82BD9069F001034DD /* XGCUserMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserMapModel.h; sourceTree = "<group>"; };
+		FB5017D92BD9069F001034DD /* XGCUserMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserMapModel.m; sourceTree = "<group>"; };
+		FB5017DA2BD9069F001034DD /* XGCUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserModel.h; sourceTree = "<group>"; };
+		FB5017DB2BD9069F001034DD /* XGCUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserModel.m; sourceTree = "<group>"; };
+		FB5017DD2BD9069F001034DD /* XGCUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUserManager.h; sourceTree = "<group>"; };
+		FB5017DE2BD9069F001034DD /* XGCUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUserManager.m; sourceTree = "<group>"; };
+		FB5017E02BD9069F001034DD /* XGCWebViewRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCWebViewRoute.h; sourceTree = "<group>"; };
+		FB5017E12BD9069F001034DD /* XGCWebViewRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCWebViewRoute.m; sourceTree = "<group>"; };
+		FB5017E32BD9069F001034DD /* XGCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCWebViewController.h; sourceTree = "<group>"; };
+		FB5017E42BD9069F001034DD /* XGCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCWebViewController.m; sourceTree = "<group>"; };
+		FB5017E62BD9069F001034DD /* XGCMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMain.h; sourceTree = "<group>"; };
+		FB5018482BDB3F1F001034DD /* XGCUploadSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCUploadSession.h; sourceTree = "<group>"; };
+		FB5018492BDB3F1F001034DD /* XGCUploadSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCUploadSession.m; sourceTree = "<group>"; };
+		FB50184B2BDB47D5001034DD /* XGCEmptyCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCEmptyCollectionView.h; sourceTree = "<group>"; };
+		FB50184C2BDB47D5001034DD /* XGCEmptyCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCEmptyCollectionView.m; sourceTree = "<group>"; };
+		FBED00662BEEFFE5005A029D /* XGCUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUISegmentedControl.h; sourceTree = "<group>"; };
+		FBED00672BEEFFE5005A029D /* XGCUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUISegmentedControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,13 +363,15 @@
 		6003F593195388D20070C39A /* Example for XGCMain */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014032BD79F54001034DD /* Assets */,
-				FB5014B52BD79F54001034DD /* Classes */,
+				FB5017322BD9069F001034DD /* Assets */,
+				FB5017E72BD9069F001034DD /* Classes */,
 				6003F59C195388D20070C39A /* XGCAppDelegate.h */,
 				6003F59D195388D20070C39A /* XGCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XGCViewController.h */,
 				6003F5A6195388D20070C39A /* XGCViewController.m */,
+				FB50162B2BD8F1C4001034DD /* XGCSceneDelegate.h */,
+				FB50162C2BD8F1C4001034DD /* XGCSceneDelegate.m */,
 				FB5012E02BD75018001034DD /* XGCSecondaryViewController.h */,
 				FB5012E12BD75018001034DD /* XGCSecondaryViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -418,436 +433,411 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		FB5014032BD79F54001034DD /* Assets */ = {
+		FB5017322BD9069F001034DD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014022BD79F54001034DD /* XGCMain.xcassets */,
+				FB5017312BD9069F001034DD /* XGCMain.xcassets */,
 			);
 			name = Assets;
 			path = ../../XGCMain/Assets;
 			sourceTree = "<group>";
 		};
-		FB50140E2BD79F54001034DD /* UIView+XGCView */ = {
+		FB50173D2BD9069F001034DD /* XGCViewConfiguration */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014042BD79F54001034DD /* UIControl+XGCControl.h */,
-				FB5014052BD79F54001034DD /* UIControl+XGCControl.m */,
-				FB5014062BD79F54001034DD /* UIView+XGCView.h */,
-				FB5014072BD79F54001034DD /* UIView+XGCView.m */,
-				FB5014082BD79F54001034DD /* XGCActivityIndicatorView.h */,
-				FB5014092BD79F54001034DD /* XGCActivityIndicatorView.m */,
-				FB50140A2BD79F54001034DD /* XGCViewConfiguration.h */,
-				FB50140B2BD79F54001034DD /* XGCViewConfiguration.m */,
-				FB50140C2BD79F54001034DD /* XGCViewLayer.h */,
-				FB50140D2BD79F54001034DD /* XGCViewLayer.m */,
+				FB5017332BD9069F001034DD /* UIControl+XGCControl.h */,
+				FB5017342BD9069F001034DD /* UIControl+XGCControl.m */,
+				FB5017352BD9069F001034DD /* UIView+XGCView.h */,
+				FB5017362BD9069F001034DD /* UIView+XGCView.m */,
+				FB5017372BD9069F001034DD /* XGCActivityIndicatorView.h */,
+				FB5017382BD9069F001034DD /* XGCActivityIndicatorView.m */,
+				FB5017392BD9069F001034DD /* XGCViewConfiguration.h */,
+				FB50173A2BD9069F001034DD /* XGCViewConfiguration.m */,
+				FB50173B2BD9069F001034DD /* XGCViewLayer.h */,
+				FB50173C2BD9069F001034DD /* XGCViewLayer.m */,
 			);
-			path = "UIView+XGCView";
+			path = XGCViewConfiguration;
 			sourceTree = "<group>";
 		};
-		FB50141D2BD79F54001034DD /* XGCCategory */ = {
+		FB50174E2BD9069F001034DD /* XGCCategory */ = {
 			isa = PBXGroup;
 			children = (
-				FB50140E2BD79F54001034DD /* UIView+XGCView */,
-				FB50140F2BD79F54001034DD /* NSArray+XGCArray.h */,
-				FB5014102BD79F54001034DD /* NSArray+XGCArray.m */,
-				FB5014112BD79F54001034DD /* NSCalendar+XGCCalendar.h */,
-				FB5014122BD79F54001034DD /* NSCalendar+XGCCalendar.m */,
-				FB5014132BD79F54001034DD /* NSDate+XGCDate.h */,
-				FB5014142BD79F54001034DD /* NSDate+XGCDate.m */,
-				FB5014152BD79F54001034DD /* NSString+XGCString.h */,
-				FB5014162BD79F54001034DD /* NSString+XGCString.m */,
-				FB5014172BD79F54001034DD /* UIColor+XGCColor.h */,
-				FB5014182BD79F54001034DD /* UIColor+XGCColor.m */,
-				FB5014192BD79F54001034DD /* UIDevice+XGCDevice.h */,
-				FB50141A2BD79F54001034DD /* UIDevice+XGCDevice.m */,
-				FB50141B2BD79F54001034DD /* UIImage+XGCImage.h */,
-				FB50141C2BD79F54001034DD /* UIImage+XGCImage.m */,
+				FB50173E2BD9069F001034DD /* NSArray+XGCArray.h */,
+				FB50173F2BD9069F001034DD /* NSArray+XGCArray.m */,
+				FB5017402BD9069F001034DD /* NSBundle+XGCBundle.h */,
+				FB5017412BD9069F001034DD /* NSBundle+XGCBundle.m */,
+				FB5017422BD9069F001034DD /* NSCalendar+XGCCalendar.h */,
+				FB5017432BD9069F001034DD /* NSCalendar+XGCCalendar.m */,
+				FB5017442BD9069F001034DD /* NSDate+XGCDate.h */,
+				FB5017452BD9069F001034DD /* NSDate+XGCDate.m */,
+				FB5017462BD9069F001034DD /* NSString+XGCString.h */,
+				FB5017472BD9069F001034DD /* NSString+XGCString.m */,
+				FB5017482BD9069F001034DD /* UIColor+XGCColor.h */,
+				FB5017492BD9069F001034DD /* UIColor+XGCColor.m */,
+				FB50174A2BD9069F001034DD /* UIDevice+XGCDevice.h */,
+				FB50174B2BD9069F001034DD /* UIDevice+XGCDevice.m */,
+				FB50174C2BD9069F001034DD /* UIImage+XGCImage.h */,
+				FB50174D2BD9069F001034DD /* UIImage+XGCImage.m */,
 			);
 			path = XGCCategory;
 			sourceTree = "<group>";
 		};
-		FB50142C2BD79F54001034DD /* XGCMainBase */ = {
+		FB50175D2BD9069F001034DD /* XGCMainBase */ = {
 			isa = PBXGroup;
 			children = (
-				FB50141E2BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.h */,
-				FB50141F2BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.m */,
-				FB5014202BD79F54001034DD /* XGCMainAppFuncCodeViewController.h */,
-				FB5014212BD79F54001034DD /* XGCMainAppFuncCodeViewController.m */,
-				FB5014222BD79F54001034DD /* XGCMainNavigationController.h */,
-				FB5014232BD79F54001034DD /* XGCMainNavigationController.m */,
-				FB5014242BD79F54001034DD /* XGCMainNavigationControllerDelegate.h */,
-				FB5014252BD79F54001034DD /* XGCMainNavigationControllerDelegate.m */,
-				FB5014262BD79F54001034DD /* XGCMainRefreshViewController.h */,
-				FB5014272BD79F54001034DD /* XGCMainRefreshViewController.m */,
-				FB5014282BD79F54001034DD /* XGCMainTabBarController.h */,
-				FB5014292BD79F54001034DD /* XGCMainTabBarController.m */,
-				FB50142A2BD79F54001034DD /* XGCMainViewController.h */,
-				FB50142B2BD79F54001034DD /* XGCMainViewController.m */,
+				FB50174F2BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.h */,
+				FB5017502BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m */,
+				FB5017512BD9069F001034DD /* XGCMainAppFuncCodeViewController.h */,
+				FB5017522BD9069F001034DD /* XGCMainAppFuncCodeViewController.m */,
+				FB5017532BD9069F001034DD /* XGCMainNavigationController.h */,
+				FB5017542BD9069F001034DD /* XGCMainNavigationController.m */,
+				FB5017552BD9069F001034DD /* XGCMainNavigationControllerDelegate.h */,
+				FB5017562BD9069F001034DD /* XGCMainNavigationControllerDelegate.m */,
+				FB5017572BD9069F001034DD /* XGCMainRefreshViewController.h */,
+				FB5017582BD9069F001034DD /* XGCMainRefreshViewController.m */,
+				FB5017592BD9069F001034DD /* XGCMainTabBarController.h */,
+				FB50175A2BD9069F001034DD /* XGCMainTabBarController.m */,
+				FB50175B2BD9069F001034DD /* XGCMainViewController.h */,
+				FB50175C2BD9069F001034DD /* XGCMainViewController.m */,
 			);
 			path = XGCMainBase;
 			sourceTree = "<group>";
 		};
-		FB5014332BD79F54001034DD /* Cell */ = {
+		FB5017642BD9069F001034DD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FB50142D2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.h */,
-				FB50142E2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.m */,
-				FB50142F2BD79F54001034DD /* XGCMainFormRowTableViewCell.h */,
-				FB5014302BD79F54001034DD /* XGCMainFormRowTableViewCell.m */,
-				FB5014312BD79F54001034DD /* XGCMainFormSectionTableHeaderView.h */,
-				FB5014322BD79F54001034DD /* XGCMainFormSectionTableHeaderView.m */,
+				FB50175E2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.h */,
+				FB50175F2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.m */,
+				FB5017602BD9069F001034DD /* XGCMainFormRowTableViewCell.h */,
+				FB5017612BD9069F001034DD /* XGCMainFormRowTableViewCell.m */,
+				FB5017622BD9069F001034DD /* XGCMainFormSectionTableHeaderView.h */,
+				FB5017632BD9069F001034DD /* XGCMainFormSectionTableHeaderView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		FB50143A2BD79F54001034DD /* Model */ = {
+		FB50176B2BD9069F001034DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014342BD79F54001034DD /* XGCMainFormDescriptor.h */,
-				FB5014352BD79F54001034DD /* XGCMainFormDescriptor.m */,
-				FB5014362BD79F54001034DD /* XGCMainFormRowDescriptor.h */,
-				FB5014372BD79F54001034DD /* XGCMainFormRowDescriptor.m */,
-				FB5014382BD79F54001034DD /* XGCMainFormSectionDescriptor.h */,
-				FB5014392BD79F54001034DD /* XGCMainFormSectionDescriptor.m */,
+				FB5017652BD9069F001034DD /* XGCMainFormDescriptor.h */,
+				FB5017662BD9069F001034DD /* XGCMainFormDescriptor.m */,
+				FB5017672BD9069F001034DD /* XGCMainFormRowDescriptor.h */,
+				FB5017682BD9069F001034DD /* XGCMainFormRowDescriptor.m */,
+				FB5017692BD9069F001034DD /* XGCMainFormSectionDescriptor.h */,
+				FB50176A2BD9069F001034DD /* XGCMainFormSectionDescriptor.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FB50143B2BD79F54001034DD /* Cell */ = {
+		FB5017722BD9069F001034DD /* XGCMainForm */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		FB50143C2BD79F54001034DD /* XGCMainMediaFileJsonContainerView */ = {
-			isa = PBXGroup;
-			children = (
-				FB50143B2BD79F54001034DD /* Cell */,
-			);
-			path = XGCMainMediaFileJsonContainerView;
-			sourceTree = "<group>";
-		};
-		FB5014412BD79F54001034DD /* XGCMainForm */ = {
-			isa = PBXGroup;
-			children = (
-				FB5014332BD79F54001034DD /* Cell */,
-				FB50143A2BD79F54001034DD /* Model */,
-				FB50143C2BD79F54001034DD /* XGCMainMediaFileJsonContainerView */,
-				FB50143D2BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.h */,
-				FB50143E2BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.m */,
-				FB50143F2BD79F54001034DD /* XGCMainFormViewController.h */,
-				FB5014402BD79F54001034DD /* XGCMainFormViewController.m */,
+				FB5017642BD9069F001034DD /* Cell */,
+				FB50176B2BD9069F001034DD /* Model */,
+				FB50176E2BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.h */,
+				FB50176F2BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.m */,
 			);
 			path = XGCMainForm;
 			sourceTree = "<group>";
 		};
-		FB5014442BD79F54001034DD /* XGCMainRoute */ = {
+		FB5017752BD9069F001034DD /* XGCMainRoute */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014422BD79F54001034DD /* XGCMainRoute.h */,
-				FB5014432BD79F54001034DD /* XGCMainRoute.m */,
+				FB5017732BD9069F001034DD /* XGCMainRoute.h */,
+				FB5017742BD9069F001034DD /* XGCMainRoute.m */,
 			);
 			path = XGCMainRoute;
 			sourceTree = "<group>";
 		};
-		FB5014492BD79F54001034DD /* XGCAlertView */ = {
+		FB50177A2BD9069F001034DD /* XGCAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014452BD79F54001034DD /* XGCAlertTableViewCell.h */,
-				FB5014462BD79F54001034DD /* XGCAlertTableViewCell.m */,
-				FB5014472BD79F54001034DD /* XGCAlertView.h */,
-				FB5014482BD79F54001034DD /* XGCAlertView.m */,
+				FB5017762BD9069F001034DD /* XGCAlertTableViewCell.h */,
+				FB5017772BD9069F001034DD /* XGCAlertTableViewCell.m */,
+				FB5017782BD9069F001034DD /* XGCAlertView.h */,
+				FB5017792BD9069F001034DD /* XGCAlertView.m */,
 			);
 			path = XGCAlertView;
 			sourceTree = "<group>";
 		};
-		FB50144C2BD79F54001034DD /* XGCDatePickerView */ = {
+		FB50177D2BD9069F001034DD /* XGCDatePickerView */ = {
 			isa = PBXGroup;
 			children = (
-				FB50144A2BD79F54001034DD /* XGCDatePickerView.h */,
-				FB50144B2BD79F54001034DD /* XGCDatePickerView.m */,
+				FB50177B2BD9069F001034DD /* XGCDatePickerView.h */,
+				FB50177C2BD9069F001034DD /* XGCDatePickerView.m */,
 			);
 			path = XGCDatePickerView;
 			sourceTree = "<group>";
 		};
-		FB50144F2BD79F54001034DD /* XGCImageUrlControl */ = {
+		FB5017802BD9069F001034DD /* XGCImageUrlControl */ = {
 			isa = PBXGroup;
 			children = (
-				FB50144D2BD79F54001034DD /* XGCImageUrlControl.h */,
-				FB50144E2BD79F54001034DD /* XGCImageUrlControl.m */,
+				FB50177E2BD9069F001034DD /* XGCImageUrlControl.h */,
+				FB50177F2BD9069F001034DD /* XGCImageUrlControl.m */,
 			);
 			path = XGCImageUrlControl;
 			sourceTree = "<group>";
 		};
-		FB5014522BD79F54001034DD /* XGCMainPickerManager */ = {
+		FB5017832BD9069F001034DD /* XGCMainPickerManager */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014502BD79F54001034DD /* XGCMainPickerManager.h */,
-				FB5014512BD79F54001034DD /* XGCMainPickerManager.m */,
+				FB5017812BD9069F001034DD /* XGCMainPickerManager.h */,
+				FB5017822BD9069F001034DD /* XGCMainPickerManager.m */,
 			);
 			path = XGCMainPickerManager;
 			sourceTree = "<group>";
 		};
-		FB5014552BD79F54001034DD /* XGCSearchTextField */ = {
+		FB50178B2BD9069F001034DD /* XGCTextField */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014532BD79F54001034DD /* XGCSearchTextField.h */,
-				FB5014542BD79F54001034DD /* XGCSearchTextField.m */,
-			);
-			path = XGCSearchTextField;
-			sourceTree = "<group>";
-		};
-		FB50145A2BD79F54001034DD /* XGCTextField */ = {
-			isa = PBXGroup;
-			children = (
-				FB5014562BD79F54001034DD /* XGCTextField.h */,
-				FB5014572BD79F54001034DD /* XGCTextField.m */,
-				FB5014582BD79F54001034DD /* XGCTextFieldDelegator.h */,
-				FB5014592BD79F54001034DD /* XGCTextFieldDelegator.m */,
+				FB5017842BD9069F001034DD /* XGCSearchTextField.h */,
+				FB5017852BD9069F001034DD /* XGCSearchTextField.m */,
+				FB5017872BD9069F001034DD /* XGCTextField.h */,
+				FB5017882BD9069F001034DD /* XGCTextField.m */,
+				FB5017892BD9069F001034DD /* XGCTextFieldDelegator.h */,
+				FB50178A2BD9069F001034DD /* XGCTextFieldDelegator.m */,
 			);
 			path = XGCTextField;
 			sourceTree = "<group>";
 		};
-		FB50145D2BD79F54001034DD /* XGCTextView */ = {
+		FB50178E2BD9069F001034DD /* XGCTextView */ = {
 			isa = PBXGroup;
 			children = (
-				FB50145B2BD79F54001034DD /* XGCTextView.h */,
-				FB50145C2BD79F54001034DD /* XGCTextView.m */,
+				FB50178C2BD9069F001034DD /* XGCTextView.h */,
+				FB50178D2BD9069F001034DD /* XGCTextView.m */,
 			);
 			path = XGCTextView;
 			sourceTree = "<group>";
 		};
-		FB50145E2BD79F54001034DD /* XGCMainTool */ = {
+		FB50178F2BD9069F001034DD /* XGCMainTool */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014492BD79F54001034DD /* XGCAlertView */,
-				FB50144C2BD79F54001034DD /* XGCDatePickerView */,
-				FB50144F2BD79F54001034DD /* XGCImageUrlControl */,
-				FB5014522BD79F54001034DD /* XGCMainPickerManager */,
-				FB5014552BD79F54001034DD /* XGCSearchTextField */,
-				FB50145A2BD79F54001034DD /* XGCTextField */,
-				FB50145D2BD79F54001034DD /* XGCTextView */,
+				FB50177A2BD9069F001034DD /* XGCAlertView */,
+				FB50177D2BD9069F001034DD /* XGCDatePickerView */,
+				FB5017832BD9069F001034DD /* XGCMainPickerManager */,
+				FB50178B2BD9069F001034DD /* XGCTextField */,
+				FB50178E2BD9069F001034DD /* XGCTextView */,
 			);
 			path = XGCMainTool;
 			sourceTree = "<group>";
 		};
-		FB5014612BD79F54001034DD /* Cell */ = {
+		FB5017922BD9069F001034DD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FB50145F2BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.h */,
-				FB5014602BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.m */,
+				FB5017902BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.h */,
+				FB5017912BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		FB50146F2BD79F54001034DD /* KSPhotoBrowser */ = {
+		FB5017A02BD9069F001034DD /* KSPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014622BD79F54001034DD /* KSImageManagerProtocol.h */,
-				FB5014632BD79F54001034DD /* KSPhotoBrowser.h */,
-				FB5014642BD79F54001034DD /* KSPhotoBrowser.m */,
-				FB5014652BD79F54001034DD /* KSPhotoBrowserManager.h */,
-				FB5014662BD79F54001034DD /* KSPhotoBrowserManager.m */,
-				FB5014672BD79F54001034DD /* KSPhotoItem.h */,
-				FB5014682BD79F54001034DD /* KSPhotoItem.m */,
-				FB5014692BD79F54001034DD /* KSPhotoView.h */,
-				FB50146A2BD79F54001034DD /* KSPhotoView.m */,
-				FB50146B2BD79F54001034DD /* KSProgressLayer.h */,
-				FB50146C2BD79F54001034DD /* KSProgressLayer.m */,
-				FB50146D2BD79F54001034DD /* KSSDImageManager.h */,
-				FB50146E2BD79F54001034DD /* KSSDImageManager.m */,
+				FB5017932BD9069F001034DD /* KSImageManagerProtocol.h */,
+				FB5017942BD9069F001034DD /* KSPhotoBrowser.h */,
+				FB5017952BD9069F001034DD /* KSPhotoBrowser.m */,
+				FB5017962BD9069F001034DD /* KSPhotoBrowserManager.h */,
+				FB5017972BD9069F001034DD /* KSPhotoBrowserManager.m */,
+				FB5017982BD9069F001034DD /* KSPhotoItem.h */,
+				FB5017992BD9069F001034DD /* KSPhotoItem.m */,
+				FB50179A2BD9069F001034DD /* KSPhotoView.h */,
+				FB50179B2BD9069F001034DD /* KSPhotoView.m */,
+				FB50179C2BD9069F001034DD /* KSProgressLayer.h */,
+				FB50179D2BD9069F001034DD /* KSProgressLayer.m */,
+				FB50179E2BD9069F001034DD /* KSSDImageManager.h */,
+				FB50179F2BD9069F001034DD /* KSSDImageManager.m */,
 			);
 			path = KSPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		FB5014722BD79F54001034DD /* Model */ = {
+		FB5017A32BD9069F001034DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014702BD79F54001034DD /* XGCMediaPreviewModel.h */,
-				FB5014712BD79F54001034DD /* XGCMediaPreviewModel.m */,
+				FB5017A12BD9069F001034DD /* XGCMediaPreviewModel.h */,
+				FB5017A22BD9069F001034DD /* XGCMediaPreviewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FB5014752BD79F54001034DD /* Route */ = {
+		FB5017A62BD9069F001034DD /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014732BD79F54001034DD /* XGCMediaPreviewRoute.h */,
-				FB5014742BD79F54001034DD /* XGCMediaPreviewRoute.m */,
+				FB5017A42BD9069F001034DD /* XGCMediaPreviewRoute.h */,
+				FB5017A52BD9069F001034DD /* XGCMediaPreviewRoute.m */,
 			);
 			path = Route;
 			sourceTree = "<group>";
 		};
-		FB5014782BD79F54001034DD /* XGCMediaPreview */ = {
+		FB5017A92BD9069F001034DD /* XGCMediaPreview */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014612BD79F54001034DD /* Cell */,
-				FB50146F2BD79F54001034DD /* KSPhotoBrowser */,
-				FB5014722BD79F54001034DD /* Model */,
-				FB5014752BD79F54001034DD /* Route */,
-				FB5014762BD79F54001034DD /* XGCMediaPreviewContainerView.h */,
-				FB5014772BD79F54001034DD /* XGCMediaPreviewContainerView.m */,
+				FB5017922BD9069F001034DD /* Cell */,
+				FB5017A02BD9069F001034DD /* KSPhotoBrowser */,
+				FB5017A32BD9069F001034DD /* Model */,
+				FB5017A62BD9069F001034DD /* Route */,
+				FB5017A72BD9069F001034DD /* XGCMediaPreviewContainerView.h */,
+				FB5017A82BD9069F001034DD /* XGCMediaPreviewContainerView.m */,
 			);
 			path = XGCMediaPreview;
 			sourceTree = "<group>";
 		};
-		FB5014802BD79F54001034DD /* XGCThemeManagerCenter */ = {
+		FB5017B12BD9069F001034DD /* XGCThemeManager */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014792BD79F54001034DD /* XGCConfiguration.h */,
-				FB50147A2BD79F54001034DD /* XGCConfiguration.m */,
-				FB50147B2BD79F54001034DD /* XGCThemeManager.h */,
-				FB50147C2BD79F54001034DD /* XGCThemeManager.m */,
-				FB50147D2BD79F54001034DD /* XGCThemeManagerCenter.h */,
-				FB50147E2BD79F54001034DD /* XGCThemeManagerCenter.m */,
-				FB50147F2BD79F54001034DD /* XGCThemeTemplateProtocol.h */,
+				FB5017AA2BD9069F001034DD /* XGCConfiguration.h */,
+				FB5017AB2BD9069F001034DD /* XGCConfiguration.m */,
+				FB5017AC2BD9069F001034DD /* XGCThemeManager.h */,
+				FB5017AD2BD9069F001034DD /* XGCThemeManager.m */,
+				FB5017AE2BD9069F001034DD /* XGCThemeManagerCenter.h */,
+				FB5017AF2BD9069F001034DD /* XGCThemeManagerCenter.m */,
+				FB5017B02BD9069F001034DD /* XGCThemeTemplateProtocol.h */,
 			);
-			path = XGCThemeManagerCenter;
+			path = XGCThemeManager;
 			sourceTree = "<group>";
 		};
-		FB5014852BD79F54001034DD /* XGCAFNetworking */ = {
+		FB5017B62BD9069F001034DD /* XGCAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014812BD79F54001034DD /* XGCAFNetworking.h */,
-				FB5014822BD79F54001034DD /* XGCAFNetworking.m */,
-				FB5014832BD79F54001034DD /* XGCAFNetworkingDelegate.h */,
-				FB5014842BD79F54001034DD /* XGCAFNetworkingDelegate.m */,
+				FB5017B22BD9069F001034DD /* XGCAFNetworking.h */,
+				FB5017B32BD9069F001034DD /* XGCAFNetworking.m */,
+				FB5017B42BD9069F001034DD /* XGCAFNetworkingDelegate.h */,
+				FB5017B52BD9069F001034DD /* XGCAFNetworkingDelegate.m */,
 			);
 			path = XGCAFNetworking;
 			sourceTree = "<group>";
 		};
-		FB50148A2BD79F54001034DD /* XGCAliyunOSSiOS */ = {
+		FB5017BB2BD9069F001034DD /* XGCAliyunOSSiOS */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014862BD79F54001034DD /* XGCAliyunOSSiOS.h */,
-				FB5014872BD79F54001034DD /* XGCAliyunOSSiOS.m */,
-				FB5014882BD79F54001034DD /* XGCAliyunOSSiOSDelegate.h */,
-				FB5014892BD79F54001034DD /* XGCAliyunOSSiOSDelegate.m */,
+				FB5017B72BD9069F001034DD /* XGCAliyunOSSiOS.h */,
+				FB5017B82BD9069F001034DD /* XGCAliyunOSSiOS.m */,
+				FB5017B92BD9069F001034DD /* XGCAliyunOSSiOSDelegate.h */,
+				FB5017BA2BD9069F001034DD /* XGCAliyunOSSiOSDelegate.m */,
 			);
 			path = XGCAliyunOSSiOS;
 			sourceTree = "<group>";
 		};
-		FB50148D2BD79F54001034DD /* XGCDZNEmptyDataSet */ = {
+		FB5017BE2BD9069F001034DD /* XGCEmptyScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				FB50148B2BD79F54001034DD /* XGCEmptyTableView.h */,
-				FB50148C2BD79F54001034DD /* XGCEmptyTableView.m */,
+				FB5017BC2BD9069F001034DD /* XGCEmptyTableView.h */,
+				FB5017BD2BD9069F001034DD /* XGCEmptyTableView.m */,
+				FB50184B2BDB47D5001034DD /* XGCEmptyCollectionView.h */,
+				FB50184C2BDB47D5001034DD /* XGCEmptyCollectionView.m */,
 			);
-			path = XGCDZNEmptyDataSet;
+			path = XGCEmptyScrollView;
 			sourceTree = "<group>";
 		};
-		FB5014922BD79F54001034DD /* XGCMJRefresh */ = {
+		FB5017C32BD9069F001034DD /* XGCMJRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				FB50148E2BD79F54001034DD /* XGCRefreshCollectionView.h */,
-				FB50148F2BD79F54001034DD /* XGCRefreshCollectionView.m */,
-				FB5014902BD79F54001034DD /* XGCRefreshTableView.h */,
-				FB5014912BD79F54001034DD /* XGCRefreshTableView.m */,
+				FB5017C12BD9069F001034DD /* XGCRefreshTableView.h */,
+				FB5017C22BD9069F001034DD /* XGCRefreshTableView.m */,
+				FB5017BF2BD9069F001034DD /* XGCRefreshCollectionView.h */,
+				FB5017C02BD9069F001034DD /* XGCRefreshCollectionView.m */,
 			);
 			path = XGCMJRefresh;
 			sourceTree = "<group>";
 		};
-		FB5014932BD79F54001034DD /* XGCThirdParty */ = {
+		FB5017CA2BD9069F001034DD /* XGCURLManagerCenter */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014852BD79F54001034DD /* XGCAFNetworking */,
-				FB50148A2BD79F54001034DD /* XGCAliyunOSSiOS */,
-				FB50148D2BD79F54001034DD /* XGCDZNEmptyDataSet */,
-				FB5014922BD79F54001034DD /* XGCMJRefresh */,
-			);
-			path = XGCThirdParty;
-			sourceTree = "<group>";
-		};
-		FB5014992BD79F54001034DD /* XGCURLManagerCenter */ = {
-			isa = PBXGroup;
-			children = (
-				FB5014942BD79F54001034DD /* XGCURLManager.h */,
-				FB5014952BD79F54001034DD /* XGCURLManager.m */,
-				FB5014962BD79F54001034DD /* XGCURLManagerCenter.h */,
-				FB5014972BD79F54001034DD /* XGCURLManagerCenter.m */,
-				FB5014982BD79F54001034DD /* XGCURLProtocol.h */,
+				FB5017C52BD9069F001034DD /* XGCURLManager.h */,
+				FB5017C62BD9069F001034DD /* XGCURLManager.m */,
+				FB5017C72BD9069F001034DD /* XGCURLManagerCenter.h */,
+				FB5017C82BD9069F001034DD /* XGCURLManagerCenter.m */,
+				FB5017C92BD9069F001034DD /* XGCURLProtocol.h */,
 			);
 			path = XGCURLManagerCenter;
 			sourceTree = "<group>";
 		};
-		FB50149E2BD79F54001034DD /* XGCURLSession */ = {
+		FB5017CF2BD9069F001034DD /* XGCURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				FB50149A2BD79F54001034DD /* XGCURLSession.h */,
-				FB50149B2BD79F54001034DD /* XGCURLSession.m */,
-				FB50149C2BD79F54001034DD /* XGCURLSessionDelegate.h */,
-				FB50149D2BD79F54001034DD /* XGCURLSessionDelegate.m */,
+				FB5017CB2BD9069F001034DD /* XGCURLSession.h */,
+				FB5017CC2BD9069F001034DD /* XGCURLSession.m */,
+				FB5017CD2BD9069F001034DD /* XGCURLSessionDelegate.h */,
+				FB5017CE2BD9069F001034DD /* XGCURLSessionDelegate.m */,
 			);
 			path = XGCURLSession;
 			sourceTree = "<group>";
 		};
-		FB5014AB2BD79F54001034DD /* Model */ = {
+		FB5017DF2BD9069F001034DD /* XGCUser */ = {
 			isa = PBXGroup;
 			children = (
-				FB50149F2BD79F54001034DD /* XGCMenuAndFuncListModel.h */,
-				FB5014A02BD79F54001034DD /* XGCMenuAndFuncListModel.m */,
-				FB5014A12BD79F54001034DD /* XGCMenuDataModel.h */,
-				FB5014A22BD79F54001034DD /* XGCMenuDataModel.m */,
-				FB5014A32BD79F54001034DD /* XGCUserAclMapModel.h */,
-				FB5014A42BD79F54001034DD /* XGCUserAclMapModel.m */,
-				FB5014A52BD79F54001034DD /* XGCUserDictMapModel.h */,
-				FB5014A62BD79F54001034DD /* XGCUserDictMapModel.m */,
-				FB5014A72BD79F54001034DD /* XGCUserMapModel.h */,
-				FB5014A82BD79F54001034DD /* XGCUserMapModel.m */,
-				FB5014A92BD79F54001034DD /* XGCUserModel.h */,
-				FB5014AA2BD79F54001034DD /* XGCUserModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FB5014AE2BD79F54001034DD /* XGCUser */ = {
-			isa = PBXGroup;
-			children = (
-				FB5014AB2BD79F54001034DD /* Model */,
-				FB5014AC2BD79F54001034DD /* XGCUserManager.h */,
-				FB5014AD2BD79F54001034DD /* XGCUserManager.m */,
+				FB5017D02BD9069F001034DD /* XGCMenuAndFuncListModel.h */,
+				FB5017D12BD9069F001034DD /* XGCMenuAndFuncListModel.m */,
+				FB5017D22BD9069F001034DD /* XGCMenuDataModel.h */,
+				FB5017D32BD9069F001034DD /* XGCMenuDataModel.m */,
+				FB5017D42BD9069F001034DD /* XGCUserAclMapModel.h */,
+				FB5017D52BD9069F001034DD /* XGCUserAclMapModel.m */,
+				FB5017D62BD9069F001034DD /* XGCUserDictMapModel.h */,
+				FB5017D72BD9069F001034DD /* XGCUserDictMapModel.m */,
+				FB5017D82BD9069F001034DD /* XGCUserMapModel.h */,
+				FB5017D92BD9069F001034DD /* XGCUserMapModel.m */,
+				FB5017DA2BD9069F001034DD /* XGCUserModel.h */,
+				FB5017DB2BD9069F001034DD /* XGCUserModel.m */,
+				FB5017DD2BD9069F001034DD /* XGCUserManager.h */,
+				FB5017DE2BD9069F001034DD /* XGCUserManager.m */,
 			);
 			path = XGCUser;
 			sourceTree = "<group>";
 		};
-		FB5014B12BD79F54001034DD /* Route */ = {
+		FB5017E52BD9069F001034DD /* XGCWebView */ = {
 			isa = PBXGroup;
 			children = (
-				FB5014AF2BD79F54001034DD /* XGCWebViewRoute.h */,
-				FB5014B02BD79F54001034DD /* XGCWebViewRoute.m */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		FB5014B42BD79F54001034DD /* XGCWebView */ = {
-			isa = PBXGroup;
-			children = (
-				FB5014B12BD79F54001034DD /* Route */,
-				FB5014B22BD79F54001034DD /* XGCWebViewController.h */,
-				FB5014B32BD79F54001034DD /* XGCWebViewController.m */,
+				FB5017E02BD9069F001034DD /* XGCWebViewRoute.h */,
+				FB5017E12BD9069F001034DD /* XGCWebViewRoute.m */,
+				FB5017E32BD9069F001034DD /* XGCWebViewController.h */,
+				FB5017E42BD9069F001034DD /* XGCWebViewController.m */,
 			);
 			path = XGCWebView;
 			sourceTree = "<group>";
 		};
-		FB5014B52BD79F54001034DD /* Classes */ = {
+		FB5017E72BD9069F001034DD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FB50141D2BD79F54001034DD /* XGCCategory */,
-				FB50142C2BD79F54001034DD /* XGCMainBase */,
-				FB5014412BD79F54001034DD /* XGCMainForm */,
-				FB5014442BD79F54001034DD /* XGCMainRoute */,
-				FB50145E2BD79F54001034DD /* XGCMainTool */,
-				FB5014782BD79F54001034DD /* XGCMediaPreview */,
-				FB5014802BD79F54001034DD /* XGCThemeManagerCenter */,
-				FB5014932BD79F54001034DD /* XGCThirdParty */,
-				FB5014992BD79F54001034DD /* XGCURLManagerCenter */,
-				FB50149E2BD79F54001034DD /* XGCURLSession */,
-				FB5014AE2BD79F54001034DD /* XGCUser */,
-				FB5014B42BD79F54001034DD /* XGCWebView */,
+				FBED00682BEEFFE5005A029D /* XGCUISegmentedControl */,
+				FB50173D2BD9069F001034DD /* XGCViewConfiguration */,
+				FB5017802BD9069F001034DD /* XGCImageUrlControl */,
+				FB5018472BDB3EDC001034DD /* XGCUploadSession */,
+				FB5017B62BD9069F001034DD /* XGCAFNetworking */,
+				FB5017BB2BD9069F001034DD /* XGCAliyunOSSiOS */,
+				FB5017BE2BD9069F001034DD /* XGCEmptyScrollView */,
+				FB5017C32BD9069F001034DD /* XGCMJRefresh */,
+				FB50174E2BD9069F001034DD /* XGCCategory */,
+				FB50175D2BD9069F001034DD /* XGCMainBase */,
+				FB5017722BD9069F001034DD /* XGCMainForm */,
+				FB5017752BD9069F001034DD /* XGCMainRoute */,
+				FB50178F2BD9069F001034DD /* XGCMainTool */,
+				FB5017A92BD9069F001034DD /* XGCMediaPreview */,
+				FB5017B12BD9069F001034DD /* XGCThemeManager */,
+				FB5017CA2BD9069F001034DD /* XGCURLManagerCenter */,
+				FB5017CF2BD9069F001034DD /* XGCURLSession */,
+				FB5017DF2BD9069F001034DD /* XGCUser */,
+				FB5017E52BD9069F001034DD /* XGCWebView */,
+				FB5017E62BD9069F001034DD /* XGCMain.h */,
 			);
 			name = Classes;
 			path = ../../XGCMain/Classes;
+			sourceTree = "<group>";
+		};
+		FB5018472BDB3EDC001034DD /* XGCUploadSession */ = {
+			isa = PBXGroup;
+			children = (
+				FB5018482BDB3F1F001034DD /* XGCUploadSession.h */,
+				FB5018492BDB3F1F001034DD /* XGCUploadSession.m */,
+			);
+			path = XGCUploadSession;
+			sourceTree = "<group>";
+		};
+		FBED00682BEEFFE5005A029D /* XGCUISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00662BEEFFE5005A029D /* XGCUISegmentedControl.h */,
+				FBED00672BEEFFE5005A029D /* XGCUISegmentedControl.m */,
+			);
+			path = XGCUISegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -931,7 +921,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5014B62BD79F54001034DD /* XGCMain.xcassets in Resources */,
+				FB5017E82BD9069F001034DD /* XGCMain.xcassets in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -1018,80 +1008,84 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5014E22BD79F54001034DD /* KSSDImageManager.m in Sources */,
-				FB5014D82BD79F54001034DD /* XGCSearchTextField.m in Sources */,
-				FB5014CA2BD79F54001034DD /* XGCMainFormRowDictMapCollectionViewCell.m in Sources */,
-				FB5014C72BD79F54001034DD /* XGCMainRefreshViewController.m in Sources */,
-				FB5014C12BD79F54001034DD /* UIDevice+XGCDevice.m in Sources */,
-				FB5014EE2BD79F54001034DD /* XGCRefreshCollectionView.m in Sources */,
-				FB5014EF2BD79F54001034DD /* XGCRefreshTableView.m in Sources */,
-				FB5014CD2BD79F54001034DD /* XGCMainFormDescriptor.m in Sources */,
-				FB5014B82BD79F54001034DD /* UIView+XGCView.m in Sources */,
+				FB50180B2BD9069F001034DD /* XGCSearchTextField.m in Sources */,
+				FB50180C2BD9069F001034DD /* XGCTextField.m in Sources */,
+				FB5018092BD9069F001034DD /* XGCImageUrlControl.m in Sources */,
 				FB5012E22BD75018001034DD /* XGCSecondaryViewController.m in Sources */,
+				FB5017F22BD9069F001034DD /* NSString+XGCString.m in Sources */,
+				FB5018102BD9069F001034DD /* KSPhotoBrowser.m in Sources */,
+				FB5018002BD9069F001034DD /* XGCMainFormDescriptor.m in Sources */,
+				FB5018192BD9069F001034DD /* XGCConfiguration.m in Sources */,
+				FB50182F2BD9069F001034DD /* XGCWebViewController.m in Sources */,
+				FB5018032BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.m in Sources */,
+				FB5018292BD9069F001034DD /* XGCUserAclMapModel.m in Sources */,
+				FB5017FE2BD9069F001034DD /* XGCMainFormRowTableViewCell.m in Sources */,
+				FB5017F12BD9069F001034DD /* NSDate+XGCDate.m in Sources */,
+				FB5018252BD9069F001034DD /* XGCURLSession.m in Sources */,
+				FB50180F2BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.m in Sources */,
+				FB50184D2BDB47D5001034DD /* XGCEmptyCollectionView.m in Sources */,
+				FB5017FB2BD9069F001034DD /* XGCMainTabBarController.m in Sources */,
+				FB50181A2BD9069F001034DD /* XGCThemeManager.m in Sources */,
+				FB50181E2BD9069F001034DD /* XGCAliyunOSSiOS.m in Sources */,
+				FB50182D2BD9069F001034DD /* XGCUserManager.m in Sources */,
+				FB5017ED2BD9069F001034DD /* XGCViewLayer.m in Sources */,
+				FB50182E2BD9069F001034DD /* XGCWebViewRoute.m in Sources */,
+				FB5017EC2BD9069F001034DD /* XGCViewConfiguration.m in Sources */,
+				FB5017F82BD9069F001034DD /* XGCMainNavigationController.m in Sources */,
+				FB5017FC2BD9069F001034DD /* XGCMainViewController.m in Sources */,
+				FB5017EE2BD9069F001034DD /* NSArray+XGCArray.m in Sources */,
+				FB5017F32BD9069F001034DD /* UIColor+XGCColor.m in Sources */,
+				FB5018282BD9069F001034DD /* XGCMenuDataModel.m in Sources */,
+				FB50181C2BD9069F001034DD /* XGCAFNetworking.m in Sources */,
+				FB5017F92BD9069F001034DD /* XGCMainNavigationControllerDelegate.m in Sources */,
+				FB50180E2BD9069F001034DD /* XGCTextView.m in Sources */,
+				FB5018152BD9069F001034DD /* KSSDImageManager.m in Sources */,
+				FB5017F42BD9069F001034DD /* UIDevice+XGCDevice.m in Sources */,
+				FB5018242BD9069F001034DD /* XGCURLManagerCenter.m in Sources */,
+				FB5018162BD9069F001034DD /* XGCMediaPreviewModel.m in Sources */,
+				FB5018022BD9069F001034DD /* XGCMainFormSectionDescriptor.m in Sources */,
 				6003F59E195388D20070C39A /* XGCAppDelegate.m in Sources */,
-				FB5014BD2BD79F54001034DD /* NSCalendar+XGCCalendar.m in Sources */,
-				FB5014D62BD79F54001034DD /* XGCImageUrlControl.m in Sources */,
-				FB5014C32BD79F54001034DD /* XGCMainAppFuncCodeRefreshViewController.m in Sources */,
-				FB5014C82BD79F54001034DD /* XGCMainTabBarController.m in Sources */,
-				FB5014C02BD79F54001034DD /* UIColor+XGCColor.m in Sources */,
-				FB5014E42BD79F54001034DD /* XGCMediaPreviewRoute.m in Sources */,
-				FB5014DF2BD79F54001034DD /* KSPhotoItem.m in Sources */,
-				FB5014EA2BD79F54001034DD /* XGCAFNetworkingDelegate.m in Sources */,
-				FB5014EB2BD79F54001034DD /* XGCAliyunOSSiOS.m in Sources */,
-				FB5014D92BD79F54001034DD /* XGCTextField.m in Sources */,
-				FB5014BC2BD79F54001034DD /* NSArray+XGCArray.m in Sources */,
-				FB5014E52BD79F54001034DD /* XGCMediaPreviewContainerView.m in Sources */,
-				FB5014E62BD79F54001034DD /* XGCConfiguration.m in Sources */,
-				FB5014DC2BD79F54001034DD /* XGCMediaPreviewCollectionViewCell.m in Sources */,
-				FB5014E02BD79F54001034DD /* KSPhotoView.m in Sources */,
-				FB5014CF2BD79F54001034DD /* XGCMainFormSectionDescriptor.m in Sources */,
-				FB5014F32BD79F54001034DD /* XGCURLSessionDelegate.m in Sources */,
-				FB5014CB2BD79F54001034DD /* XGCMainFormRowTableViewCell.m in Sources */,
-				FB5014C92BD79F54001034DD /* XGCMainViewController.m in Sources */,
-				FB5014B92BD79F54001034DD /* XGCActivityIndicatorView.m in Sources */,
-				FB5014CE2BD79F54001034DD /* XGCMainFormRowDescriptor.m in Sources */,
-				FB5014DA2BD79F54001034DD /* XGCTextFieldDelegator.m in Sources */,
-				FB5014D52BD79F54001034DD /* XGCDatePickerView.m in Sources */,
-				FB5014ED2BD79F54001034DD /* XGCEmptyTableView.m in Sources */,
-				FB5014F62BD79F54001034DD /* XGCUserAclMapModel.m in Sources */,
-				FB5014F42BD79F54001034DD /* XGCMenuAndFuncListModel.m in Sources */,
-				FB5014E92BD79F54001034DD /* XGCAFNetworking.m in Sources */,
-				FB5014F22BD79F54001034DD /* XGCURLSession.m in Sources */,
-				FB5014C52BD79F54001034DD /* XGCMainNavigationController.m in Sources */,
-				FB5014DD2BD79F54001034DD /* KSPhotoBrowser.m in Sources */,
-				FB5014FB2BD79F54001034DD /* XGCWebViewRoute.m in Sources */,
-				FB5014C62BD79F54001034DD /* XGCMainNavigationControllerDelegate.m in Sources */,
-				FB5014D02BD79F54001034DD /* XGCMainAppFuncCodeFormViewController.m in Sources */,
-				FB5014F92BD79F54001034DD /* XGCUserModel.m in Sources */,
 				6003F5A7195388D20070C39A /* XGCViewController.m in Sources */,
-				FB5014FC2BD79F54001034DD /* XGCWebViewController.m in Sources */,
-				FB5014F02BD79F54001034DD /* XGCURLManager.m in Sources */,
+				FB50180D2BD9069F001034DD /* XGCTextFieldDelegator.m in Sources */,
+				FB50182B2BD9069F001034DD /* XGCUserMapModel.m in Sources */,
+				FB5018142BD9069F001034DD /* KSProgressLayer.m in Sources */,
+				FB5018182BD9069F001034DD /* XGCMediaPreviewContainerView.m in Sources */,
+				FB5017FD2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.m in Sources */,
+				FB5017EA2BD9069F001034DD /* UIView+XGCView.m in Sources */,
+				FB5018262BD9069F001034DD /* XGCURLSessionDelegate.m in Sources */,
+				FB5017EB2BD9069F001034DD /* XGCActivityIndicatorView.m in Sources */,
+				FB50181B2BD9069F001034DD /* XGCThemeManagerCenter.m in Sources */,
+				FB5018082BD9069F001034DD /* XGCDatePickerView.m in Sources */,
+				FB50181F2BD9069F001034DD /* XGCAliyunOSSiOSDelegate.m in Sources */,
+				FB50180A2BD9069F001034DD /* XGCMainPickerManager.m in Sources */,
+				FB5018202BD9069F001034DD /* XGCEmptyTableView.m in Sources */,
+				FB5017F02BD9069F001034DD /* NSCalendar+XGCCalendar.m in Sources */,
+				FB50184A2BDB3F1F001034DD /* XGCUploadSession.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				FB5014D12BD79F54001034DD /* XGCMainFormViewController.m in Sources */,
-				FB5014F12BD79F54001034DD /* XGCURLManagerCenter.m in Sources */,
-				FB5014EC2BD79F54001034DD /* XGCAliyunOSSiOSDelegate.m in Sources */,
-				FB5014CC2BD79F54001034DD /* XGCMainFormSectionTableHeaderView.m in Sources */,
-				FB5014E72BD79F54001034DD /* XGCThemeManager.m in Sources */,
-				FB5014F52BD79F54001034DD /* XGCMenuDataModel.m in Sources */,
-				FB5014D42BD79F54001034DD /* XGCAlertView.m in Sources */,
-				FB5014BA2BD79F54001034DD /* XGCViewConfiguration.m in Sources */,
-				FB5014BF2BD79F54001034DD /* NSString+XGCString.m in Sources */,
-				FB5014E32BD79F54001034DD /* XGCMediaPreviewModel.m in Sources */,
-				FB5014C42BD79F54001034DD /* XGCMainAppFuncCodeViewController.m in Sources */,
-				FB5014E82BD79F54001034DD /* XGCThemeManagerCenter.m in Sources */,
-				FB5014BE2BD79F54001034DD /* NSDate+XGCDate.m in Sources */,
-				FB5014F72BD79F54001034DD /* XGCUserDictMapModel.m in Sources */,
-				FB5014DB2BD79F54001034DD /* XGCTextView.m in Sources */,
-				FB5014BB2BD79F54001034DD /* XGCViewLayer.m in Sources */,
-				FB5014FA2BD79F54001034DD /* XGCUserManager.m in Sources */,
-				FB5014F82BD79F54001034DD /* XGCUserMapModel.m in Sources */,
-				FB5014E12BD79F54001034DD /* KSProgressLayer.m in Sources */,
-				FB5014C22BD79F54001034DD /* UIImage+XGCImage.m in Sources */,
-				FB5014D72BD79F54001034DD /* XGCMainPickerManager.m in Sources */,
-				FB5014B72BD79F54001034DD /* UIControl+XGCControl.m in Sources */,
-				FB5014DE2BD79F54001034DD /* KSPhotoBrowserManager.m in Sources */,
-				FB5014D22BD79F54001034DD /* XGCMainRoute.m in Sources */,
-				FB5014D32BD79F54001034DD /* XGCAlertTableViewCell.m in Sources */,
+				FB5017EF2BD9069F001034DD /* NSBundle+XGCBundle.m in Sources */,
+				FB5018052BD9069F001034DD /* XGCMainRoute.m in Sources */,
+				FB50182C2BD9069F001034DD /* XGCUserModel.m in Sources */,
+				FB5017F62BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m in Sources */,
+				FB50181D2BD9069F001034DD /* XGCAFNetworkingDelegate.m in Sources */,
+				FB50182A2BD9069F001034DD /* XGCUserDictMapModel.m in Sources */,
+				FB5017FF2BD9069F001034DD /* XGCMainFormSectionTableHeaderView.m in Sources */,
+				FB5017E92BD9069F001034DD /* UIControl+XGCControl.m in Sources */,
+				FB5018222BD9069F001034DD /* XGCRefreshTableView.m in Sources */,
+				FB5017F52BD9069F001034DD /* UIImage+XGCImage.m in Sources */,
+				FB5018122BD9069F001034DD /* KSPhotoItem.m in Sources */,
+				FB5018072BD9069F001034DD /* XGCAlertView.m in Sources */,
+				FB50162D2BD8F1C4001034DD /* XGCSceneDelegate.m in Sources */,
+				FB5018012BD9069F001034DD /* XGCMainFormRowDescriptor.m in Sources */,
+				FB5018132BD9069F001034DD /* KSPhotoView.m in Sources */,
+				FB5018062BD9069F001034DD /* XGCAlertTableViewCell.m in Sources */,
+				FB5018232BD9069F001034DD /* XGCURLManager.m in Sources */,
+				FB5018212BD9069F001034DD /* XGCRefreshCollectionView.m in Sources */,
+				FB5018272BD9069F001034DD /* XGCMenuAndFuncListModel.m in Sources */,
+				FB5018172BD9069F001034DD /* XGCMediaPreviewRoute.m in Sources */,
+				FB5018112BD9069F001034DD /* KSPhotoBrowserManager.m in Sources */,
+				FBED00692BEEFFE5005A029D /* XGCUISegmentedControl.m in Sources */,
+				FB5017FA2BD9069F001034DD /* XGCMainRefreshViewController.m in Sources */,
+				FB5017F72BD9069F001034DD /* XGCMainAppFuncCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
