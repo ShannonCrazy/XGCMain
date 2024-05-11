@@ -1,6 +1,6 @@
 {
   "name": "XGCMain",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "summary": "A short description of XGCMain.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ShannonCrazy/XGCMain",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ShannonCrazy/XGCMain.git",
-    "tag": "1.0.5"
+    "tag": "1.0.6"
   },
   "platforms": {
     "ios": "12.0"
@@ -84,14 +84,20 @@
       "source_files": "XGCMain/Classes/XGCMainRoute/*"
     },
     {
+      "name": "XGCURLManagerCenter",
+      "source_files": "XGCMain/Classes/XGCURLManagerCenter/*"
+    },
+    {
       "name": "XGCURLSession",
       "source_files": [
         "XGCMain/Classes/XGCURLSession/*",
-        "XGCMain/Classes/XGCURLManagerCenter/*",
         "XGCMain/Classes/XGCAFNetworking/*"
       ],
       "dependencies": {
         "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCURLManagerCenter": [
 
         ],
         "AFNetworking": [
@@ -118,13 +124,22 @@
       "name": "XGCMainBase",
       "source_files": "XGCMain/Classes/XGCMainBase/*",
       "dependencies": {
+        "XGCMain/XGCThemeManager": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainBaseController",
+      "source_files": "XGCMain/Classes/XGCMainBaseController/*",
+      "dependencies": {
         "XGCMain/XGCUser": [
 
         ],
-        "XGCMain/XGCMJRefresh": [
+        "XGCMain/XGCMainBase": [
 
         ],
-        "XGCMain/XGCThemeManager": [
+        "XGCMain/XGCMJRefresh": [
 
         ]
       }
@@ -147,21 +162,7 @@
     },
     {
       "name": "XGCTextView",
-      "source_files": "XGCMain/Classes/XGCMainTool/XGCTextView/*",
-      "dependencies": {
-        "XGCMain/XGCUser": [
-
-        ],
-        "XGCMain/XGCThemeManager": [
-
-        ],
-        "XGCMain/XGCEmptyScrollView": [
-
-        ],
-        "M13OrderedDictionary": [
-
-        ]
-      }
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCTextView/*"
     },
     {
       "name": "XGCUISegmentedControl",
@@ -232,7 +233,7 @@
         "XGCMain/XGCMainRoute": [
 
         ],
-        "XGCMain/XGCURLSession": [
+        "XGCMain/XGCURLManagerCenter": [
 
         ]
       },
@@ -243,21 +244,13 @@
     },
     {
       "name": "XGCViewConfiguration",
-      "source_files": "XGCMain/Classes/XGCViewConfiguration/*",
-      "dependencies": {
-        "XGCMain/XGCMainPickerManager": [
-
-        ]
-      }
+      "source_files": "XGCMain/Classes/XGCViewConfiguration/*"
     },
     {
       "name": "XGCMainForm",
       "source_files": "XGCMain/Classes/XGCMainForm/**/*",
       "dependencies": {
         "XGCMain/XGCUser": [
-
-        ],
-        "XGCMain/XGCMainBase": [
 
         ],
         "XGCMain/XGCCategory": [
@@ -285,6 +278,9 @@
 
         ],
         "XGCMain/XGCViewConfiguration": [
+
+        ],
+        "XGCMain/XGCMainBaseController": [
 
         ],
         "Masonry": [

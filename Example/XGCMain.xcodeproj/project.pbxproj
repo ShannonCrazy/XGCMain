@@ -485,16 +485,10 @@
 		FB50175D2BD9069F001034DD /* XGCMainBase */ = {
 			isa = PBXGroup;
 			children = (
-				FB50174F2BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.h */,
-				FB5017502BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m */,
-				FB5017512BD9069F001034DD /* XGCMainAppFuncCodeViewController.h */,
-				FB5017522BD9069F001034DD /* XGCMainAppFuncCodeViewController.m */,
 				FB5017532BD9069F001034DD /* XGCMainNavigationController.h */,
 				FB5017542BD9069F001034DD /* XGCMainNavigationController.m */,
 				FB5017552BD9069F001034DD /* XGCMainNavigationControllerDelegate.h */,
 				FB5017562BD9069F001034DD /* XGCMainNavigationControllerDelegate.m */,
-				FB5017572BD9069F001034DD /* XGCMainRefreshViewController.h */,
-				FB5017582BD9069F001034DD /* XGCMainRefreshViewController.m */,
 				FB5017592BD9069F001034DD /* XGCMainTabBarController.h */,
 				FB50175A2BD9069F001034DD /* XGCMainTabBarController.m */,
 				FB50175B2BD9069F001034DD /* XGCMainViewController.h */,
@@ -797,6 +791,7 @@
 		FB5017E72BD9069F001034DD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FBED007A2BEF49F5005A029D /* XGCMainBaseController */,
 				FBED00682BEEFFE5005A029D /* XGCUISegmentedControl */,
 				FB50173D2BD9069F001034DD /* XGCViewConfiguration */,
 				FB5017802BD9069F001034DD /* XGCImageUrlControl */,
@@ -838,6 +833,19 @@
 				FBED00672BEEFFE5005A029D /* XGCUISegmentedControl.m */,
 			);
 			path = XGCUISegmentedControl;
+			sourceTree = "<group>";
+		};
+		FBED007A2BEF49F5005A029D /* XGCMainBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				FB50174F2BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.h */,
+				FB5017502BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.m */,
+				FB5017512BD9069F001034DD /* XGCMainAppFuncCodeViewController.h */,
+				FB5017522BD9069F001034DD /* XGCMainAppFuncCodeViewController.m */,
+				FB5017572BD9069F001034DD /* XGCMainRefreshViewController.h */,
+				FB5017582BD9069F001034DD /* XGCMainRefreshViewController.m */,
+			);
+			path = XGCMainBaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

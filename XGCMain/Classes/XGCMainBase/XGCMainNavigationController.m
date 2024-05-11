@@ -6,10 +6,10 @@
 //
 
 #import "XGCMainNavigationController.h"
+// 
+#import "XGCConfiguration.h"
 // delegate
 #import "XGCMainNavigationControllerDelegate.h"
-//
-#import "XGCConfiguration.h"
 
 @interface XGCMainNavigationController ()
 @property (nonatomic, strong) XGCMainNavigationControllerDelegate *delegator;

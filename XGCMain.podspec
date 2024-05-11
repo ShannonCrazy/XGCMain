@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'XGCMain'
-    s.version          = '1.0.6'
+    s.version          = '1.0.7'
     s.summary          = 'A short description of XGCMain.'
     
     # This description is used to generate tags and improve search results.
@@ -72,10 +72,15 @@ Pod::Spec.new do |s|
         ss.source_files = 'XGCMain/Classes/XGCMainRoute/*'
     end
     
+    s.subspec 'XGCURLManagerCenter' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCURLManagerCenter/*'
+    end
+    
     s.subspec 'XGCURLSession' do |ss|
-        ss.source_files = ['XGCMain/Classes/XGCURLSession/*', 'XGCMain/Classes/XGCURLManagerCenter/*', 'XGCMain/Classes/XGCAFNetworking/*']
+        ss.source_files = ['XGCMain/Classes/XGCURLSession/*', 'XGCMain/Classes/XGCAFNetworking/*']
         # 内部
         ss.dependency 'XGCMain/XGCUser'
+        ss.dependency 'XGCMain/XGCURLManagerCenter'
         # 外部
         ss.dependency 'AFNetworking'
     end
@@ -91,9 +96,15 @@ Pod::Spec.new do |s|
     s.subspec 'XGCMainBase' do |ss|
         ss.source_files = 'XGCMain/Classes/XGCMainBase/*'
         # 内部
-        ss.dependency 'XGCMain/XGCUser'
-        ss.dependency 'XGCMain/XGCMJRefresh'
         ss.dependency 'XGCMain/XGCThemeManager'
+    end
+    
+    s.subspec 'XGCMainBaseController' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainBaseController/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCUser'
+        ss.dependency 'XGCMain/XGCMainBase'
+        ss.dependency 'XGCMain/XGCMJRefresh'
     end
     
     s.subspec 'XGCImageUrlControl' do |ss|
@@ -110,12 +121,6 @@ Pod::Spec.new do |s|
     
     s.subspec "XGCTextView" do |ss|
         ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCTextView/*'
-        # 内部
-        ss.dependency 'XGCMain/XGCUser'
-        ss.dependency 'XGCMain/XGCThemeManager'
-        ss.dependency 'XGCMain/XGCEmptyScrollView'
-        # 外部
-        ss.dependency 'M13OrderedDictionary'
     end
     
     s.subspec "XGCUISegmentedControl" do |ss|
@@ -159,14 +164,13 @@ Pod::Spec.new do |s|
         # 内部
         ss.dependency 'XGCMain/XGCMainBase'
         ss.dependency 'XGCMain/XGCMainRoute'
-        ss.dependency 'XGCMain/XGCURLSession'
+        ss.dependency 'XGCMain/XGCURLManagerCenter'
         # frameworks
         ss.frameworks = 'WebKit', 'QuartzCore'
     end
     
     s.subspec 'XGCViewConfiguration' do |ss|
         ss.source_files = 'XGCMain/Classes/XGCViewConfiguration/*'
-        ss.dependency 'XGCMain/XGCMainPickerManager'
         # 外部
         s.dependency 'Toast'
         s.dependency 'SVProgressHUD'
@@ -176,7 +180,6 @@ Pod::Spec.new do |s|
         ss.source_files = 'XGCMain/Classes/XGCMainForm/**/*'
         # 内部
         ss.dependency 'XGCMain/XGCUser'
-        ss.dependency 'XGCMain/XGCMainBase'
         ss.dependency 'XGCMain/XGCCategory'
         ss.dependency 'XGCMain/XGCTextView'
         ss.dependency 'XGCMain/XGCTextField'
@@ -186,6 +189,7 @@ Pod::Spec.new do |s|
         ss.dependency 'XGCMain/XGCUploadSession'
         ss.dependency 'XGCMain/XGCDatePickerView'
         ss.dependency 'XGCMain/XGCViewConfiguration'
+        ss.dependency 'XGCMain/XGCMainBaseController'
         # 外部
         ss.dependency 'Masonry'
         ss.dependency 'SDWebImage'
