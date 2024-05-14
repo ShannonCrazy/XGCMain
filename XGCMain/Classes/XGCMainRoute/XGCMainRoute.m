@@ -19,6 +19,7 @@
 
 @interface XGCMainRoute ()
 @property (nonatomic, strong) UIWindowScene *windowScene API_AVAILABLE(ios(13.0));
+@property (nonatomic, strong, readwrite) UIWindow *keyWindow;
 @property (nonatomic, strong) NSMutableDictionary <NSString *, id <XGCMainRouteProtocol>> *maps;
 @end
 
@@ -46,6 +47,43 @@
 #endif
     }
     return self;
+}
+
+#pragma mark get
++ (UIWindowScene *)windowScene {
+    return [XGCMainRoute shareInstance].windowScene;
+}
+
++ (UIWindow *)keyWindow {
+    return [XGCMainRoute shareInstance].keyWindow;
+}
+
+- (UIWindow *)keyWindow {
+    if (!self.windowScene) {
+        NSSet<UIScene *> *connectedScenes = UIApplication.sharedApplication.connectedScenes;
+        // 获取第一个对象
+        self.windowScene = connectedScenes.allObjects.firstObject;
+        // 循环
+        for (UIWindowScene *windowScene in connectedScenes) {
+            if (![windowScene isKindOfClass:[UIWindowScene class]]) {
+                continue;
+            }
+            if (windowScene.activationState != UISceneActivationStateForegroundActive) {
+                continue;
+            }
+            self.windowScene = windowScene;
+        }
+    }
+    for (UIWindow *window in self.windowScene.windows) {
+        if (!window.isKeyWindow) {
+            continue;
+        }
+        self.keyWindow = window;
+    }
+    if (!self.keyWindow) {
+        self.keyWindow = UIApplication.sharedApplication.keyWindow;
+    }
+    return self.keyWindow;
 }
 
 #pragma mark func
@@ -110,37 +148,10 @@
     if (!viewController) {
         return;
     }
-    UIWindow *keyWindow = nil;
-    if (@available(iOS 13.0, *)) {
-        if (!self.windowScene) {
-            NSSet<UIScene *> *connectedScenes = UIApplication.sharedApplication.connectedScenes;
-            for (UIWindowScene *windowScene in connectedScenes) {
-                if (![windowScene isKindOfClass:[UIWindowScene class]]) {
-                    continue;
-                }
-                if (windowScene.activationState != UISceneActivationStateForegroundActive) {
-                    continue;
-                }
-                self.windowScene = windowScene;
-            }
-            if (!self.windowScene) {
-                self.windowScene = (UIWindowScene *)connectedScenes.allObjects.firstObject;
-            }
-        }
-        for (UIWindow *window in self.windowScene.windows) {
-            if (!window.isKeyWindow) {
-                continue;
-            }
-            keyWindow = window;
-        }
-    }
-    if (!keyWindow) {
-        keyWindow = UIApplication.sharedApplication.keyWindow;
-    }
-    if (!keyWindow) {
+    if (!self.keyWindow) {
         return;
     }
-    __kindof UIViewController *rootViewController = keyWindow.rootViewController;
+    __kindof UIViewController *rootViewController = self.keyWindow.rootViewController;
     while ([rootViewController isKindOfClass:[UITabBarController class]] || [rootViewController isKindOfClass:[UINavigationController class]]) {
         UITabBarController *tabBarController = (UITabBarController *)rootViewController;
         if ([tabBarController isKindOfClass:[UITabBarController class]]) {

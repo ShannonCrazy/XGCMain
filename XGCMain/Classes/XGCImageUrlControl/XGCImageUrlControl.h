@@ -14,14 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameters:
 ///   - URL: 图片链接
 ///   - placeholder: 文字(自动截取最后两位)
-- (void)setImageWithURL:(nullable NSURL *)url placeholder:(NSString *)placeholder;
+- (void)setImageWithURL:(nullable NSURL *)url placeholder:(nullable NSString *)placeholder;
 /// 配置图片
 /// - Parameters:
 ///   - URL: 图片链接
 ///   - placeholder: 文字
 ///   - fillColor: 填充色
 ///   - foregroundColor: 字体颜色
-- (void)setImageWithURL:(nullable NSURL *)url placeholder:(NSString *)placeholder fillColor:(UIColor *)fillColor foregroundColor:(UIColor *)foregroundColor;
+- (void)setImageWithURL:(nullable NSURL *)url placeholder:(nullable NSString *)placeholder fillColor:(UIColor *)fillColor foregroundColor:(UIColor *)foregroundColor;
 /// 图片控件
 @property (nonatomic, strong, readonly) UIImageView *imageView;
 @end

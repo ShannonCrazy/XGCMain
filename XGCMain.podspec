@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'XGCMain'
-    s.version          = '1.0.7'
+    s.version          = '1.0.8'
     s.summary          = 'A short description of XGCMain.'
     
     # This description is used to generate tags and improve search results.
@@ -38,16 +38,16 @@ Pod::Spec.new do |s|
     
     # 第三方
     s.subspec 'XGCEmptyScrollView' do |ss|
-      ss.source_files = 'XGCMain/Classes/XGCEmptyScrollView/*'
-      ss.dependency 'DZNEmptyDataSet'
+        ss.source_files = 'XGCMain/Classes/XGCEmptyScrollView/*'
+        ss.dependency 'DZNEmptyDataSet'
     end
     
     s.subspec 'XGCMJRefresh' do |ss|
-      ss.source_files = 'XGCMain/Classes/XGCMJRefresh/*'
-      # 内部
-      ss.dependency 'XGCMain/XGCEmptyScrollView'
-      # 外部
-      ss.dependency 'MJRefresh'
+        ss.source_files = 'XGCMain/Classes/XGCMJRefresh/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCEmptyScrollView'
+        # 外部
+        ss.dependency 'MJRefresh'
     end
     
     s.subspec "XGCThemeManager" do |ss|
@@ -61,11 +61,11 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'XGCUser' do |ss|
-      ss.source_files = 'XGCMain/Classes/XGCUser/*'
-      # 外部
-      ss.dependency 'MJExtension'
-      # 内部
-      ss.dependency 'XGCMain/XGCCategory'
+        ss.source_files = 'XGCMain/Classes/XGCUser/*'
+        # 外部
+        ss.dependency 'MJExtension'
+        # 内部
+        ss.dependency 'XGCMain/XGCCategory'
     end
     
     s.subspec 'XGCMainRoute' do |ss|
@@ -93,17 +93,18 @@ Pod::Spec.new do |s|
         ss.dependency 'AliyunOSSiOS'
     end
     
-    s.subspec 'XGCMainBase' do |ss|
-        ss.source_files = 'XGCMain/Classes/XGCMainBase/*'
+    s.subspec 'XGCMainFrame' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainFrame/*'
         # 内部
+        ss.dependency 'XGCMain/MobClickCenter'
         ss.dependency 'XGCMain/XGCThemeManager'
     end
     
-    s.subspec 'XGCMainBaseController' do |ss|
-        ss.source_files = 'XGCMain/Classes/XGCMainBaseController/*'
+    s.subspec 'XGCMainFrameBase' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainFrameBase/*'
         # 内部
         ss.dependency 'XGCMain/XGCUser'
-        ss.dependency 'XGCMain/XGCMainBase'
+        ss.dependency 'XGCMain/XGCMainFrame'
         ss.dependency 'XGCMain/XGCMJRefresh'
     end
     
@@ -162,7 +163,7 @@ Pod::Spec.new do |s|
     s.subspec 'XGCWebView' do |ss|
         ss.source_files = 'XGCMain/Classes/XGCWebView/*'
         # 内部
-        ss.dependency 'XGCMain/XGCMainBase'
+        ss.dependency 'XGCMain/XGCMainFrame'
         ss.dependency 'XGCMain/XGCMainRoute'
         ss.dependency 'XGCMain/XGCURLManagerCenter'
         # frameworks
@@ -187,13 +188,139 @@ Pod::Spec.new do |s|
         ss.dependency 'XGCMain/XGCThemeManager'
         ss.dependency 'XGCMain/XGCMediaPreview'
         ss.dependency 'XGCMain/XGCUploadSession'
+        ss.dependency 'XGCMain/XGCMainFrameBase'
         ss.dependency 'XGCMain/XGCDatePickerView'
         ss.dependency 'XGCMain/XGCViewConfiguration'
-        ss.dependency 'XGCMain/XGCMainBaseController'
         # 外部
         ss.dependency 'Masonry'
         ss.dependency 'SDWebImage'
     end
     
-    # s.public_header_files = 'Pod/Classes/**/*.h'
+    s.subspec 'XGCUserNotificationCenter' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCUserNotificationCenter/*'
+        # frameworks
+        ss.frameworks = 'UserNotifications'
+    end
+    
+    s.subspec 'UMConfigureCenter' do |ss|
+        ss.source_files = 'XGCMain/Classes/UMConfigureCenter/*'
+        # 外部
+        ss.dependency 'UMCommon'
+        ss.dependency 'UMDevice'
+        # 使用静态库
+        s.static_framework = true
+    end
+    
+    s.subspec 'UMessageManager' do |ss|
+        ss.source_files = 'XGCMain/Classes/UMessageManager/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCUser'
+        ss.dependency 'XGCMain/UMConfigureCenter'
+        ss.dependency 'XGCMain/XGCUserNotificationCenter'
+        # 外部
+        ss.dependency 'UYuMao'
+        ss.dependency 'UMPush'
+        # 使用静态库
+        s.static_framework = true
+    end
+    
+    s.subspec 'MobClickCenter' do |ss|
+        ss.source_files = 'XGCMain/Classes/MobClickCenter/*'
+        # 内部
+        ss.dependency 'XGCMain/UMConfigureCenter'
+        # 外部
+        ss.dependency 'UMAPM'
+        # 使用静态库
+        s.static_framework = true
+    end
+    
+    s.subspec 'XGCMainView' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCMainView/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCThemeManager'
+        ss.dependency 'XGCMain/XGCViewConfiguration'
+        # 外部
+        ss.dependency 'Masonry'
+    end
+    
+    s.subspec 'XGCSignatureViewController' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCSignatureViewController/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCUser'
+        ss.dependency 'XGCMain/XGCCategory'
+        ss.dependency 'XGCMain/XGCMainFrame'
+        ss.dependency 'XGCMain/XGCThemeManager'
+        ss.dependency 'XGCMain/XGCUploadSession'
+        ss.dependency 'XGCMain/XGCViewConfiguration'
+        # 外部
+        ss.dependency 'Masonry'
+    end
+    
+    s.subspec 'XGCMainOrgTree' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCMainOrgTree/**/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCMainView'
+        ss.dependency 'XGCMain/XGCMainFrame'
+        ss.dependency 'XGCMain/XGCTextField'
+        ss.dependency 'XGCMain/XGCURLSession'
+        ss.dependency 'XGCMain/XGCThemeManager'
+        ss.dependency 'XGCMain/XGCEmptyScrollView'
+        ss.dependency 'XGCMain/XGCViewConfiguration'
+        # 外部
+        ss.dependency 'Masonry'
+        ss.dependency 'MJExtension'
+        ss.dependency 'M13OrderedDictionary'
+    end
+    
+    s.subspec 'XGCMainProPerson' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCMainProPerson/**/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCUser'
+        ss.dependency 'XGCMain/XGCCategory'
+        ss.dependency 'XGCMain/XGCMainView'
+        ss.dependency 'XGCMain/XGCMainFrame'
+        ss.dependency 'XGCMain/XGCTextField'
+        ss.dependency 'XGCMain/XGCMJRefresh'
+        ss.dependency 'XGCMain/XGCURLSession'
+        ss.dependency 'XGCMain/XGCThemeManager'
+        ss.dependency 'XGCMain/XGCImageUrlControl'
+        ss.dependency 'XGCMain/XGCViewConfiguration'
+        # 外部
+        ss.dependency 'Masonry'
+        ss.dependency 'MJExtension'
+        ss.dependency 'M13OrderedDictionary'
+    end
+    
+    s.subspec 'XGCWeakTargetTimer' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCWeakTargetTimer/*'
+    end
+    
+    s.subspec 'XGCQRCodeControl' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCQRCodeControl/*'
+    end
+    
+    s.subspec 'XGCIcon' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCIcon/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCUser'
+        ss.dependency 'XGCMain/XGCMainView'
+        ss.dependency 'XGCMain/XGCMainRoute'
+        ss.dependency 'XGCMain/XGCMainFrame'
+        ss.dependency 'XGCMain/XGCThemeManager'
+        ss.dependency 'XGCMain/XGCEmptyScrollView'
+        # 外部
+        ss.dependency 'Masonry'
+    end
+    
+    s.subspec 'XGCFileJsonController' do |ss|
+        ss.source_files = 'XGCMain/Classes/XGCMainTool/XGCFileJsonController/*'
+        # 内部
+        ss.dependency 'XGCMain/XGCWebView'
+        ss.dependency 'XGCMain/XGCMainRoute'
+        ss.dependency 'XGCMain/XGCMediaPreview'
+    end
+    
+    # https://github.com/CocoaPods/CocoaPods/issues/10065#issuecomment-694266259
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

@@ -30,64 +30,107 @@ PODS:
     - TZImagePickerController/Location (= 3.8.5)
   - TZImagePickerController/Basic (3.8.5)
   - TZImagePickerController/Location (3.8.5)
-  - XGCMain (1.0.6):
+  - UMAPM (1.9.1)
+  - UMCommon (7.4.6):
+    - UMDevice
+  - UMDevice (3.4.0)
+  - UMPush (4.1.1):
+    - UMCommon
+  - UYuMao (1.1.1):
+    - UMCommon
+  - XGCMain (1.0.7):
     - SVProgressHUD
     - Toast
-    - XGCMain/XGCAlertView (= 1.0.6)
-    - XGCMain/XGCCategory (= 1.0.6)
-    - XGCMain/XGCDatePickerView (= 1.0.6)
-    - XGCMain/XGCEmptyScrollView (= 1.0.6)
-    - XGCMain/XGCImageUrlControl (= 1.0.6)
-    - XGCMain/XGCMainBase (= 1.0.6)
-    - XGCMain/XGCMainBaseController (= 1.0.6)
-    - XGCMain/XGCMainForm (= 1.0.6)
-    - XGCMain/XGCMainPickerManager (= 1.0.6)
-    - XGCMain/XGCMainRoute (= 1.0.6)
-    - XGCMain/XGCMediaPreview (= 1.0.6)
-    - XGCMain/XGCMJRefresh (= 1.0.6)
-    - XGCMain/XGCTextField (= 1.0.6)
-    - XGCMain/XGCTextView (= 1.0.6)
-    - XGCMain/XGCThemeManager (= 1.0.6)
-    - XGCMain/XGCUISegmentedControl (= 1.0.6)
-    - XGCMain/XGCUploadSession (= 1.0.6)
-    - XGCMain/XGCURLManagerCenter (= 1.0.6)
-    - XGCMain/XGCURLSession (= 1.0.6)
-    - XGCMain/XGCUser (= 1.0.6)
-    - XGCMain/XGCViewConfiguration (= 1.0.6)
-    - XGCMain/XGCWebView (= 1.0.6)
-  - XGCMain/XGCAlertView (1.0.6):
+    - XGCMain/MobClickCenter (= 1.0.7)
+    - XGCMain/UMConfigureCenter (= 1.0.7)
+    - XGCMain/UMessageManager (= 1.0.7)
+    - XGCMain/XGCAlertView (= 1.0.7)
+    - XGCMain/XGCCategory (= 1.0.7)
+    - XGCMain/XGCDatePickerView (= 1.0.7)
+    - XGCMain/XGCEmptyScrollView (= 1.0.7)
+    - XGCMain/XGCFileJsonController (= 1.0.7)
+    - XGCMain/XGCIcon (= 1.0.7)
+    - XGCMain/XGCImageUrlControl (= 1.0.7)
+    - XGCMain/XGCMainForm (= 1.0.7)
+    - XGCMain/XGCMainFrame (= 1.0.7)
+    - XGCMain/XGCMainFrameBase (= 1.0.7)
+    - XGCMain/XGCMainOrgTree (= 1.0.7)
+    - XGCMain/XGCMainPickerManager (= 1.0.7)
+    - XGCMain/XGCMainProPerson (= 1.0.7)
+    - XGCMain/XGCMainRoute (= 1.0.7)
+    - XGCMain/XGCMainView (= 1.0.7)
+    - XGCMain/XGCMediaPreview (= 1.0.7)
+    - XGCMain/XGCMJRefresh (= 1.0.7)
+    - XGCMain/XGCQRCodeControl (= 1.0.7)
+    - XGCMain/XGCSignatureViewController (= 1.0.7)
+    - XGCMain/XGCTextField (= 1.0.7)
+    - XGCMain/XGCTextView (= 1.0.7)
+    - XGCMain/XGCThemeManager (= 1.0.7)
+    - XGCMain/XGCUISegmentedControl (= 1.0.7)
+    - XGCMain/XGCUploadSession (= 1.0.7)
+    - XGCMain/XGCURLManagerCenter (= 1.0.7)
+    - XGCMain/XGCURLSession (= 1.0.7)
+    - XGCMain/XGCUser (= 1.0.7)
+    - XGCMain/XGCUserNotificationCenter (= 1.0.7)
+    - XGCMain/XGCViewConfiguration (= 1.0.7)
+    - XGCMain/XGCWeakTargetTimer (= 1.0.7)
+    - XGCMain/XGCWebView (= 1.0.7)
+  - XGCMain/MobClickCenter (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - UMAPM
+    - XGCMain/UMConfigureCenter
+  - XGCMain/UMConfigureCenter (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - UMCommon
+    - UMDevice
+  - XGCMain/UMessageManager (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - UMPush
+    - UYuMao
+    - XGCMain/UMConfigureCenter
+    - XGCMain/XGCUser
+    - XGCMain/XGCUserNotificationCenter
+  - XGCMain/XGCAlertView (1.0.7):
     - M13OrderedDictionary
     - SVProgressHUD
     - Toast
     - XGCMain/XGCEmptyScrollView
     - XGCMain/XGCThemeManager
     - XGCMain/XGCUser
-  - XGCMain/XGCCategory (1.0.6):
+  - XGCMain/XGCCategory (1.0.7):
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCDatePickerView (1.0.6):
+  - XGCMain/XGCDatePickerView (1.0.7):
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCEmptyScrollView (1.0.6):
+  - XGCMain/XGCEmptyScrollView (1.0.7):
     - DZNEmptyDataSet
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCImageUrlControl (1.0.6):
+  - XGCMain/XGCFileJsonController (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMainRoute
+    - XGCMain/XGCMediaPreview
+    - XGCMain/XGCWebView
+  - XGCMain/XGCIcon (1.0.7):
+    - Masonry
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCEmptyScrollView
+    - XGCMain/XGCMainRoute
+    - XGCMain/XGCMainView
+    - XGCMain/XGCThemeManager
+    - XGCMain/XGCUser
+  - XGCMain/XGCImageUrlControl (1.0.7):
     - SDWebImage
     - SVProgressHUD
     - Toast
     - XGCMain/XGCThemeManager
-  - XGCMain/XGCMainBase (1.0.6):
-    - SVProgressHUD
-    - Toast
-    - XGCMain/XGCThemeManager
-  - XGCMain/XGCMainBaseController (1.0.6):
-    - SVProgressHUD
-    - Toast
-    - XGCMain/XGCMainBase
-    - XGCMain/XGCMJRefresh
-    - XGCMain/XGCUser
-  - XGCMain/XGCMainForm (1.0.6):
+  - XGCMain/XGCMainForm (1.0.7):
     - Masonry
     - SDWebImage
     - SVProgressHUD
@@ -95,7 +138,7 @@ PODS:
     - XGCMain/XGCAlertView
     - XGCMain/XGCCategory
     - XGCMain/XGCDatePickerView
-    - XGCMain/XGCMainBaseController
+    - XGCMain/XGCMainFrameBase
     - XGCMain/XGCMediaPreview
     - XGCMain/XGCTextField
     - XGCMain/XGCTextView
@@ -103,14 +146,57 @@ PODS:
     - XGCMain/XGCUploadSession
     - XGCMain/XGCUser
     - XGCMain/XGCViewConfiguration
-  - XGCMain/XGCMainPickerManager (1.0.6):
+  - XGCMain/XGCMainFrame (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/MobClickCenter
+    - XGCMain/XGCThemeManager
+  - XGCMain/XGCMainFrameBase (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMainFrame
+    - XGCMain/XGCMJRefresh
+    - XGCMain/XGCUser
+  - XGCMain/XGCMainOrgTree (1.0.7):
+    - M13OrderedDictionary
+    - Masonry
+    - MJExtension
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMainView
+    - XGCMain/XGCTextField
+    - XGCMain/XGCThemeManager
+    - XGCMain/XGCURLSession
+    - XGCMain/XGCViewConfiguration
+  - XGCMain/XGCMainPickerManager (1.0.7):
     - SVProgressHUD
     - Toast
     - TZImagePickerController
-  - XGCMain/XGCMainRoute (1.0.6):
+  - XGCMain/XGCMainProPerson (1.0.7):
+    - M13OrderedDictionary
+    - Masonry
+    - MJExtension
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCMediaPreview (1.0.6):
+    - XGCMain/XGCCategory
+    - XGCMain/XGCImageUrlControl
+    - XGCMain/XGCMainView
+    - XGCMain/XGCMJRefresh
+    - XGCMain/XGCTextField
+    - XGCMain/XGCThemeManager
+    - XGCMain/XGCURLSession
+    - XGCMain/XGCUser
+    - XGCMain/XGCViewConfiguration
+  - XGCMain/XGCMainRoute (1.0.7):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCMainView (1.0.7):
+    - Masonry
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCThemeManager
+    - XGCMain/XGCViewConfiguration
+  - XGCMain/XGCMediaPreview (1.0.7):
     - Masonry
     - SDWebImage
     - SVProgressHUD
@@ -119,50 +205,68 @@ PODS:
     - XGCMain/XGCMainPickerManager
     - XGCMain/XGCMainRoute
     - XGCMain/XGCThemeManager
-  - XGCMain/XGCMJRefresh (1.0.6):
+  - XGCMain/XGCMJRefresh (1.0.7):
     - MJRefresh
     - SVProgressHUD
     - Toast
     - XGCMain/XGCEmptyScrollView
-  - XGCMain/XGCTextField (1.0.6):
+  - XGCMain/XGCQRCodeControl (1.0.7):
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCTextView (1.0.6):
-    - SVProgressHUD
-    - Toast
-  - XGCMain/XGCThemeManager (1.0.6):
+  - XGCMain/XGCSignatureViewController (1.0.7):
+    - Masonry
     - SVProgressHUD
     - Toast
     - XGCMain/XGCCategory
-  - XGCMain/XGCUISegmentedControl (1.0.6):
+    - XGCMain/XGCThemeManager
+    - XGCMain/XGCUploadSession
+    - XGCMain/XGCUser
+    - XGCMain/XGCViewConfiguration
+  - XGCMain/XGCTextField (1.0.7):
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCUploadSession (1.0.6):
+  - XGCMain/XGCTextView (1.0.7):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCThemeManager (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCCategory
+  - XGCMain/XGCUISegmentedControl (1.0.7):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCUploadSession (1.0.7):
     - AliyunOSSiOS
     - SVProgressHUD
     - Toast
     - XGCMain/XGCUser
-  - XGCMain/XGCURLManagerCenter (1.0.6):
+  - XGCMain/XGCURLManagerCenter (1.0.7):
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCURLSession (1.0.6):
+  - XGCMain/XGCURLSession (1.0.7):
     - AFNetworking
     - SVProgressHUD
     - Toast
     - XGCMain/XGCURLManagerCenter
     - XGCMain/XGCUser
-  - XGCMain/XGCUser (1.0.6):
+  - XGCMain/XGCUser (1.0.7):
     - MJExtension
     - SVProgressHUD
     - Toast
     - XGCMain/XGCCategory
-  - XGCMain/XGCViewConfiguration (1.0.6):
+  - XGCMain/XGCUserNotificationCenter (1.0.7):
     - SVProgressHUD
     - Toast
-  - XGCMain/XGCWebView (1.0.6):
+  - XGCMain/XGCViewConfiguration (1.0.7):
     - SVProgressHUD
     - Toast
-    - XGCMain/XGCMainBase
+  - XGCMain/XGCWeakTargetTimer (1.0.7):
+    - SVProgressHUD
+    - Toast
+  - XGCMain/XGCWebView (1.0.7):
+    - SVProgressHUD
+    - Toast
+    - XGCMain/XGCMainFrame
     - XGCMain/XGCMainRoute
     - XGCMain/XGCURLManagerCenter
 
@@ -182,6 +286,11 @@ SPEC REPOS:
     - SVProgressHUD
     - Toast
     - TZImagePickerController
+    - UMAPM
+    - UMCommon
+    - UMDevice
+    - UMPush
+    - UYuMao
 
 EXTERNAL SOURCES:
   XGCMain:
@@ -199,7 +308,12 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TZImagePickerController: c0f8e83c27cb08f7d812b1d066a5934d30ff78ad
-  XGCMain: bec3e53f94e65a3bf4ff9a6e5a46e7ef59b5a2f8
+  UMAPM: dad298c296209d65da542f19ba701dfffc902139
+  UMCommon: 9399105b64e099c3c66aad21fc85ae695567a1f1
+  UMDevice: dcdf7ec167387837559d149fbc7d793d984faf82
+  UMPush: 057de32a6766ece4b23f308e5951fe92ccf7da26
+  UYuMao: 8f01de51a9377a63f5cc92ba42ab0eb217d9ca11
+  XGCMain: 34047bcdb7ec2eb54c23477424e6889e6b9bcd0c
 
 PODFILE CHECKSUM: fc2112c46b62005c8a73018cb97546ce16c9fd81
 

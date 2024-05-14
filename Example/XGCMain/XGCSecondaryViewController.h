@@ -6,11 +6,11 @@
 //  Copyright © 2024 ShannonCrazy. All rights reserved.
 //
 
-#import "XGCMain/XGCMainFormViewController.h"
+#import <XGCMain/XGCMainViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XGCSecondaryViewController : XGCMainFormViewController
+@interface XGCSecondaryViewController : XGCMainViewController
 
 @end
 

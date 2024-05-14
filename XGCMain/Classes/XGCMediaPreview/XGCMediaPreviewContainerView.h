@@ -12,6 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// 横向view
 @interface XGCMediaPreviewContainerView : UIView
 /// 对象
 @property (nonatomic, weak, nullable) __kindof UIViewController *aTarget;

@@ -100,6 +100,42 @@
 		FB50184A2BDB3F1F001034DD /* XGCUploadSession.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5018492BDB3F1F001034DD /* XGCUploadSession.m */; };
 		FB50184D2BDB47D5001034DD /* XGCEmptyCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB50184C2BDB47D5001034DD /* XGCEmptyCollectionView.m */; };
 		FBED00692BEEFFE5005A029D /* XGCUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00672BEEFFE5005A029D /* XGCUISegmentedControl.m */; };
+		FBED007E2BEF64BC005A029D /* XGCUserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED007D2BEF64BC005A029D /* XGCUserNotificationCenter.m */; };
+		FBED00822BEF6B1B005A029D /* UMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00812BEF6B1B005A029D /* UMessageManager.m */; };
+		FBED00862BEF72DC005A029D /* MobClickCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00852BEF72DC005A029D /* MobClickCenter.m */; };
+		FBED008A2BF19FE5005A029D /* UMConfigureCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00892BF19FE5005A029D /* UMConfigureCenter.m */; };
+		FBED008E2BF1AF3C005A029D /* XGCSubscriptView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED008D2BF1AF3C005A029D /* XGCSubscriptView.m */; };
+		FBED00922BF1C06E005A029D /* XGCSelectionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00912BF1C06E005A029D /* XGCSelectionControl.m */; };
+		FBED00952BF1C0EB005A029D /* XGCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00942BF1C0EB005A029D /* XGCSegmentedControl.m */; };
+		FBED00982BF1C12F005A029D /* XGCPageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00972BF1C12F005A029D /* XGCPageViewManager.m */; };
+		FBED009C2BF1C196005A029D /* XGCQRCodeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED009B2BF1C196005A029D /* XGCQRCodeControl.m */; };
+		FBED009F2BF1C272005A029D /* XGCCataloguesView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED009E2BF1C272005A029D /* XGCCataloguesView.m */; };
+		FBED00A22BF1C2D3005A029D /* XGCPopupContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00A12BF1C2D3005A029D /* XGCPopupContainerView.m */; };
+		FBED00A52BF1C31C005A029D /* XGCToolBarContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00A42BF1C31C005A029D /* XGCToolBarContainerView.m */; };
+		FBED00C92BF1C47C005A029D /* XGCMainOrgTreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00A72BF1C47B005A029D /* XGCMainOrgTreeModel.m */; };
+		FBED00CA2BF1C47C005A029D /* XGCMainOrgTreeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00AA2BF1C47B005A029D /* XGCMainOrgTreeTableViewCell.m */; };
+		FBED00CB2BF1C47C005A029D /* XGCMainOrgTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00AD2BF1C47B005A029D /* XGCMainOrgTreeView.m */; };
+		FBED00CC2BF1C47C005A029D /* XGCMainOrgTreeViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00B02BF1C47B005A029D /* XGCMainOrgTreeViewControllerCell.m */; };
+		FBED00CD2BF1C47C005A029D /* XGCMainOrgTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00B32BF1C47B005A029D /* XGCMainOrgTreeViewController.m */; };
+		FBED00CE2BF1C47C005A029D /* XGCMainOrgTreeViewTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00B52BF1C47B005A029D /* XGCMainOrgTreeViewTypeController.m */; };
+		FBED00CF2BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00B92BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.m */; };
+		FBED00D02BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00BB2BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.m */; };
+		FBED00D12BF1C47C005A029D /* XGCMainProPersonPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00BE2BF1C47C005A029D /* XGCMainProPersonPersonModel.m */; };
+		FBED00D22BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00C02BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.m */; };
+		FBED00D32BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00C32BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.m */; };
+		FBED00D42BF1C47C005A029D /* XGCMainProPersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00C52BF1C47C005A029D /* XGCMainProPersonListViewController.m */; };
+		FBED00D52BF1C47C005A029D /* XGCMainProPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00C72BF1C47C005A029D /* XGCMainProPersonViewController.m */; };
+		FBED00D92BF1DE86005A029D /* XGCWeakTargetTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00D82BF1DE86005A029D /* XGCWeakTargetTimer.m */; };
+		FBED00DF2BF1E140005A029D /* XGCSignatureNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00DE2BF1E140005A029D /* XGCSignatureNavigationController.m */; };
+		FBED00E32BF1E1BD005A029D /* XGCSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00E22BF1E1BD005A029D /* XGCSignatureViewController.m */; };
+		FBED00E62BF1E302005A029D /* XGCSignatureContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00E52BF1E302005A029D /* XGCSignatureContainerView.m */; };
+		FBED00EA2BF1E986005A029D /* XGCIconRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00E92BF1E986005A029D /* XGCIconRoute.m */; };
+		FBED00ED2BF1E9CE005A029D /* XGCIconRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00EC2BF1E9CE005A029D /* XGCIconRouteViewController.m */; };
+		FBED00F02BF1EA6E005A029D /* XGCIconCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00EF2BF1EA6E005A029D /* XGCIconCollectionViewCell.m */; };
+		FBED00F32BF1EBFA005A029D /* XGCIconGetRedDotNumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00F22BF1EBFA005A029D /* XGCIconGetRedDotNumModel.m */; };
+		FBED00F62BF1EE51005A029D /* XGCGestureContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED00F52BF1EE51005A029D /* XGCGestureContainerView.m */; };
+		FBED01012BF1F295005A029D /* XGCFileJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED01002BF1F295005A029D /* XGCFileJsonViewController.m */; };
+		FBED01042BF1FBA1005A029D /* XGCDashPatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED01032BF1FBA1005A029D /* XGCDashPatternView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,6 +334,78 @@
 		FB50184C2BDB47D5001034DD /* XGCEmptyCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCEmptyCollectionView.m; sourceTree = "<group>"; };
 		FBED00662BEEFFE5005A029D /* XGCUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCUISegmentedControl.h; sourceTree = "<group>"; };
 		FBED00672BEEFFE5005A029D /* XGCUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCUISegmentedControl.m; sourceTree = "<group>"; };
+		FBED007C2BEF64BC005A029D /* XGCUserNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCUserNotificationCenter.h; sourceTree = "<group>"; };
+		FBED007D2BEF64BC005A029D /* XGCUserNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCUserNotificationCenter.m; sourceTree = "<group>"; };
+		FBED00802BEF6B1B005A029D /* UMessageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMessageManager.h; sourceTree = "<group>"; };
+		FBED00812BEF6B1B005A029D /* UMessageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMessageManager.m; sourceTree = "<group>"; };
+		FBED00842BEF72DC005A029D /* MobClickCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobClickCenter.h; sourceTree = "<group>"; };
+		FBED00852BEF72DC005A029D /* MobClickCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobClickCenter.m; sourceTree = "<group>"; };
+		FBED00882BF19FE5005A029D /* UMConfigureCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMConfigureCenter.h; sourceTree = "<group>"; };
+		FBED00892BF19FE5005A029D /* UMConfigureCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMConfigureCenter.m; sourceTree = "<group>"; };
+		FBED008C2BF1AF3C005A029D /* XGCSubscriptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSubscriptView.h; sourceTree = "<group>"; };
+		FBED008D2BF1AF3C005A029D /* XGCSubscriptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSubscriptView.m; sourceTree = "<group>"; };
+		FBED00902BF1C06E005A029D /* XGCSelectionControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSelectionControl.h; sourceTree = "<group>"; };
+		FBED00912BF1C06E005A029D /* XGCSelectionControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSelectionControl.m; sourceTree = "<group>"; };
+		FBED00932BF1C0EB005A029D /* XGCSegmentedControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSegmentedControl.h; sourceTree = "<group>"; };
+		FBED00942BF1C0EB005A029D /* XGCSegmentedControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSegmentedControl.m; sourceTree = "<group>"; };
+		FBED00962BF1C12F005A029D /* XGCPageViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCPageViewManager.h; sourceTree = "<group>"; };
+		FBED00972BF1C12F005A029D /* XGCPageViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCPageViewManager.m; sourceTree = "<group>"; };
+		FBED009A2BF1C196005A029D /* XGCQRCodeControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCQRCodeControl.h; sourceTree = "<group>"; };
+		FBED009B2BF1C196005A029D /* XGCQRCodeControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCQRCodeControl.m; sourceTree = "<group>"; };
+		FBED009D2BF1C272005A029D /* XGCCataloguesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCCataloguesView.h; sourceTree = "<group>"; };
+		FBED009E2BF1C272005A029D /* XGCCataloguesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCCataloguesView.m; sourceTree = "<group>"; };
+		FBED00A02BF1C2D3005A029D /* XGCPopupContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCPopupContainerView.h; sourceTree = "<group>"; };
+		FBED00A12BF1C2D3005A029D /* XGCPopupContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCPopupContainerView.m; sourceTree = "<group>"; };
+		FBED00A32BF1C31C005A029D /* XGCToolBarContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCToolBarContainerView.h; sourceTree = "<group>"; };
+		FBED00A42BF1C31C005A029D /* XGCToolBarContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCToolBarContainerView.m; sourceTree = "<group>"; };
+		FBED00A62BF1C47B005A029D /* XGCMainOrgTreeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainOrgTreeModel.h; sourceTree = "<group>"; };
+		FBED00A72BF1C47B005A029D /* XGCMainOrgTreeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainOrgTreeModel.m; sourceTree = "<group>"; };
+		FBED00A92BF1C47B005A029D /* XGCMainOrgTreeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainOrgTreeTableViewCell.h; sourceTree = "<group>"; };
+		FBED00AA2BF1C47B005A029D /* XGCMainOrgTreeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainOrgTreeTableViewCell.m; sourceTree = "<group>"; };
+		FBED00AC2BF1C47B005A029D /* XGCMainOrgTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainOrgTreeView.h; sourceTree = "<group>"; };
+		FBED00AD2BF1C47B005A029D /* XGCMainOrgTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainOrgTreeView.m; sourceTree = "<group>"; };
+		FBED00AF2BF1C47B005A029D /* XGCMainOrgTreeViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainOrgTreeViewControllerCell.h; sourceTree = "<group>"; };
+		FBED00B02BF1C47B005A029D /* XGCMainOrgTreeViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainOrgTreeViewControllerCell.m; sourceTree = "<group>"; };
+		FBED00B22BF1C47B005A029D /* XGCMainOrgTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainOrgTreeViewController.h; sourceTree = "<group>"; };
+		FBED00B32BF1C47B005A029D /* XGCMainOrgTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainOrgTreeViewController.m; sourceTree = "<group>"; };
+		FBED00B42BF1C47B005A029D /* XGCMainOrgTreeViewTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainOrgTreeViewTypeController.h; sourceTree = "<group>"; };
+		FBED00B52BF1C47B005A029D /* XGCMainOrgTreeViewTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainOrgTreeViewTypeController.m; sourceTree = "<group>"; };
+		FBED00B82BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonBusTypePersonTableViewCell.h; sourceTree = "<group>"; };
+		FBED00B92BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonBusTypePersonTableViewCell.m; sourceTree = "<group>"; };
+		FBED00BA2BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonOrgBusTypeOrgTableViewCell.h; sourceTree = "<group>"; };
+		FBED00BB2BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonOrgBusTypeOrgTableViewCell.m; sourceTree = "<group>"; };
+		FBED00BD2BF1C47C005A029D /* XGCMainProPersonPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonPersonModel.h; sourceTree = "<group>"; };
+		FBED00BE2BF1C47C005A029D /* XGCMainProPersonPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonPersonModel.m; sourceTree = "<group>"; };
+		FBED00BF2BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonPersonOrgModel.h; sourceTree = "<group>"; };
+		FBED00C02BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonPersonOrgModel.m; sourceTree = "<group>"; };
+		FBED00C22BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonBusTypeViewController.h; sourceTree = "<group>"; };
+		FBED00C32BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonBusTypeViewController.m; sourceTree = "<group>"; };
+		FBED00C42BF1C47C005A029D /* XGCMainProPersonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonListViewController.h; sourceTree = "<group>"; };
+		FBED00C52BF1C47C005A029D /* XGCMainProPersonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonListViewController.m; sourceTree = "<group>"; };
+		FBED00C62BF1C47C005A029D /* XGCMainProPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGCMainProPersonViewController.h; sourceTree = "<group>"; };
+		FBED00C72BF1C47C005A029D /* XGCMainProPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGCMainProPersonViewController.m; sourceTree = "<group>"; };
+		FBED00D72BF1DE86005A029D /* XGCWeakTargetTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCWeakTargetTimer.h; sourceTree = "<group>"; };
+		FBED00D82BF1DE86005A029D /* XGCWeakTargetTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCWeakTargetTimer.m; sourceTree = "<group>"; };
+		FBED00DD2BF1E140005A029D /* XGCSignatureNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSignatureNavigationController.h; sourceTree = "<group>"; };
+		FBED00DE2BF1E140005A029D /* XGCSignatureNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSignatureNavigationController.m; sourceTree = "<group>"; };
+		FBED00E12BF1E1BD005A029D /* XGCSignatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSignatureViewController.h; sourceTree = "<group>"; };
+		FBED00E22BF1E1BD005A029D /* XGCSignatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSignatureViewController.m; sourceTree = "<group>"; };
+		FBED00E42BF1E302005A029D /* XGCSignatureContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCSignatureContainerView.h; sourceTree = "<group>"; };
+		FBED00E52BF1E302005A029D /* XGCSignatureContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCSignatureContainerView.m; sourceTree = "<group>"; };
+		FBED00E82BF1E986005A029D /* XGCIconRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCIconRoute.h; sourceTree = "<group>"; };
+		FBED00E92BF1E986005A029D /* XGCIconRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCIconRoute.m; sourceTree = "<group>"; };
+		FBED00EB2BF1E9CE005A029D /* XGCIconRouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCIconRouteViewController.h; sourceTree = "<group>"; };
+		FBED00EC2BF1E9CE005A029D /* XGCIconRouteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCIconRouteViewController.m; sourceTree = "<group>"; };
+		FBED00EE2BF1EA6E005A029D /* XGCIconCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCIconCollectionViewCell.h; sourceTree = "<group>"; };
+		FBED00EF2BF1EA6E005A029D /* XGCIconCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCIconCollectionViewCell.m; sourceTree = "<group>"; };
+		FBED00F12BF1EBFA005A029D /* XGCIconGetRedDotNumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCIconGetRedDotNumModel.h; sourceTree = "<group>"; };
+		FBED00F22BF1EBFA005A029D /* XGCIconGetRedDotNumModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCIconGetRedDotNumModel.m; sourceTree = "<group>"; };
+		FBED00F42BF1EE51005A029D /* XGCGestureContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCGestureContainerView.h; sourceTree = "<group>"; };
+		FBED00F52BF1EE51005A029D /* XGCGestureContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCGestureContainerView.m; sourceTree = "<group>"; };
+		FBED00FF2BF1F295005A029D /* XGCFileJsonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCFileJsonViewController.h; sourceTree = "<group>"; };
+		FBED01002BF1F295005A029D /* XGCFileJsonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCFileJsonViewController.m; sourceTree = "<group>"; };
+		FBED01022BF1FBA1005A029D /* XGCDashPatternView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XGCDashPatternView.h; sourceTree = "<group>"; };
+		FBED01032BF1FBA1005A029D /* XGCDashPatternView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XGCDashPatternView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,7 +590,7 @@
 			path = XGCCategory;
 			sourceTree = "<group>";
 		};
-		FB50175D2BD9069F001034DD /* XGCMainBase */ = {
+		FB50175D2BD9069F001034DD /* XGCMainFrame */ = {
 			isa = PBXGroup;
 			children = (
 				FB5017532BD9069F001034DD /* XGCMainNavigationController.h */,
@@ -494,7 +602,7 @@
 				FB50175B2BD9069F001034DD /* XGCMainViewController.h */,
 				FB50175C2BD9069F001034DD /* XGCMainViewController.m */,
 			);
-			path = XGCMainBase;
+			path = XGCMainFrame;
 			sourceTree = "<group>";
 		};
 		FB5017642BD9069F001034DD /* Cell */ = {
@@ -606,6 +714,14 @@
 		FB50178F2BD9069F001034DD /* XGCMainTool */ = {
 			isa = PBXGroup;
 			children = (
+				FBED00FE2BF1F22D005A029D /* XGCFileJsonController */,
+				FBED00E02BF1E182005A029D /* XGCSignatureViewController */,
+				FBED00D62BF1DE79005A029D /* XGCWeakTargetTimer */,
+				FBED00B72BF1C47B005A029D /* XGCMainOrgTree */,
+				FBED00C82BF1C47C005A029D /* XGCMainProPerson */,
+				FBED00992BF1C185005A029D /* XGCQRCodeControl */,
+				FBED008F2BF1BDBE005A029D /* XGCMainView */,
+				FBED008B2BF1AF2B005A029D /* XGCSubscriptView */,
 				FB50177A2BD9069F001034DD /* XGCAlertView */,
 				FB50177D2BD9069F001034DD /* XGCDatePickerView */,
 				FB5017832BD9069F001034DD /* XGCMainPickerManager */,
@@ -791,7 +907,12 @@
 		FB5017E72BD9069F001034DD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FBED007A2BEF49F5005A029D /* XGCMainBaseController */,
+				FBED00E72BF1E94B005A029D /* XGCIcon */,
+				FBED00872BEF752B005A029D /* UMConfigureCenter */,
+				FBED00832BEF72CD005A029D /* MobClickCenter */,
+				FBED007F2BEF6ADF005A029D /* UMessageManager */,
+				FBED007B2BEF64A8005A029D /* XGCUserNotificationCenter */,
+				FBED007A2BEF49F5005A029D /* XGCMainFrameBase */,
 				FBED00682BEEFFE5005A029D /* XGCUISegmentedControl */,
 				FB50173D2BD9069F001034DD /* XGCViewConfiguration */,
 				FB5017802BD9069F001034DD /* XGCImageUrlControl */,
@@ -801,7 +922,7 @@
 				FB5017BE2BD9069F001034DD /* XGCEmptyScrollView */,
 				FB5017C32BD9069F001034DD /* XGCMJRefresh */,
 				FB50174E2BD9069F001034DD /* XGCCategory */,
-				FB50175D2BD9069F001034DD /* XGCMainBase */,
+				FB50175D2BD9069F001034DD /* XGCMainFrame */,
 				FB5017722BD9069F001034DD /* XGCMainForm */,
 				FB5017752BD9069F001034DD /* XGCMainRoute */,
 				FB50178F2BD9069F001034DD /* XGCMainTool */,
@@ -835,7 +956,7 @@
 			path = XGCUISegmentedControl;
 			sourceTree = "<group>";
 		};
-		FBED007A2BEF49F5005A029D /* XGCMainBaseController */ = {
+		FBED007A2BEF49F5005A029D /* XGCMainFrameBase */ = {
 			isa = PBXGroup;
 			children = (
 				FB50174F2BD9069F001034DD /* XGCMainAppFuncCodeRefreshViewController.h */,
@@ -845,7 +966,226 @@
 				FB5017572BD9069F001034DD /* XGCMainRefreshViewController.h */,
 				FB5017582BD9069F001034DD /* XGCMainRefreshViewController.m */,
 			);
-			path = XGCMainBaseController;
+			path = XGCMainFrameBase;
+			sourceTree = "<group>";
+		};
+		FBED007B2BEF64A8005A029D /* XGCUserNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FBED007C2BEF64BC005A029D /* XGCUserNotificationCenter.h */,
+				FBED007D2BEF64BC005A029D /* XGCUserNotificationCenter.m */,
+			);
+			path = XGCUserNotificationCenter;
+			sourceTree = "<group>";
+		};
+		FBED007F2BEF6ADF005A029D /* UMessageManager */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00802BEF6B1B005A029D /* UMessageManager.h */,
+				FBED00812BEF6B1B005A029D /* UMessageManager.m */,
+			);
+			path = UMessageManager;
+			sourceTree = "<group>";
+		};
+		FBED00832BEF72CD005A029D /* MobClickCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00842BEF72DC005A029D /* MobClickCenter.h */,
+				FBED00852BEF72DC005A029D /* MobClickCenter.m */,
+			);
+			path = MobClickCenter;
+			sourceTree = "<group>";
+		};
+		FBED00872BEF752B005A029D /* UMConfigureCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00882BF19FE5005A029D /* UMConfigureCenter.h */,
+				FBED00892BF19FE5005A029D /* UMConfigureCenter.m */,
+			);
+			path = UMConfigureCenter;
+			sourceTree = "<group>";
+		};
+		FBED008B2BF1AF2B005A029D /* XGCSubscriptView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XGCSubscriptView;
+			sourceTree = "<group>";
+		};
+		FBED008F2BF1BDBE005A029D /* XGCMainView */ = {
+			isa = PBXGroup;
+			children = (
+				FBED008C2BF1AF3C005A029D /* XGCSubscriptView.h */,
+				FBED008D2BF1AF3C005A029D /* XGCSubscriptView.m */,
+				FBED00902BF1C06E005A029D /* XGCSelectionControl.h */,
+				FBED00912BF1C06E005A029D /* XGCSelectionControl.m */,
+				FBED00932BF1C0EB005A029D /* XGCSegmentedControl.h */,
+				FBED00942BF1C0EB005A029D /* XGCSegmentedControl.m */,
+				FBED00962BF1C12F005A029D /* XGCPageViewManager.h */,
+				FBED00972BF1C12F005A029D /* XGCPageViewManager.m */,
+				FBED009D2BF1C272005A029D /* XGCCataloguesView.h */,
+				FBED009E2BF1C272005A029D /* XGCCataloguesView.m */,
+				FBED00A02BF1C2D3005A029D /* XGCPopupContainerView.h */,
+				FBED00A12BF1C2D3005A029D /* XGCPopupContainerView.m */,
+				FBED00A32BF1C31C005A029D /* XGCToolBarContainerView.h */,
+				FBED00A42BF1C31C005A029D /* XGCToolBarContainerView.m */,
+				FBED00F42BF1EE51005A029D /* XGCGestureContainerView.h */,
+				FBED00F52BF1EE51005A029D /* XGCGestureContainerView.m */,
+				FBED01022BF1FBA1005A029D /* XGCDashPatternView.h */,
+				FBED01032BF1FBA1005A029D /* XGCDashPatternView.m */,
+			);
+			path = XGCMainView;
+			sourceTree = "<group>";
+		};
+		FBED00992BF1C185005A029D /* XGCQRCodeControl */ = {
+			isa = PBXGroup;
+			children = (
+				FBED009A2BF1C196005A029D /* XGCQRCodeControl.h */,
+				FBED009B2BF1C196005A029D /* XGCQRCodeControl.m */,
+			);
+			path = XGCQRCodeControl;
+			sourceTree = "<group>";
+		};
+		FBED00A82BF1C47B005A029D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00A62BF1C47B005A029D /* XGCMainOrgTreeModel.h */,
+				FBED00A72BF1C47B005A029D /* XGCMainOrgTreeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBED00AB2BF1C47B005A029D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00A92BF1C47B005A029D /* XGCMainOrgTreeTableViewCell.h */,
+				FBED00AA2BF1C47B005A029D /* XGCMainOrgTreeTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FBED00AE2BF1C47B005A029D /* XGCMainOrgTreeView */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00AB2BF1C47B005A029D /* Cell */,
+				FBED00AC2BF1C47B005A029D /* XGCMainOrgTreeView.h */,
+				FBED00AD2BF1C47B005A029D /* XGCMainOrgTreeView.m */,
+			);
+			path = XGCMainOrgTreeView;
+			sourceTree = "<group>";
+		};
+		FBED00B12BF1C47B005A029D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00AF2BF1C47B005A029D /* XGCMainOrgTreeViewControllerCell.h */,
+				FBED00B02BF1C47B005A029D /* XGCMainOrgTreeViewControllerCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FBED00B62BF1C47B005A029D /* XGCMainOrgTreeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00B12BF1C47B005A029D /* Cell */,
+				FBED00B22BF1C47B005A029D /* XGCMainOrgTreeViewController.h */,
+				FBED00B32BF1C47B005A029D /* XGCMainOrgTreeViewController.m */,
+				FBED00B42BF1C47B005A029D /* XGCMainOrgTreeViewTypeController.h */,
+				FBED00B52BF1C47B005A029D /* XGCMainOrgTreeViewTypeController.m */,
+			);
+			path = XGCMainOrgTreeViewController;
+			sourceTree = "<group>";
+		};
+		FBED00B72BF1C47B005A029D /* XGCMainOrgTree */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00A82BF1C47B005A029D /* Model */,
+				FBED00AE2BF1C47B005A029D /* XGCMainOrgTreeView */,
+				FBED00B62BF1C47B005A029D /* XGCMainOrgTreeViewController */,
+			);
+			path = XGCMainOrgTree;
+			sourceTree = "<group>";
+		};
+		FBED00BC2BF1C47C005A029D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00B82BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.h */,
+				FBED00B92BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.m */,
+				FBED00BA2BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.h */,
+				FBED00BB2BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FBED00C12BF1C47C005A029D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00BD2BF1C47C005A029D /* XGCMainProPersonPersonModel.h */,
+				FBED00BE2BF1C47C005A029D /* XGCMainProPersonPersonModel.m */,
+				FBED00BF2BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.h */,
+				FBED00C02BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBED00C82BF1C47C005A029D /* XGCMainProPerson */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00BC2BF1C47C005A029D /* Cell */,
+				FBED00C12BF1C47C005A029D /* Model */,
+				FBED00C22BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.h */,
+				FBED00C32BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.m */,
+				FBED00C42BF1C47C005A029D /* XGCMainProPersonListViewController.h */,
+				FBED00C52BF1C47C005A029D /* XGCMainProPersonListViewController.m */,
+				FBED00C62BF1C47C005A029D /* XGCMainProPersonViewController.h */,
+				FBED00C72BF1C47C005A029D /* XGCMainProPersonViewController.m */,
+			);
+			path = XGCMainProPerson;
+			sourceTree = "<group>";
+		};
+		FBED00D62BF1DE79005A029D /* XGCWeakTargetTimer */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00D72BF1DE86005A029D /* XGCWeakTargetTimer.h */,
+				FBED00D82BF1DE86005A029D /* XGCWeakTargetTimer.m */,
+			);
+			path = XGCWeakTargetTimer;
+			sourceTree = "<group>";
+		};
+		FBED00E02BF1E182005A029D /* XGCSignatureViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00DD2BF1E140005A029D /* XGCSignatureNavigationController.h */,
+				FBED00DE2BF1E140005A029D /* XGCSignatureNavigationController.m */,
+				FBED00E12BF1E1BD005A029D /* XGCSignatureViewController.h */,
+				FBED00E22BF1E1BD005A029D /* XGCSignatureViewController.m */,
+				FBED00E42BF1E302005A029D /* XGCSignatureContainerView.h */,
+				FBED00E52BF1E302005A029D /* XGCSignatureContainerView.m */,
+			);
+			path = XGCSignatureViewController;
+			sourceTree = "<group>";
+		};
+		FBED00E72BF1E94B005A029D /* XGCIcon */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00E82BF1E986005A029D /* XGCIconRoute.h */,
+				FBED00E92BF1E986005A029D /* XGCIconRoute.m */,
+				FBED00EB2BF1E9CE005A029D /* XGCIconRouteViewController.h */,
+				FBED00EC2BF1E9CE005A029D /* XGCIconRouteViewController.m */,
+				FBED00EE2BF1EA6E005A029D /* XGCIconCollectionViewCell.h */,
+				FBED00EF2BF1EA6E005A029D /* XGCIconCollectionViewCell.m */,
+				FBED00F12BF1EBFA005A029D /* XGCIconGetRedDotNumModel.h */,
+				FBED00F22BF1EBFA005A029D /* XGCIconGetRedDotNumModel.m */,
+			);
+			path = XGCIcon;
+			sourceTree = "<group>";
+		};
+		FBED00FE2BF1F22D005A029D /* XGCFileJsonController */ = {
+			isa = PBXGroup;
+			children = (
+				FBED00FF2BF1F295005A029D /* XGCFileJsonViewController.h */,
+				FBED01002BF1F295005A029D /* XGCFileJsonViewController.m */,
+			);
+			path = XGCFileJsonController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -860,6 +1200,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				67CEB70F148326DF06B85169 /* [CP] Embed Pods Frameworks */,
+				50043814586F013728326D07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -970,6 +1311,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		50043814586F013728326D07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XGCMain_Example/Pods-XGCMain_Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XGCMain_Example/Pods-XGCMain_Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XGCMain_Example/Pods-XGCMain_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		67CEB70F148326DF06B85169 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1026,49 +1384,71 @@
 				FB5018192BD9069F001034DD /* XGCConfiguration.m in Sources */,
 				FB50182F2BD9069F001034DD /* XGCWebViewController.m in Sources */,
 				FB5018032BD9069F001034DD /* XGCMainAppFuncCodeFormViewController.m in Sources */,
+				FBED00C92BF1C47C005A029D /* XGCMainOrgTreeModel.m in Sources */,
 				FB5018292BD9069F001034DD /* XGCUserAclMapModel.m in Sources */,
+				FBED00A22BF1C2D3005A029D /* XGCPopupContainerView.m in Sources */,
 				FB5017FE2BD9069F001034DD /* XGCMainFormRowTableViewCell.m in Sources */,
 				FB5017F12BD9069F001034DD /* NSDate+XGCDate.m in Sources */,
 				FB5018252BD9069F001034DD /* XGCURLSession.m in Sources */,
 				FB50180F2BD9069F001034DD /* XGCMediaPreviewCollectionViewCell.m in Sources */,
+				FBED00CE2BF1C47C005A029D /* XGCMainOrgTreeViewTypeController.m in Sources */,
 				FB50184D2BDB47D5001034DD /* XGCEmptyCollectionView.m in Sources */,
 				FB5017FB2BD9069F001034DD /* XGCMainTabBarController.m in Sources */,
 				FB50181A2BD9069F001034DD /* XGCThemeManager.m in Sources */,
 				FB50181E2BD9069F001034DD /* XGCAliyunOSSiOS.m in Sources */,
+				FBED007E2BEF64BC005A029D /* XGCUserNotificationCenter.m in Sources */,
 				FB50182D2BD9069F001034DD /* XGCUserManager.m in Sources */,
 				FB5017ED2BD9069F001034DD /* XGCViewLayer.m in Sources */,
 				FB50182E2BD9069F001034DD /* XGCWebViewRoute.m in Sources */,
 				FB5017EC2BD9069F001034DD /* XGCViewConfiguration.m in Sources */,
+				FBED00982BF1C12F005A029D /* XGCPageViewManager.m in Sources */,
 				FB5017F82BD9069F001034DD /* XGCMainNavigationController.m in Sources */,
+				FBED008A2BF19FE5005A029D /* UMConfigureCenter.m in Sources */,
 				FB5017FC2BD9069F001034DD /* XGCMainViewController.m in Sources */,
 				FB5017EE2BD9069F001034DD /* NSArray+XGCArray.m in Sources */,
 				FB5017F32BD9069F001034DD /* UIColor+XGCColor.m in Sources */,
+				FBED00ED2BF1E9CE005A029D /* XGCIconRouteViewController.m in Sources */,
+				FBED00952BF1C0EB005A029D /* XGCSegmentedControl.m in Sources */,
 				FB5018282BD9069F001034DD /* XGCMenuDataModel.m in Sources */,
 				FB50181C2BD9069F001034DD /* XGCAFNetworking.m in Sources */,
 				FB5017F92BD9069F001034DD /* XGCMainNavigationControllerDelegate.m in Sources */,
 				FB50180E2BD9069F001034DD /* XGCTextView.m in Sources */,
+				FBED009F2BF1C272005A029D /* XGCCataloguesView.m in Sources */,
 				FB5018152BD9069F001034DD /* KSSDImageManager.m in Sources */,
 				FB5017F42BD9069F001034DD /* UIDevice+XGCDevice.m in Sources */,
 				FB5018242BD9069F001034DD /* XGCURLManagerCenter.m in Sources */,
 				FB5018162BD9069F001034DD /* XGCMediaPreviewModel.m in Sources */,
 				FB5018022BD9069F001034DD /* XGCMainFormSectionDescriptor.m in Sources */,
+				FBED008E2BF1AF3C005A029D /* XGCSubscriptView.m in Sources */,
 				6003F59E195388D20070C39A /* XGCAppDelegate.m in Sources */,
+				FBED00D32BF1C47C005A029D /* XGCMainProPersonBusTypeViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* XGCViewController.m in Sources */,
 				FB50180D2BD9069F001034DD /* XGCTextFieldDelegator.m in Sources */,
+				FBED00D92BF1DE86005A029D /* XGCWeakTargetTimer.m in Sources */,
 				FB50182B2BD9069F001034DD /* XGCUserMapModel.m in Sources */,
+				FBED00CB2BF1C47C005A029D /* XGCMainOrgTreeView.m in Sources */,
+				FBED00D52BF1C47C005A029D /* XGCMainProPersonViewController.m in Sources */,
 				FB5018142BD9069F001034DD /* KSProgressLayer.m in Sources */,
 				FB5018182BD9069F001034DD /* XGCMediaPreviewContainerView.m in Sources */,
+				FBED00D42BF1C47C005A029D /* XGCMainProPersonListViewController.m in Sources */,
+				FBED00D22BF1C47C005A029D /* XGCMainProPersonPersonOrgModel.m in Sources */,
 				FB5017FD2BD9069F001034DD /* XGCMainFormRowDictMapCollectionViewCell.m in Sources */,
 				FB5017EA2BD9069F001034DD /* UIView+XGCView.m in Sources */,
 				FB5018262BD9069F001034DD /* XGCURLSessionDelegate.m in Sources */,
+				FBED00D02BF1C47C005A029D /* XGCMainProPersonOrgBusTypeOrgTableViewCell.m in Sources */,
 				FB5017EB2BD9069F001034DD /* XGCActivityIndicatorView.m in Sources */,
 				FB50181B2BD9069F001034DD /* XGCThemeManagerCenter.m in Sources */,
+				FBED00D12BF1C47C005A029D /* XGCMainProPersonPersonModel.m in Sources */,
 				FB5018082BD9069F001034DD /* XGCDatePickerView.m in Sources */,
+				FBED00A52BF1C31C005A029D /* XGCToolBarContainerView.m in Sources */,
 				FB50181F2BD9069F001034DD /* XGCAliyunOSSiOSDelegate.m in Sources */,
 				FB50180A2BD9069F001034DD /* XGCMainPickerManager.m in Sources */,
 				FB5018202BD9069F001034DD /* XGCEmptyTableView.m in Sources */,
+				FBED009C2BF1C196005A029D /* XGCQRCodeControl.m in Sources */,
 				FB5017F02BD9069F001034DD /* NSCalendar+XGCCalendar.m in Sources */,
 				FB50184A2BDB3F1F001034DD /* XGCUploadSession.m in Sources */,
+				FBED00CF2BF1C47C005A029D /* XGCMainProPersonBusTypePersonTableViewCell.m in Sources */,
+				FBED00CD2BF1C47C005A029D /* XGCMainOrgTreeViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				FB5017EF2BD9069F001034DD /* NSBundle+XGCBundle.m in Sources */,
 				FB5018052BD9069F001034DD /* XGCMainRoute.m in Sources */,
@@ -1077,23 +1457,37 @@
 				FB50181D2BD9069F001034DD /* XGCAFNetworkingDelegate.m in Sources */,
 				FB50182A2BD9069F001034DD /* XGCUserDictMapModel.m in Sources */,
 				FB5017FF2BD9069F001034DD /* XGCMainFormSectionTableHeaderView.m in Sources */,
+				FBED00F62BF1EE51005A029D /* XGCGestureContainerView.m in Sources */,
+				FBED00DF2BF1E140005A029D /* XGCSignatureNavigationController.m in Sources */,
 				FB5017E92BD9069F001034DD /* UIControl+XGCControl.m in Sources */,
+				FBED00922BF1C06E005A029D /* XGCSelectionControl.m in Sources */,
+				FBED00F02BF1EA6E005A029D /* XGCIconCollectionViewCell.m in Sources */,
 				FB5018222BD9069F001034DD /* XGCRefreshTableView.m in Sources */,
 				FB5017F52BD9069F001034DD /* UIImage+XGCImage.m in Sources */,
+				FBED00EA2BF1E986005A029D /* XGCIconRoute.m in Sources */,
+				FBED01012BF1F295005A029D /* XGCFileJsonViewController.m in Sources */,
+				FBED00822BEF6B1B005A029D /* UMessageManager.m in Sources */,
 				FB5018122BD9069F001034DD /* KSPhotoItem.m in Sources */,
 				FB5018072BD9069F001034DD /* XGCAlertView.m in Sources */,
 				FB50162D2BD8F1C4001034DD /* XGCSceneDelegate.m in Sources */,
 				FB5018012BD9069F001034DD /* XGCMainFormRowDescriptor.m in Sources */,
+				FBED00E32BF1E1BD005A029D /* XGCSignatureViewController.m in Sources */,
 				FB5018132BD9069F001034DD /* KSPhotoView.m in Sources */,
+				FBED00F32BF1EBFA005A029D /* XGCIconGetRedDotNumModel.m in Sources */,
 				FB5018062BD9069F001034DD /* XGCAlertTableViewCell.m in Sources */,
+				FBED00CA2BF1C47C005A029D /* XGCMainOrgTreeTableViewCell.m in Sources */,
 				FB5018232BD9069F001034DD /* XGCURLManager.m in Sources */,
 				FB5018212BD9069F001034DD /* XGCRefreshCollectionView.m in Sources */,
 				FB5018272BD9069F001034DD /* XGCMenuAndFuncListModel.m in Sources */,
+				FBED00CC2BF1C47C005A029D /* XGCMainOrgTreeViewControllerCell.m in Sources */,
 				FB5018172BD9069F001034DD /* XGCMediaPreviewRoute.m in Sources */,
+				FBED01042BF1FBA1005A029D /* XGCDashPatternView.m in Sources */,
 				FB5018112BD9069F001034DD /* KSPhotoBrowserManager.m in Sources */,
+				FBED00E62BF1E302005A029D /* XGCSignatureContainerView.m in Sources */,
 				FBED00692BEEFFE5005A029D /* XGCUISegmentedControl.m in Sources */,
 				FB5017FA2BD9069F001034DD /* XGCMainRefreshViewController.m in Sources */,
 				FB5017F72BD9069F001034DD /* XGCMainAppFuncCodeViewController.m in Sources */,
+				FBED00862BEF72DC005A029D /* MobClickCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -235,6 +235,31 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+## UMAPM
+
+Copyright 2011 - 2020 umeng.com. All rights reserved.
+
+
+## UMCommon
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
+## UMDevice
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
+## UMPush
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
+## UYuMao
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
 ## XGCMain
 
 Copyright (c) 2024 ShannonCrazy <541273160@qq.com>

@@ -13,5 +13,3 @@ FOUNDATION_EXPORT double XGCMainVersionNumber;
 
 //! Project version string for Masonry.
 FOUNDATION_EXPORT const unsigned char XGCMainVersionString[];
-
-#import "XGCURLSession.h"

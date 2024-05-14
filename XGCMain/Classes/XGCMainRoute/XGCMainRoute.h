@@ -23,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface XGCMainRoute : NSObject
+/// UIWindowScene
+@property (class, nonatomic, strong, readonly) UIWindowScene *windowScene API_AVAILABLE(ios(13.0));
+/// UIWindow
+@property (class, nonatomic, strong, readonly) UIWindow *keyWindow;
 
 + (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions API_AVAILABLE(ios(13.0));
 

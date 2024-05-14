@@ -1,6 +1,6 @@
 {
   "name": "XGCMain",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "summary": "A short description of XGCMain.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/ShannonCrazy/XGCMain",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ShannonCrazy/XGCMain.git",
-    "tag": "1.0.6"
+    "tag": "1.0.7"
   },
   "platforms": {
     "ios": "12.0"
@@ -32,6 +32,7 @@
 
     ]
   },
+  "static_framework": true,
   "subspecs": [
     {
       "name": "XGCEmptyScrollView",
@@ -121,22 +122,25 @@
       }
     },
     {
-      "name": "XGCMainBase",
-      "source_files": "XGCMain/Classes/XGCMainBase/*",
+      "name": "XGCMainFrame",
+      "source_files": "XGCMain/Classes/XGCMainFrame/*",
       "dependencies": {
+        "XGCMain/MobClickCenter": [
+
+        ],
         "XGCMain/XGCThemeManager": [
 
         ]
       }
     },
     {
-      "name": "XGCMainBaseController",
-      "source_files": "XGCMain/Classes/XGCMainBaseController/*",
+      "name": "XGCMainFrameBase",
+      "source_files": "XGCMain/Classes/XGCMainFrameBase/*",
       "dependencies": {
         "XGCMain/XGCUser": [
 
         ],
-        "XGCMain/XGCMainBase": [
+        "XGCMain/XGCMainFrame": [
 
         ],
         "XGCMain/XGCMJRefresh": [
@@ -227,7 +231,7 @@
       "name": "XGCWebView",
       "source_files": "XGCMain/Classes/XGCWebView/*",
       "dependencies": {
-        "XGCMain/XGCMainBase": [
+        "XGCMain/XGCMainFrame": [
 
         ],
         "XGCMain/XGCMainRoute": [
@@ -274,19 +278,227 @@
         "XGCMain/XGCUploadSession": [
 
         ],
+        "XGCMain/XGCMainFrameBase": [
+
+        ],
         "XGCMain/XGCDatePickerView": [
 
         ],
         "XGCMain/XGCViewConfiguration": [
 
         ],
-        "XGCMain/XGCMainBaseController": [
+        "Masonry": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCUserNotificationCenter",
+      "source_files": "XGCMain/Classes/XGCUserNotificationCenter/*",
+      "frameworks": "UserNotifications"
+    },
+    {
+      "name": "UMConfigureCenter",
+      "source_files": "XGCMain/Classes/UMConfigureCenter/*",
+      "dependencies": {
+        "UMCommon": [
+
+        ],
+        "UMDevice": [
+
+        ]
+      }
+    },
+    {
+      "name": "UMessageManager",
+      "source_files": "XGCMain/Classes/UMessageManager/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/UMConfigureCenter": [
+
+        ],
+        "XGCMain/XGCUserNotificationCenter": [
+
+        ],
+        "UYuMao": [
+
+        ],
+        "UMPush": [
+
+        ]
+      }
+    },
+    {
+      "name": "MobClickCenter",
+      "source_files": "XGCMain/Classes/MobClickCenter/*",
+      "dependencies": {
+        "XGCMain/UMConfigureCenter": [
+
+        ],
+        "UMAPM": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainView",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCMainView/*",
+      "dependencies": {
+        "XGCMain/XGCThemeManager": [
+
+        ],
+        "XGCMain/XGCViewConfiguration": [
+
+        ],
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCSignatureViewController",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCSignatureViewController/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCCategory": [
+
+        ],
+        "XGCMain/XGCThemeManager": [
+
+        ],
+        "XGCMain/XGCUploadSession": [
+
+        ],
+        "XGCMain/XGCViewConfiguration": [
+
+        ],
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainOrgTree",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCMainOrgTree/**/*",
+      "dependencies": {
+        "XGCMain/XGCMainView": [
+
+        ],
+        "XGCMain/XGCTextField": [
+
+        ],
+        "XGCMain/XGCURLSession": [
+
+        ],
+        "XGCMain/XGCThemeManager": [
+
+        ],
+        "XGCMain/XGCViewConfiguration": [
 
         ],
         "Masonry": [
 
         ],
-        "SDWebImage": [
+        "MJExtension": [
+
+        ],
+        "M13OrderedDictionary": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCMainProPerson",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCMainProPerson/**/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCCategory": [
+
+        ],
+        "XGCMain/XGCMainView": [
+
+        ],
+        "XGCMain/XGCTextField": [
+
+        ],
+        "XGCMain/XGCMJRefresh": [
+
+        ],
+        "XGCMain/XGCURLSession": [
+
+        ],
+        "XGCMain/XGCThemeManager": [
+
+        ],
+        "XGCMain/XGCImageUrlControl": [
+
+        ],
+        "XGCMain/XGCViewConfiguration": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "MJExtension": [
+
+        ],
+        "M13OrderedDictionary": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCWeakTargetTimer",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCWeakTargetTimer/*"
+    },
+    {
+      "name": "XGCQRCodeControl",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCQRCodeControl/*"
+    },
+    {
+      "name": "XGCIcon",
+      "source_files": "XGCMain/Classes/XGCIcon/*",
+      "dependencies": {
+        "XGCMain/XGCUser": [
+
+        ],
+        "XGCMain/XGCMainView": [
+
+        ],
+        "XGCMain/XGCMainRoute": [
+
+        ],
+        "XGCMain/XGCThemeManager": [
+
+        ],
+        "XGCMain/XGCEmptyScrollView": [
+
+        ],
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "XGCFileJsonController",
+      "source_files": "XGCMain/Classes/XGCMainTool/XGCFileJsonController/*",
+      "dependencies": {
+        "XGCMain/XGCWebView": [
+
+        ],
+        "XGCMain/XGCMainRoute": [
+
+        ],
+        "XGCMain/XGCMediaPreview": [
 
         ]
       }

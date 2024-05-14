@@ -7,13 +7,23 @@
 //
 
 #import "XGCAppDelegate.h"
+#import <XGCMain/UMConfigureCenter.h>
 
 @implementation XGCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([UMConfigureCenter.shareInstance respondsToSelector:_cmd]) {
+        [UMConfigureCenter.shareInstance application:application didFinishLaunchingWithOptions:launchOptions];
+    }
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    if ([UMConfigureCenter.shareInstance respondsToSelector:_cmd]) {
+        [UMConfigureCenter.shareInstance application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
